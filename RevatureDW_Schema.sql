@@ -133,3 +133,14 @@ create table fct_Screening(
 	constraint fk_screening_qualifiedLeadID foreign key (qualifiedLeadID) references dim_QualifiedLeads,
 	constraint fk_screening_screenTypeID foreign key (screenTypeID) references dim_ScreenType,
 );
+
+create table fct_ContactAttempt(
+	contactAttemptID int primary key,
+	qualifiedLeadID int,
+	contactDateID int,
+	contactTypeID int,
+
+	constraint fk_contactAttempt_qualifiedLeadID foreign key (qualifiedLeadID) references dim_QualifiedLeads,
+	constraint fk_contactAttempt_contactDateID foreign key (contactDateID) references dim_Date,
+	constraint fk_contactAttempt_contactTypeID foreign key (contactTypeID) references dim_ContactType,
+);
