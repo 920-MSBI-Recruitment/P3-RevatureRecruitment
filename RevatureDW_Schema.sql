@@ -1,4 +1,5 @@
-use DW;
+create database RevatureDW;
+use RevatureDW;
 
 create table dim_Date(
 	dateID int primary key identity,
