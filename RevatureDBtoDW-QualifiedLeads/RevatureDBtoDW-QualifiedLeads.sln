@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "RevatureDBtoDW-QualifiedLeads", "RevatureDBtoDW-QualifiedLeads\RevatureDBtoDW-QualifiedLeads.dtproj", "{DE45FCCE-2B50-43EC-B5A9-71BEA9E3C6AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE45FCCE-2B50-43EC-B5A9-71BEA9E3C6AB}.Development|Default.ActiveCfg = Development
+		{DE45FCCE-2B50-43EC-B5A9-71BEA9E3C6AB}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78B76472-F644-4E34-A1C1-E8065D6AC34C}
+	EndGlobalSection
+EndGlobal

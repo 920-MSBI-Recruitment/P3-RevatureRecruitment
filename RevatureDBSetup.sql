@@ -16,6 +16,12 @@ create table tbl_Recruiters
 	recLastName varchar(255)
 )
 
+create table tbl_States
+(
+	stateAbbrev varchar(2) primary key,
+	stateFull varchar(50)
+)
+
 create table tbl_QualifiedLeads
 (
 	qlId int primary key,
@@ -24,7 +30,8 @@ create table tbl_QualifiedLeads
 	qlUniversity varchar(255),
 	qlMajor varchar(255),
 	qlEmail varchar(255) unique,
-	qlState varchar(2)
+	qlState varchar(2),
+	constraint fk_QualifiedLeads_stateAbbrev foreign key(qlState) references tbl_States
 )
 
 create table tbl_ContactAttempts
@@ -69,9 +76,3 @@ create table tbl_Offers
 	constraint fk_Offers_recId foreign key(recId) references tbl_Recruiters,
 	constraint fk_Offers_qlId foreign key(qlId) references tbl_QualifiedLeads
 )
-
-select tbl_ContactAttempts.contId as [Contact Number], concat(tbl_Recruiters.recFirstName, ' ', tbl_Recruiters.recLastName)  as [Recruiter], concat(tbl_QualifiedLeads.qlFirstName, ' ', tbl_QualifiedLeads.qlLastName) as [Qualified Lead], tbl_ContactAttempts.contDate as [Date] from tbl_ContactAttempts
-join tbl_Recruiters
-on tbl_ContactAttempts.recId = tbl_Recruiters.recId
-join tbl_QualifiedLeads
-on tbl_ContactAttempts.qlId = tbl_QualifiedLeads.qlId

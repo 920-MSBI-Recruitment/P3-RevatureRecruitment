@@ -1,5 +1,5 @@
-create database RevatureDW;
-use RevatureDW;
+create database RevatureDW
+use RevatureDW
 
 create table dim_Date(
 	dateID int primary key identity,
@@ -145,3 +145,5 @@ create table fct_ContactAttempt(
 	constraint fk_contactAttempt_contactDateID foreign key (contactDateID) references dim_Date,
 	constraint fk_contactAttempt_contactTypeID foreign key (contactTypeID) references dim_ContactType,
 );
+
+select * from dim_Date
