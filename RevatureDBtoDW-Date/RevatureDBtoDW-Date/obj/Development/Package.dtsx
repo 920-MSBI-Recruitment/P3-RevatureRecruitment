@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{FAAEA806-58AF-4748-AC41-77918730C44D}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{1182B69D-4946-4D48-B1CD-4C51294F7EEE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -334,6 +334,15 @@
                       lineageId="Package\dimDate\Excel Source.Outputs[Excel Source Output].Columns[yearNumber]"
                       name="yearNumber"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\dimDate\Excel Source.Outputs[Excel Source Output].Columns[date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dimDate\Excel Source.Outputs[Excel Source Output].ExternalColumns[date]"
+                      lineageId="Package\dimDate\Excel Source.Outputs[Excel Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -359,6 +368,10 @@
                       refId="Package\dimDate\Excel Source.Outputs[Excel Source Output].ExternalColumns[yearNumber]"
                       dataType="r8"
                       name="yearNumber" />
+                    <externalMetadataColumn
+                      refId="Package\dimDate\Excel Source.Outputs[Excel Source Output].ExternalColumns[date]"
+                      dataType="date"
+                      name="date" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -366,6 +379,11 @@
                   isErrorOut="true"
                   name="Excel Source Error Output">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\dimDate\Excel Source.Outputs[Excel Source Error Output].Columns[date]"
+                      dataType="date"
+                      lineageId="Package\dimDate\Excel Source.Outputs[Excel Source Error Output].Columns[date]"
+                      name="date" />
                     <outputColumn
                       refId="Package\dimDate\Excel Source.Outputs[Excel Source Error Output].Columns[dateDay]"
                       dataType="r8"
@@ -516,6 +534,12 @@
                       cachedName="Copy of yearNumber"
                       externalMetadataColumnId="Package\dimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[yearNumber]"
                       lineageId="Package\dimDate\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of yearNumber]" />
+                    <inputColumn
+                      refId="Package\dimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date]"
+                      cachedDataType="date"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\dimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      lineageId="Package\dimDate\Excel Source.Outputs[Excel Source Output].Columns[date]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -547,6 +571,10 @@
                       refId="Package\dimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[yearNumber]"
                       dataType="i4"
                       name="yearNumber" />
+                    <externalMetadataColumn
+                      refId="Package\dimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      dataType="dbDate"
+                      name="date" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -617,13 +645,17 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="139,42"
-          Id="Package\dimDate\Excel Source"
-          TopLeft="21.5,5.5" />
+          Size="171,42"
+          Id="Package\dimDate\OLE DB Destination"
+          TopLeft="5.50000000000003,209.5" />
         <NodeLayout
           Size="156,42"
           Id="Package\dimDate\Data Conversion"
           TopLeft="13,107.5" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\dimDate\Excel Source"
+          TopLeft="21.5,5.5" />
         <EdgeLayout
           Id="Package\dimDate.Paths[Excel Source Output]"
           TopLeft="91,47.5">
@@ -646,10 +678,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\dimDate\OLE DB Destination"
-          TopLeft="5.50000000000003,209.5" />
         <EdgeLayout
           Id="Package\dimDate.Paths[Data Conversion Output]"
           TopLeft="91,149.5">
@@ -676,7 +704,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\dimDate\Excel Source">
+    design-time-name="Package\dimDate\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -689,7 +717,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\dimDate\OLE DB Destination">
+    design-time-name="Package\dimDate\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

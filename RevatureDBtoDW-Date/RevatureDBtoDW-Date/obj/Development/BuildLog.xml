@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>RevatureDBtoDW-Date</Name>
-    <LastWriteTime>2021-02-26T22:29:30.430773Z</LastWriteTime>
+    <LastWriteTime>2021-03-01T16:59:01.1535663Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Package.dtsx</Name>
-      <LastWriteTime>2021-02-26T22:29:30.407834Z</LastWriteTime>
+      <LastWriteTime>2021-03-01T16:59:01.1415972Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
