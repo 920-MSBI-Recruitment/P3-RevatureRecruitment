@@ -135,6 +135,7 @@ create table fct_Screening(
 	constraint fk_screening_screenTypeID foreign key (screenTypeID) references dim_ScreenType,
 );
 
+
 create table fct_ContactAttempt(
 	contactAttemptID int primary key,
 	qualifiedLeadID int,
@@ -145,5 +146,9 @@ create table fct_ContactAttempt(
 	constraint fk_contactAttempt_contactDateID foreign key (contactDateID) references dim_Date,
 	constraint fk_contactAttempt_contactTypeID foreign key (contactTypeID) references dim_ContactType,
 );
+
+alter table fct_ContactAttempt ADD recruiterID int
+
+ALTER TABLE fct_ContactAttempt ADD FOREIGN KEY (recruiterID) REFERENCES dim_Recruiter(recruiterID);
 
 select * from dim_Date
