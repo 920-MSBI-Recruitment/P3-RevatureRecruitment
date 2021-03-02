@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Screening", "Screening\Screening.dtproj", "{6828D483-840F-424C-A8B9-8D892EB2ECCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|Default = Azure|Default
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6828D483-840F-424C-A8B9-8D892EB2ECCE}.Azure|Default.ActiveCfg = Azure
+		{6828D483-840F-424C-A8B9-8D892EB2ECCE}.Azure|Default.Build.0 = Azure
+		{6828D483-840F-424C-A8B9-8D892EB2ECCE}.Development|Default.ActiveCfg = Development
+		{6828D483-840F-424C-A8B9-8D892EB2ECCE}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A97C83E-9DF5-4EEA-B337-14A81C9522E7}
+	EndGlobalSection
+EndGlobal
