@@ -1,0 +1,1674 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/2/2021 3:37:02 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SLEDGEHAMMER"
+  DTS:CreatorName="SLEDGEHAMMER\S"
+  DTS:DTSID="{9DEB996D-70AF-4B31-9F5F-BF1C6744A259}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.150"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{5EA6AD32-1FDF-4CB4-B1CD-030F176D9A7A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E90FAC31-E20F-42F0-A7EF-FFB81B715EB5}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAjc5qAbH5NNZMfH2Y36v1IVG0p91hhRarol7ScwP9QbAAAAAAOgAAAAAIAACAAAABo/wf87YiXXuLNUY+tYJSucylmEcwtxsek08VTOXOYeiAAAABpDCqEt46B9xeY/gYCzkRdyLPnX3hPFxbodvo2lSnenkAAAACR6mMJOZexK3SObxtK3XizfPvwpwDVJMzlYvjrQ+E2/+JKIWqEc9EcV9Af+HcgmXKRvhNQW4zVYqwuKLOq+HdI</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6E07849E-DA8D-4ABE-8A18-F0AC25F3DCB4}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABEOi1J5hT59nRR2E0M9Q0LZTnnJZIe/uHBuupZ3q6ufwAAAAAOgAAAAAIAACAAAABMuMHzAHZMs3QDTTH+o7OxXvxw7OnPPW9xwkB720IsnCAAAAD2ugCDLWQDdDnugRb6QBhto2YuzBkg7glixeobC7Vq/kAAAADJQtcWAR0E9dVPLw3KI6V4vdRDThKDbkK3FSB83t+eoXDRk3XsdgPTkw7qx1Sd/ZHd07y//OgYCZYL7xTvRKxg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{14B12BC7-3755-4B5E-A7A2-A599AA3FCA67}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADfHnwSmM0o7zs1sSLnYT/isdeZEfDELC9XSJXed2hSfgAAAAAOgAAAAAIAACAAAAAu31q+ckOQ44LArBRIWTDty9NbwDQHJz09EixY8AAOqyAAAAAJzKmoZBJmxAs1VXYFuHXC0+xU8eyKzvr33KdNTUEToEAAAACLYdXKt3vtGVAwQTySvvsuJ2DHQXtuP8PdMAXsrUAdr5QL2El0WEK+BOzuncEqhagMK0DDXJpuLc465C47AEX3</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{083D801D-4C99-4DFD-B797-6254E08F5096}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACMaSqkjlWs+FstS5R9A4HkedPefNOBWhJH8oDoXSQGawAAAAAOgAAAAAIAACAAAADIj8TwyVUPuZnnXt4mhWiotw1+Fz1j0slsOhcy/I/7+iAAAACHJi3Is7x2dYhHBD9NF89zbCtVM5+l1P9WA/kGSaeTg0AAAABvvmRto/rB0Qd5VpsoMBtikznGO4EjfAxsLkxXH79/8h6zrSXU1FD3wdHRWqST+n4GLAW11X3RiWKOWgo93qnx</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{82935EF9-7E77-420E-8BC7-0ED16CFC8622}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABxCpJKrcdM7tYJYrkapkUgwxpKZSEGbqR/ndk+l5XfIwAAAAAOgAAAAAIAACAAAAC69h52ku8PjEVry6qjEaL2R5o2qIy56go6ZHzrCoQr7SAAAACXrDBcJ9WWPBTqoV8zXOvG8p7MCpmvT4g1Pe2yUe9iyEAAAADjaVKr5vzqh511mHkMnxjPLcgtaDudXd5upqUG/O1zwq+J49aZHyv9DwyE93NpRyFuw20yEjMbWNJytC1PRAan</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8DEA2C0D-6B86-4AE9-96B7-BD421B934CC0}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC4N6zChRyTSz8yXWv8cZ4F4X2d4m7/Zyeyy83LfzJiNwAAAAAOgAAAAAIAACAAAADDfX/1EmQl0roxHyWm+i8jwoii59wBrHzox/yj5zCN5iAAAAA92zbSfOXqTkuqF/TdU0e3R5g13zBCh/2TobBrdt0KhkAAAABCSyY4ObHBJ64IsJoBMglIHOi/BoJsG9Demqz3o6m9wks5uNTJ6tHj9PjfDdyPesUIv80y+y5ngFqeWTeFYsGU</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Dimension Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{882B71DD-85D5-420C-A881-D66117690AC5}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dimension Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Dimension Container\dimContactType"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{EB25CF40-1979-4EAA-A2DD-15B817C0C438}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="dimContactType"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Dimension Container\dimContactType\Contact Type Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="Contact Type Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[dim_ContactType]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Container\dimContactType\Contact Type Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Dimension Container\dimContactType\Contact Type Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Destination.Inputs[OLE DB Destination Input].Columns[contMethod]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="contMethod"
+                          externalMetadataColumnId="Package\Dimension Container\dimContactType\Contact Type Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactType]"
+                          lineageId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Output].Columns[contMethod]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactTypeID]"
+                          dataType="i4"
+                          name="contactTypeID" />
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactType]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="contactType" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Container\dimContactType\Contact Type Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Dimension Container\dimContactType\Contact Type Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimContactType\Contact Type Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimContactType\Contact Type Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimension Container\dimContactType\Contact Type Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="Contact Type Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[tbl_ContactAttempts]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select distinct contMethod from tbl_ContactAttempts</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Container\dimContactType\Contact Type Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Output].Columns[contMethod]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Output].ExternalColumns[contMethod]"
+                          length="255"
+                          lineageId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Output].Columns[contMethod]"
+                          name="contMethod"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Output].ExternalColumns[contMethod]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="contMethod" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Error Output].Columns[contMethod]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Error Output].Columns[contMethod]"
+                          name="contMethod" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Dimension Container\dimContactType.Paths[OLE DB Source Output]"
+                  endId="Package\Dimension Container\dimContactType\Contact Type Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Dimension Container\dimContactType\Contact Type Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Dimension Container\dimRecruiter"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{496b1ccf-7fc7-4625-93e5-5f33ef4e8f4f}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="dimRecruiter"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Dimension Container\dimRecruiter\Recruiter Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="Recruiter Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[dim_Recruiter]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 2]"
+                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 2]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].Columns[recId]"
+                          cachedDataType="i4"
+                          cachedName="recId"
+                          externalMetadataColumnId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].ExternalColumns[recruiterID]"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recId]" />
+                        <inputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].Columns[recFirstName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="recFirstName"
+                          externalMetadataColumnId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].ExternalColumns[recruiterFirstName]"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recFirstName]" />
+                        <inputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].Columns[recLastName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="recLastName"
+                          externalMetadataColumnId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].ExternalColumns[recruiterLastName]"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recLastName]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].ExternalColumns[recruiterID]"
+                          dataType="i4"
+                          name="recruiterID" />
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].ExternalColumns[recruiterFirstName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          name="recruiterFirstName" />
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input].ExternalColumns[recruiterLastName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          name="recruiterLastName" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimension Container\dimRecruiter\Recruiter Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="Recruiter Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[tbl_Recruiters]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 2]"
+                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 2]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recId]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].ExternalColumns[recId]"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recId]"
+                          name="recId"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recFirstName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].ExternalColumns[recFirstName]"
+                          length="255"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recFirstName]"
+                          name="recFirstName"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recLastName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].ExternalColumns[recLastName]"
+                          length="255"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].Columns[recLastName]"
+                          name="recLastName"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].ExternalColumns[recId]"
+                          dataType="i4"
+                          name="recId" />
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].ExternalColumns[recFirstName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="recFirstName" />
+                        <externalMetadataColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output].ExternalColumns[recLastName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="recLastName" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[recId]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[recId]"
+                          name="recId" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[recFirstName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[recFirstName]"
+                          name="recFirstName" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[recLastName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[recLastName]"
+                          name="recLastName" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Dimension Container\dimRecruiter.Paths[OLE DB Source Output]"
+                  endId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Dimension Container\dimRecruiter\Recruiter Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\factContactAttempts"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{b9887968-1ce7-4e91-863c-359b1932dc23}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="factContactAttempts"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\factContactAttempts\Contact Attempts Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Contact Attempts Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[tbl_ContactAttempts]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\factContactAttempts\Contact Attempts Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contId]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contId]"
+                      name="contId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[recId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[recId]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[recId]"
+                      name="recId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[qlId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[qlId]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[qlId]"
+                      name="qlId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contDate]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contDate]"
+                      name="contDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contStartTime]"
+                      dataType="dbTime2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contStartTime]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contStartTime]"
+                      name="contStartTime"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contEndTime]"
+                      dataType="dbTime2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contEndTime]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contEndTime]"
+                      name="contEndTime"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contMethod]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contMethod]"
+                      length="255"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contMethod]"
+                      name="contMethod"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contId]"
+                      dataType="i4"
+                      name="contId" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[recId]"
+                      dataType="i4"
+                      name="recId" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[qlId]"
+                      dataType="i4"
+                      name="qlId" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contDate]"
+                      dataType="dbDate"
+                      name="contDate" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contStartTime]"
+                      dataType="dbTime2"
+                      name="contStartTime"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contEndTime]"
+                      dataType="dbTime2"
+                      name="contEndTime"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].ExternalColumns[contMethod]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="contMethod" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contId]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contId]"
+                      name="contId" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[recId]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[recId]"
+                      name="recId" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[qlId]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[qlId]"
+                      name="qlId" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contDate]"
+                      dataType="dbDate"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contDate]"
+                      name="contDate" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contStartTime]"
+                      dataType="dbTime2"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contStartTime]"
+                      name="contStartTime"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contEndTime]"
+                      dataType="dbTime2"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contEndTime]"
+                      name="contEndTime"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contMethod]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[contMethod]"
+                      name="contMethod" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\factContactAttempts\fctContactAttempts Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="fctContactAttempts Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[fct_ContactAttempt]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\factContactAttempts\fctContactAttempts Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].Columns[contactTypeID]"
+                      cachedDataType="i4"
+                      cachedName="contactTypeID"
+                      externalMetadataColumnId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactTypeID]"
+                      lineageId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Match Output].Columns[contactTypeID]" />
+                    <inputColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].Columns[dateID]"
+                      cachedDataType="i4"
+                      cachedName="dateID"
+                      externalMetadataColumnId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactDateID]"
+                      lineageId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Match Output].Columns[dateID]" />
+                    <inputColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].Columns[qlId]"
+                      cachedDataType="i4"
+                      cachedName="qlId"
+                      externalMetadataColumnId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[qualifiedLeadID]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[qlId]" />
+                    <inputColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].Columns[recId]"
+                      cachedDataType="i4"
+                      cachedName="recId"
+                      externalMetadataColumnId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[recruiterID]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[recId]" />
+                    <inputColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].Columns[contId]"
+                      cachedDataType="i4"
+                      cachedName="contId"
+                      externalMetadataColumnId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactAttemptID]"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contId]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactAttemptID]"
+                      dataType="i4"
+                      name="contactAttemptID" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[qualifiedLeadID]"
+                      dataType="i4"
+                      name="qualifiedLeadID" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactDateID]"
+                      dataType="i4"
+                      name="contactDateID" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[contactTypeID]"
+                      dataType="i4"
+                      name="contactTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input].ExternalColumns[recruiterID]"
+                      dataType="i4"
+                      name="recruiterID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\factContactAttempts\fctContactAttempts Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\fctContactAttempts Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\fctContactAttempts Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\fctContactAttempts Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\factContactAttempts\Lookup ContactTypeId"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup ContactTypeId"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[dim_ContactType]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[dim_ContactType]) [refTable]
+where [refTable].[contactType] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="contactTypeID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="contactType" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contMethod]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\factContactAttempts\Lookup ContactTypeId.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\factContactAttempts\Lookup ContactTypeId.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\factContactAttempts\Lookup ContactTypeId.Inputs[Lookup Input].Columns[contMethod]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="contMethod"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contMethod]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">contactType</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\factContactAttempts\Lookup ContactTypeId.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Match Output].Columns[contactTypeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Match Output].Columns[contactTypeID]"
+                      name="contactTypeID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">contactTypeID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\factContactAttempts\Lookup ContactTypeId.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\factContactAttempts\Lookup ContactTypeId.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\factContactAttempts\Lookup DateId"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup DateId"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[dim_Date]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[dim_Date]) [refTable]
+where [refTable].[date] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="dateID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="dateDay" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="engNameOfDay" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="monthNumber" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="engNameOfMonth" dataType="DT_STR" length="15" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="yearNumber" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="date" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contDate]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\factContactAttempts\Lookup DateId.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\factContactAttempts\Lookup DateId.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\factContactAttempts\Lookup DateId.Inputs[Lookup Input].Columns[contDate]"
+                      cachedDataType="dbDate"
+                      cachedName="contDate"
+                      lineageId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output].Columns[contDate]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">date</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\factContactAttempts\Lookup DateId.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Match Output].Columns[dateID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Match Output].Columns[dateID]"
+                      name="dateID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">dateID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\factContactAttempts\Lookup DateId.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\factContactAttempts\Lookup DateId.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\factContactAttempts.Paths[Lookup Match Output]"
+              endId="Package\factContactAttempts\Lookup DateId.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\factContactAttempts\Lookup ContactTypeId.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\factContactAttempts.Paths[Lookup Match Output1]"
+              endId="Package\factContactAttempts\fctContactAttempts Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\factContactAttempts\Lookup DateId.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\factContactAttempts.Paths[OLE DB Source Output]"
+              endId="Package\factContactAttempts\Lookup ContactTypeId.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\factContactAttempts\Contact Attempts Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{3DD0D08B-7DA9-474A-86B3-A709E887A2D8}"
+      DTS:From="Package\Dimension Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\factContactAttempts" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="175,42"
+          Id="Package\factContactAttempts"
+          TopLeft="514,400" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Dimension Container\dimRecruiter"
+          TopLeft="9,3" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Dimension Container\dimContactType"
+          TopLeft="209,5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="385,150"
+          Size="385,193"
+          Id="Package\Dimension Container"
+          TopLeft="407,79" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="600.5,272">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,128"
+              Start="0,0"
+              End="0,120.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,120.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\factContactAttempts">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="225,42"
+          Id="Package\factContactAttempts\fctContactAttempts Destination"
+          TopLeft="552,384" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\factContactAttempts\Lookup ContactTypeId"
+          TopLeft="566,155" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\factContactAttempts\Contact Attempts Source"
+          TopLeft="562,67" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\factContactAttempts\Lookup DateId"
+          TopLeft="585,264" />
+        <EdgeLayout
+          Id="Package\factContactAttempts.Paths[Lookup Match Output1]"
+          TopLeft="661.75,306">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,78"
+              Start="0,0"
+              End="0,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,29.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\factContactAttempts.Paths[OLE DB Source Output]"
+          TopLeft="659.25,109">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\factContactAttempts.Paths[Lookup Match Output]"
+          TopLeft="658.75,197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67"
+              Start="0,0"
+              End="0,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,23.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Dimension Container\dimRecruiter">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Dimension Container\dimRecruiter\Recruiter Destination"
+          TopLeft="294,317" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Dimension Container\dimRecruiter\Recruiter Source"
+          TopLeft="301,156" />
+        <EdgeLayout
+          Id="Package\Dimension Container\dimRecruiter.Paths[OLE DB Source Output]"
+          TopLeft="381.25,198">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,119"
+              Start="0,0"
+              End="0,111.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,111.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Dimension Container\dimContactType">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="197,42"
+          Id="Package\Dimension Container\dimContactType\Contact Type Destination"
+          TopLeft="283,227" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Dimension Container\dimContactType\Contact Type Source"
+          TopLeft="292,60" />
+        <EdgeLayout
+          Id="Package\Dimension Container\dimContactType.Paths[OLE DB Source Output]"
+          TopLeft="381,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,125"
+              Start="0,0"
+              End="0,117.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,117.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
