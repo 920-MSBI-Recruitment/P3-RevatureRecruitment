@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{73930912-04D3-44D2-9A68-835D0D8F9ACA}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{0CDF7D72-6727-4CD8-83F6-87D3424A07B7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADCaDlXEnA9/sZEvSPwjZgBbnUsXUO58Srwn3zX4o0BRAAAAAAOgAAAAAIAACAAAADJT/BsbF1FpOYS32fLWZBu+R0888+3QU1lAMKhGk8zLCAAAAAxFkI6viAbs8+fcnI4W0wU1RTL2BXxqTYwexJXOROdOUAAAAAT2yld1KxgpGzX5O09OKgyTz8d57Ib/HxWLuyglPIdeZaVjpWcTfj2GPmI/8nYhxEp2fpz1Yg25251gboIjUm9</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAdnuR5KL9Mk5FSblaCGgscsKXduMRFCmIsVX9+y9cwYwAAAAAOgAAAAAIAACAAAADx8cB20qJDprhNYW97FDVjiSxXJ6/MLdT/BMutLTodriAAAABizmIAL391tckXOgtwGktVPfcczQwp57tjMQawrX2WfUAAAACOeCPyqCe/FEm7iGTEqD8TUgg4gwQC4uHjNdeVtd62iUkb+T34oSQVZYWruX9aH+G0eOnMJZ8eNK1UvIR1FC9w</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxvflveu4i3CZSCpBvSwW53N7dzaysWQDdTSEKsGrNWAAAAAAOgAAAAAIAACAAAACM9O7E8lI1rgvdsXOv+P/EhLTZbhSmG08OyU6ljFuYqCAAAABzJO4IhIi7qnIgefiVzQwwd4KWEVMu1r6HUr1mDpYGSkAAAADyq/Pl53UrXIak+x8tA8gdK63KpTnMtjR/cACNHGdJLm8WfTceC8Z+hP/fnZkC5qbpv8Mz3nNs8TqsIYQeEdwF</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAfnE0XBn4sivqCSO8S3EQPFpCXekSu1WKhVIDkf01mpAAAAAAOgAAAAAIAACAAAACijabN/ZIH5fgjScReEAHv4xEpGTzdpdzyYXBW8DrmbSAAAABO6oFVghzK59nH1VAOHab7rsi1h5/rtF909B/bAWPvvEAAAAAwWacePI7QNFK4QwmnnhKP39fNQulELr95rr6ZwqLeuY4eo7Wh+VyhdaniYLNUWRJDpik3rR3xjMJc/w/0edHs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAyBemm0Tx3w9OkYxVwnvPif/osRxRS7JBy94eOWQ89HAAAAAAOgAAAAAIAACAAAACp6DNzsM9Y+6eXKJ2wm0hd0hZ2Uzt9IixkDeNZR+bPbCAAAACJGYdxoybUcYG1B5aCrl+m2OZdk2aLYwhptYZyNPRcT0AAAAByy/tb1hmjsrjsDf4n9PURtL2CvLewQMthrejihYU1m+Ut2C/gvi9pd/k7n6yxuVj47wztgBCQbvvoxyigmfrT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADdXyjilGTIisjVXGkLXDFWV0d7by4Q4LJo/a9jZM+kVQAAAAAOgAAAAAIAACAAAABUncaRg6iiLw81HbJr+Fvl8CJYak57h00zR1y/59Zo4CAAAABv/cR3joZsnLrWAiKfN8dmewUqR1Snc0bLq1fe5T6ZKkAAAAAU+fWcXe7TxNNRnlqVkqfmacwdXgfdy+I8u7R4wpeLxwhyekR9IS9I7DgHiXUiyfRpSq80jrHmF84lpr0iTljr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -72,7 +72,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD1mMDRJmIc4W8/VKqD80RrGsWggj7DloNxdfXyN8GBrgAAAAAOgAAAAAIAACAAAAAaQT8xhuJTkOcgC+L9ONK26o3MrZwXfRryCu9+pP5dxCAAAAC7Sk8D2EfgyMIS80Ue6ARodTU2JIaFKDh5xNC606uaUUAAAADGh3UtJmNwf0j7Lw4WbwLZpsfjXclJYl5vrZr2mq+rc1JlXiVZ8Ik2Qg3G602Hv3zgd8U+La1TwD1HPHJtyUzw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACtTdoeYYIDf5ae/uEFaOGUFzrjMFFvN79LlZnduHfgKAAAAAAOgAAAAAIAACAAAAAsCLPMR2ZpzZOCAbOWZNyjQBfgb+1/H1BDpHUdioSd0iAAAAB+x0v7a3OjsDZingi/IqzRDtbr18Of1ySfmQjy/bIJ3kAAAABxMElvh4E5G8/zPe8AIk9H2grPm1MS9SaK0O+wnHqPUTRGhn0jtP7D/e00f7oAJNlkvmc4O8TWODQs5CVtRQlc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -87,7 +87,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB2okKyF7OyHmjz2AnWkpv8DLVAUIAjHjjPttKB5C22GAAAAAAOgAAAAAIAACAAAACjjVRxfKacCDoMMy+9tRWSuinrSOwvFophduoddCT/JCAAAAD0wEWwi51g9HDyEjD5kcH+hprLcW18uYUdfk0Ag3Tt3EAAAAD+HdENqwCPlZcrNMCH9+qakGFdC67n/STmVs8NOP52RaQgk87OB+9VJaWzIZVTioLjn60Hx3OB7TNHRBaZ4fJq</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAacCbXez+mIGZIhrkArzVTZOSnFq6vau+04Hf5QwOfvAAAAAAOgAAAAAIAACAAAADJJ/WJXhjJv0+fkOQoL8z2B0JEWn00mIRbtw3YOdxx8SAAAACGt6sFR8th3A4ewOMbv//6L+5D7hjwb+aUmC0p36nhwUAAAADaF2abHlXQRpvsJED+TMXNSkpPra1bjjgEOVyT9lKdEEt+DuDcpTlV9Ggou9XyZ9u63k5FaV9zbVQ2j3NCV55T</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -102,7 +102,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAABWuwnIQEzL1Zrzj1BXYhEOO28+glHwFIhDe8PQl+8uQAAAAAOgAAAAAIAACAAAAA9yjb1TgNTFi8BKlbP4YW7zYaQZZMiv7tkbQinFfBjoSAAAAALqY6/uXVvhjxyncTIGev3fI3YDFrDUxkRByymApIA4UAAAAD9vGGu5UVY7K60NoQciA+AF6HA2mOou71BBie8OgE7IJoybyOyQN9eHK4tdCAtgVToKzebrJBeZmT0jnFEhP01</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACrf95Yhfzmg3w0f/upODx6Opajn2yoo8LM3YpWOkB9zwAAAAAOgAAAAAIAACAAAAB5KTZjgQmreEsyiGdWOUpr0fue4hV5epWMbQqUJpUqwSAAAAB0zEt0MLxmwdGieA03MFztqYgjR2pIXQk541Sr4twQckAAAABPdJctCsxxXwXQkupDaV84H2LUGoFXAlzvIzH9DmhK2Jks/NE3CKsxByq2hQ6SOULXQ35wRVTxeYb+Tzy6esq2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1504,7 +1504,7 @@ where [refTable].[contactType] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Offers fact table\Revature DB Source.Outputs[OLE DB Source Output].Columns[contact method]};</property>
+                  name="ParameterMap">#{Package\Offers fact table\152:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1664,7 +1664,7 @@ where [refTable].[date] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Offers fact table\Revature DB Source.Outputs[OLE DB Source Output].Columns[offer action date]};</property>
+                  name="ParameterMap">#{Package\Offers fact table\153:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2003,7 +2003,7 @@ where [refTable].[date] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Offers fact table\Revature DB Source.Outputs[OLE DB Source Output].Columns[offer start date]};</property>
+                  name="ParameterMap">#{Package\Offers fact table\154:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2120,7 +2120,7 @@ where [refTable].[date] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset"></property>
+                  name="OpenRowset">[dbo].[tbl_Offers]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2135,18 +2135,14 @@ o.offerExtDate as [offer start date],
 o.offerActDate as [offer action date],
 q.qlId as [qualified lead ID],
 r.recId as [recruiter ID],
-s.scrId as [screener ID],
+o.scrId as [screener ID],
 o.offerAction as [action]
 
 from tbl_Offers as o
-join tbl_ContactAttempts as c
-on c.qlId = o.qlId
 join tbl_QualifiedLeads as q
-on q.qlId = o.qlId
+on o.qlId = q.qlId
 join tbl_Recruiters as r
-on r.recId = o.recId
-join tbl_Screenings as s
-on s.qlId = q.qlId</property>
+on o.recId = r.recId</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2351,14 +2347,14 @@ on s.qlId = q.qlId</property>
           <paths>
             <path
               refId="Package\Offers fact table.Paths[Lookup Match Output]"
-              endId="Package\Offers fact table\OfferStartDateID.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Offers fact table\ContactTypeID.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Offers fact table.Paths[Lookup Match Output1]"
               endId="Package\Offers fact table\OfferActionDateID.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Offers fact table\OfferStartDateID.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Offers fact table.Paths[Lookup Match Output1]"
+              endId="Package\Offers fact table\OfferStartDateID.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Offers fact table\ContactTypeID.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Offers fact table.Paths[Lookup Match Output2]"
               endId="Package\Offers fact table\Offers Fact Table.Inputs[OLE DB Destination Input]"
@@ -2460,7 +2456,7 @@ on s.qlId = q.qlId</property>
     design-time-name="Package\Dimension Container\dimContactType">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="197,42"
           Id="Package\Dimension Container\dimContactType\Contact Type Destination"
@@ -2488,7 +2484,9 @@ on s.qlId = q.qlId</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2498,15 +2496,15 @@ on s.qlId = q.qlId</property>
     design-time-name="Package\Dimension Container\dimRecruiter">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="178,42"
-          Id="Package\Dimension Container\dimRecruiter\Recruiter Destination"
-          TopLeft="294,317" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157,42"
           Id="Package\Dimension Container\dimRecruiter\Recruiter Source"
           TopLeft="301,156" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Dimension Container\dimRecruiter\Recruiter Destination"
+          TopLeft="294,317" />
         <EdgeLayout
           Id="Package\Dimension Container\dimRecruiter.Paths[OLE DB Source Output]"
           TopLeft="381.25,198">
@@ -2526,7 +2524,9 @@ on s.qlId = q.qlId</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2538,45 +2538,21 @@ on s.qlId = q.qlId</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="225,42"
-          Id="Package\factContactAttempts\fctContactAttempts Destination"
-          TopLeft="552,384" />
+          Size="148,42"
+          Id="Package\factContactAttempts\Lookup DateId"
+          TopLeft="585,264" />
         <NodeLayout
           Size="185,42"
           Id="Package\factContactAttempts\Lookup ContactTypeId"
           TopLeft="566,155" />
         <NodeLayout
+          Size="225,42"
+          Id="Package\factContactAttempts\fctContactAttempts Destination"
+          TopLeft="552,384" />
+        <NodeLayout
           Size="196,42"
           Id="Package\factContactAttempts\Contact Attempts Source"
           TopLeft="562,67" />
-        <NodeLayout
-          Size="148,42"
-          Id="Package\factContactAttempts\Lookup DateId"
-          TopLeft="585,264" />
-        <EdgeLayout
-          Id="Package\factContactAttempts.Paths[Lookup Match Output1]"
-          TopLeft="661.75,306">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,78"
-              Start="0,0"
-              End="0,70.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,70.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,29.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\factContactAttempts.Paths[OLE DB Source Output]"
           TopLeft="659.25,109">
@@ -2598,6 +2574,30 @@ on s.qlId = q.qlId</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\factContactAttempts.Paths[Lookup Match Output1]"
+          TopLeft="661.75,306">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,78"
+              Start="0,0"
+              End="0,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,29.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2636,49 +2636,45 @@ on s.qlId = q.qlId</property>
         <NodeLayout
           Size="165,42"
           Id="Package\Offers fact table\OfferActionDateID"
-          TopLeft="474.7,429.5" />
+          TopLeft="475.7,430.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\Offers fact table\Revature DB Source"
           TopLeft="470.7,167" />
         <NodeLayout
-          Size="160,42"
-          Id="Package\Offers fact table\Offers Fact Table"
-          TopLeft="477.2,517" />
-        <NodeLayout
-          Size="149,42"
-          Id="Package\Offers fact table\ContactTypeID"
-          TopLeft="482.7,254.5" />
-        <NodeLayout
           Size="159,42"
           Id="Package\Offers fact table\OfferStartDateID"
           TopLeft="477.7,342" />
         <EdgeLayout
-          Id="Package\Offers fact table.Paths[Lookup Match Output1]"
-          TopLeft="557.2,384">
+          Id="Package\Offers fact table.Paths[Lookup Match Output]"
+          TopLeft="557.7,384">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.5"
+              EndConnector="0,46.5"
               Start="0,0"
-              End="0,38">
+              End="0,39">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38" />
+                    End="0,39" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,13.1953125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,13.6953125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Offers fact table\ContactTypeID"
+          TopLeft="482.7,254.5" />
         <EdgeLayout
-          Id="Package\Offers fact table.Paths[Lookup Match Output]"
+          Id="Package\Offers fact table.Paths[Lookup Match Output1]"
           TopLeft="557.2,296.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2723,27 +2719,31 @@ on s.qlId = q.qlId</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Offers fact table\Offers Fact Table"
+          TopLeft="479,508" />
         <EdgeLayout
           Id="Package\Offers fact table.Paths[Lookup Match Output2]"
-          TopLeft="557.2,471.5">
+          TopLeft="558.6,472.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.5"
+              EndConnector="0,35.5"
               Start="0,0"
-              End="0,38">
+              End="0,28">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38" />
+                    End="0,28" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,13.1953125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,8.1953125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2779,41 +2779,10 @@ on s.qlId = q.qlId</property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Offers fact table\Offers Fact Table">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Offers fact table\ContactTypeID">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[dim_ContactType]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

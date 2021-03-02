@@ -8,7 +8,7 @@
       DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAACAAAAAAAQZgAAAAEAACAAAADnhzF8coTO6vJy0OPXbxrb+2bQUfb8VTU/f3OKIfyCBAAAAAAOgAAAAAIAACAAAACaRHLMaHt1WzkA12JetwTBRx64znr+V5jdS/UDPg8okoAAAAAo/eiUH5bpsswPh+TfRAnOBlCWR4Dy/1PdzvlwmpWZnuU7V4P2sTdADjiwpAcMVLiH//+xsTQq50RFpZUQ8FLnyTuOrIbSA7DMC5iFH2LUzHca0oZVMDitIlJQzuqWaoDEShCpr9kr2kEttIIT9yXdAR9EOd22wlhn8yijBtRkFEAAAAC5zPlQwgU4u4UjP5rnXajdkWhE/g3yfDTYrMsR6Ei17iEk2DVyqDmez4oQD2a9Z0Yjotcr0v3JBN5wcFtxXMPH</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAACAAAAAAAQZgAAAAEAACAAAAAoDUo4DtpAlDyEJcTxJXjZhtcKccQgdIgvbI5lLqgw/QAAAAAOgAAAAAIAACAAAABdBttGMqwp5Vrzz3NhAII4aMxdccdwTHmY5GigEJAsjoAAAABd5Rm3pCXKruQNosIBsZexUj9xhNcHtrFOuPJj1L7QLfPstzyeNj268aKSuVyrE9LkBB2agUq8KdE/KZo13H6iO50P7favJFZ4HpZbCgnSn2G0gQk0F7Hhq2as7F+DXRO6iC9vbLKeuw/g14Up4mwCH7R/j4i5Fr51Qn8sApBf10AAAAD4q7V52uEB0wDZj9hI8nH6GkrwoatMGETkHU2R1F2Qzl8Mqpnjq+fi7Qrej9rzLlXSEaL3mgfTvdwCZO/1BXl4</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
