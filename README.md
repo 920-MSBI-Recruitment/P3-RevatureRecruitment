@@ -1,7 +1,5 @@
 # Revature Recruitment
 
-## Teams
-
 ## Description
 This project aims to support Revature's internal BI Team by providing meaningful graphics of Key Performance Indicators pertaining to the Recruitment Team. Leveraging a similar schema as used in production, the Recruitment Dashboard provides insight into the Recruitment and Screening process through utilisation rates of both Recruiters and Screeners, analysis of the optimal background of a Qualified Lead, and offers predictions on Training Team composition based on historical Qualified Lead offer acceptance rates.
 
@@ -12,6 +10,8 @@ This project aims to support Revature's internal BI Team by providing meaningful
 * SQL Server Integration Services
 * SQL Server Reporting Services
 * Microsoft Power Bi
+
+## Teams
 
 #### Team Jordan
 * Jordan Roberts - Team Leader
