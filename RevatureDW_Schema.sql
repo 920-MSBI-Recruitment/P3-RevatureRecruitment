@@ -135,6 +135,18 @@ create table fct_Screening(
 	constraint fk_screening_screenTypeID foreign key (screenTypeID) references dim_ScreenType,
 );
 
+create table fct_ScreenerUtilization(
+    utilizationID int primary key identity(1,1),
+    screenerID int not null,
+    dateID int not null,
+    screeningsCompleted int not null,
+    utilizationRate decimal(9,2)
+
+    constraint fk_screenerUtilization_screenerID foreign key(screenerID) references dim_Screener,
+    constraint fk_screenerUtilization_dateID foreign key(dateID) references dim_Date
+);
+
+
 
 create table fct_ContactAttempt(
 	contactAttemptID int primary key,
