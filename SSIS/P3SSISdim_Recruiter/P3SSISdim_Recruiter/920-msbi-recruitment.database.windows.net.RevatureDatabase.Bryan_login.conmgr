@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.Bryan_login"
+  DTS:DTSID="{9975BCA4-7CCB-417B-A9FF-0E412B5DF18E}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=Bryan_login;Initial Catalog=RevatureDatabase;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFvxMp5kgWESK5viPYm/rbAAAAAACAAAAAAAQZgAAAAEAACAAAAC1fWnn30kzyZ9YMlf4kwXOAgBljzfwBrKYggQJZc1XRgAAAAAOgAAAAAIAACAAAAAZFjbYvIzthGQ0iHUHpzWPU11InORPKZSSxUsakEHmhYAAAABSpNdvknzc1FXiaZO6PCRovreChIIaDA0tQODFMUbuM7bnM7Ob+LpNxcLosVOR9P3LB+uxdAXg/0CdWS4y2DM9IwRyxAMsIu6YUDjbDk3IWSse6Zj6E0BoXYqA0MbhQB60Ca6Wccq4aaDO2fpq2qkFE+YShAtAVeaT4qvQRHq+c0AAAAClZNiPjt61OxlPBQhhm+YTHp5PG7rvG533bj/3vqKmrVinSiEfpuCDtjMkOMVqQT4wR/o4FHG5XvxRLY3xIbGi</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
