@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "RevatureDBtoDW-Latency", "RevatureDBtoDW-Latency\RevatureDBtoDW-Latency.dtproj", "{ABFB3458-8A93-4D2E-8D18-98FE64583B32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFB3458-8A93-4D2E-8D18-98FE64583B32}.Development|Default.ActiveCfg = Development
+		{ABFB3458-8A93-4D2E-8D18-98FE64583B32}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70803601-93E6-487D-A895-991A964F628C}
+	EndGlobalSection
+EndGlobal
