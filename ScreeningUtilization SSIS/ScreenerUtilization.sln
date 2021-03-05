@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ScreenerUtilization", "ScreenerUtilization\ScreenerUtilization.dtproj", "{F994FFB3-21F6-48D3-A960-30C72B2C6DCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F994FFB3-21F6-48D3-A960-30C72B2C6DCC}.Development|Default.ActiveCfg = Development
+		{F994FFB3-21F6-48D3-A960-30C72B2C6DCC}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {882386F4-EB52-4793-9A67-54D792ED4381}
+	EndGlobalSection
+EndGlobal
