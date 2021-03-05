@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>RevatureExceltoDB</Name>
-    <LastWriteTime>2021-03-01T16:08:50.8746365Z</LastWriteTime>
+    <LastWriteTime>2021-03-03T22:53:08.6704086Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>ExceltoDB.dtsx</Name>
-      <LastWriteTime>2021-03-01T16:08:50.8041962Z</LastWriteTime>
+      <LastWriteTime>2021-03-04T16:29:49.7831881Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
