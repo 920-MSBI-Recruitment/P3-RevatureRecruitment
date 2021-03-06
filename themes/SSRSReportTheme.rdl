@@ -88,6 +88,36 @@
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="DataSet2">
+      <SharedDataSet>
+        <SharedDataSetReference>recruiterNames_acceptanceRates</SharedDataSetReference>
+      </SharedDataSet>
+      <Fields>
+        <Field Name="recruiterFirstName">
+          <DataField>recruiterFirstName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="recruiterLastName">
+          <DataField>recruiterLastName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Total_Acceptance_Rate">
+          <DataField>Total_Acceptance_Rate</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Total_Acceptance_Count">
+          <DataField>Total_Acceptance_Count</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Total_NonDelayed_Count">
+          <DataField>Total_NonDelayed_Count</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="accept">
+          <Value>=Avg(Fields!Total_Acceptance_Count.Value)</Value>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -1689,16 +1719,28 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                    <Style>Solid</Style>
+                    <Width>2pt</Width>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
                     <Style>Solid</Style>
+                    <Width>2pt</Width>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                    <Style>Solid</Style>
+                    <Width>2pt</Width>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
                     <Style>Solid</Style>
+                    <Width>2pt</Width>
                   </RightBorder>
                   <BackgroundColor>White</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
@@ -2525,7 +2567,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>5.63969in</Top>
                 <Left>0.42708in</Left>
                 <Height>2.5in</Height>
@@ -2533,16 +2574,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>12</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -2838,7 +2883,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>8.42094in</Top>
                 <Left>0.42708in</Left>
                 <Height>2.5in</Height>
@@ -2846,16 +2890,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>13</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -3151,7 +3199,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>5.63969in</Top>
                 <Left>3.80209in</Left>
                 <Height>2.5in</Height>
@@ -3159,16 +3206,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>14</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -3464,7 +3515,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>8.42094in</Top>
                 <Left>3.80209in</Left>
                 <Height>2.5in</Height>
@@ -3472,16 +3522,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>15</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -3777,7 +3831,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>11.19177in</Top>
                 <Left>0.42708in</Left>
                 <Height>2.5in</Height>
@@ -3785,16 +3838,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>16</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -4090,7 +4147,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>11.19177in</Top>
                 <Left>3.80209in</Left>
                 <Height>2.5in</Height>
@@ -4098,16 +4154,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>17</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -4404,7 +4464,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>8.42094in</Top>
                 <Left>7.07813in</Left>
                 <Height>2.5in</Height>
@@ -4412,16 +4471,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>18</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -4717,7 +4780,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>11.19177in</Top>
                 <Left>7.07813in</Left>
                 <Height>2.5in</Height>
@@ -4725,16 +4787,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>19</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -5030,7 +5096,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>5.63969in</Top>
                 <Left>7.07813in</Left>
                 <Height>2.5in</Height>
@@ -5038,16 +5103,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>20</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -5344,7 +5413,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>8.42094in</Top>
                 <Left>10.28646in</Left>
                 <Height>2.5in</Height>
@@ -5352,16 +5420,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>21</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -5657,7 +5729,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>11.19177in</Top>
                 <Left>10.28646in</Left>
                 <Height>2.5in</Height>
@@ -5665,16 +5736,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>22</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -5722,7 +5797,7 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                               <ShadowOffset>2pt</ShadowOffset>
                             </Style>
                             <GaugeInputValue>
-                              <Value>50</Value>
+                              <Value>=Avg(Fields!Total_Acceptance_Rate.Value)</Value>
                               <Multiplier>1</Multiplier>
                             </GaugeInputValue>
                             <PointerImage>
@@ -5970,7 +6045,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                   <Source>External</Source>
                   <Value />
                 </TopImage>
-                <DataSetName>fact_offers</DataSetName>
                 <Top>5.63969in</Top>
                 <Left>10.28646in</Left>
                 <Height>2.5in</Height>
@@ -5978,16 +6052,20 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <ZIndex>23</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                     <Width>2pt</Width>
                   </Border>
+                  <TopBorder>
+                    <Color>Gray</Color>
+                  </TopBorder>
                   <BottomBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </BottomBorder>
+                  <LeftBorder>
+                    <Color>Gray</Color>
+                  </LeftBorder>
                   <RightBorder>
                     <Color>#333333</Color>
-                    <Style>Solid</Style>
                   </RightBorder>
                   <BackgroundColor>#474c55</BackgroundColor>
                 </Style>
@@ -6206,7 +6284,7 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
             <Top>0.01389in</Top>
             <Left>0.49875in</Left>
             <Height>20.14663in</Height>
-            <Width>17.86198in</Width>
+            <Width>17.46615in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -6622,7 +6700,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>fact_offers</DataSetName>
             <Top>25.05288in</Top>
             <Left>11.57688in</Left>
             <Height>4.0625in</Height>
@@ -6630,16 +6707,28 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
                 <Width>2pt</Width>
               </Border>
+              <TopBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </TopBorder>
               <BottomBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </BottomBorder>
+              <LeftBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </LeftBorder>
               <RightBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </RightBorder>
               <BackgroundColor>#474c55</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
@@ -6649,96 +6738,27 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart7_CategoryGroup">
-                    <GroupExpressions>
-                      <GroupExpression>=Fields!action.Value</GroupExpression>
-                    </GroupExpressions>
-                  </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields!action.Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
-                  <Label>=Fields!action.Value</Label>
+                  <Group Name="ChartGroup" />
+                  <Label />
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_SeriesGroup7">
-                    <GroupExpressions>
-                      <GroupExpression>=Fields!action.Value</GroupExpression>
-                    </GroupExpressions>
-                  </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields!action.Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
-                  <Label>=Fields!action.Value</Label>
+                  <Label />
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="action">
+                <ChartSeries Name="EmptySeriesName">
                   <ChartDataPoints>
                     <ChartDataPoint>
-                      <ChartDataPointValues>
-                        <X>=Fields!qualifiedLeadID.Value</X>
-                        <Y>=Sum(Fields!qualifiedLeadID.Value)</Y>
-                      </ChartDataPointValues>
-                      <ChartDataLabel>
-                        <Style>
-                          <Border>
-                            <Width>0.25pt</Width>
-                          </Border>
-                          <BackgroundColor>#4b474c55</BackgroundColor>
-                          <FontFamily>Futura Std Medium</FontFamily>
-                          <Color>White</Color>
-                        </Style>
-                        <UseValueAsLabel>true</UseValueAsLabel>
-                        <Visible>true</Visible>
-                      </ChartDataLabel>
-                      <Style>
-                        <Color>#fcb414</Color>
-                        <BackgroundGradientType>None</BackgroundGradientType>
-                        <BackgroundGradientEndColor>#f26925</BackgroundGradientEndColor>
-                      </Style>
-                      <ChartMarker>
-                        <Type>Circle</Type>
-                        <Size>1pt</Size>
-                        <Style>
-                          <Border>
-                            <Color>#00ffffff</Color>
-                            <Width>0.25pt</Width>
-                          </Border>
-                          <Color>#ffffff</Color>
-                        </Style>
-                      </ChartMarker>
-                      <DataElementOutput>Output</DataElementOutput>
+                      <ChartDataPointValues />
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Style>
-                    <ShadowColor>#49000000</ShadowColor>
-                    <ShadowOffset>0.5pt</ShadowOffset>
-                  </Style>
-                  <ChartEmptyPoints>
-                    <Style />
-                    <ChartMarker>
-                      <Style />
-                    </ChartMarker>
-                    <ChartDataLabel>
-                      <Style />
-                    </ChartDataLabel>
-                  </ChartEmptyPoints>
-                  <ValueAxisName>Primary</ValueAxisName>
-                  <CategoryAxisName>Primary</CategoryAxisName>
-                  <ChartSmartLabel>
-                    <CalloutLineColor>Black</CalloutLineColor>
-                    <MinMovingDistance>0pt</MinMovingDistance>
-                  </ChartSmartLabel>
+                  <Style />
                 </ChartSeries>
               </ChartSeriesCollection>
             </ChartData>
@@ -7042,7 +7062,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>fact_offers</DataSetName>
             <Top>20.70913in</Top>
             <Left>11.57688in</Left>
             <Height>4.0625in</Height>
@@ -7050,16 +7069,28 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
                 <Width>2pt</Width>
               </Border>
+              <TopBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </TopBorder>
               <BottomBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </BottomBorder>
+              <LeftBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </LeftBorder>
               <RightBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </RightBorder>
               <BackgroundColor>#474c55</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
@@ -7462,7 +7493,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>fact_offers</DataSetName>
             <Top>20.70913in</Top>
             <Left>1.37375in</Left>
             <Height>4.0625in</Height>
@@ -7470,16 +7500,28 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
                 <Width>2pt</Width>
               </Border>
+              <TopBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </TopBorder>
               <BottomBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </BottomBorder>
+              <LeftBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </LeftBorder>
               <RightBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </RightBorder>
               <BackgroundColor>#474c55</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
@@ -7882,7 +7924,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>fact_offers</DataSetName>
             <Top>25.05288in</Top>
             <Left>1.37375in</Left>
             <Height>4.0625in</Height>
@@ -7890,16 +7931,28 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
                 <Width>2pt</Width>
               </Border>
+              <TopBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </TopBorder>
               <BottomBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </BottomBorder>
+              <LeftBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </LeftBorder>
               <RightBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </RightBorder>
               <BackgroundColor>#474c55</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
@@ -8302,7 +8355,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>fact_offers</DataSetName>
             <Top>25.05288in</Top>
             <Left>6.45578in</Left>
             <Height>4.0625in</Height>
@@ -8310,16 +8362,28 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
             <ZIndex>6</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
                 <Width>2pt</Width>
               </Border>
+              <TopBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </TopBorder>
               <BottomBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </BottomBorder>
+              <LeftBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </LeftBorder>
               <RightBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </RightBorder>
               <BackgroundColor>#474c55</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
@@ -8722,7 +8786,6 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>fact_offers</DataSetName>
             <Top>20.70913in</Top>
             <Left>6.45578in</Left>
             <Height>4.0625in</Height>
@@ -8730,16 +8793,28 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
-                <Style>None</Style>
+                <Style>Solid</Style>
                 <Width>2pt</Width>
               </Border>
+              <TopBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </TopBorder>
               <BottomBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </BottomBorder>
+              <LeftBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </LeftBorder>
               <RightBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
+                <Width>2pt</Width>
               </RightBorder>
               <BackgroundColor>#474c55</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
@@ -8983,10 +9058,18 @@ TTo1QJPIPsgymWPAC/Dd5o07NUAM5xpm6JpjwHehuU4jOTVAe0ykNJucY8AYIqev5zs1QKOTpdb7nWPA
                 <Style>None</Style>
                 <Width>2pt</Width>
               </Border>
+              <TopBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </TopBorder>
               <BottomBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
               </BottomBorder>
+              <LeftBorder>
+                <Color>Gray</Color>
+                <Style>Solid</Style>
+              </LeftBorder>
               <RightBorder>
                 <Color>#333333</Color>
                 <Style>Solid</Style>
