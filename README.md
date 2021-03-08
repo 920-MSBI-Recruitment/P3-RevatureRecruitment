@@ -6,9 +6,10 @@ This project aims to support Revature's internal BI Team by providing meaningful
 ## Tech Stack
 * Microsoft Excel
 * Microsoft Azure SQL Database
+* Microsoft Azure Analysis Services
 * Microsoft SQL Server Management Studio (SSMS)
 * SQL Server Integration Services
-* SQLServer Analysis Services
+* SQL Server Analysis Services
 * SQL Server Reporting Services
 * Microsoft Power Bi
 
