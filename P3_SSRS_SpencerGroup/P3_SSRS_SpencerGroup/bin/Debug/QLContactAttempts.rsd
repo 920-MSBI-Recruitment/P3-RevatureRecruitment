@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>Azure_SSAS_Source</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('dim_Recruiter'[recruiterFirstName], 'dim_Recruiter'[recruiterLastName], "Count of Contact Attempts", [Count of Contact Attempts])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_Recruiter</DimensionName>
+                    <HierarchyName>recruiterFirstName</HierarchyName>
+                    <HierarchyUniqueName>[dim_Recruiter].[recruiterFirstName]</HierarchyUniqueName>
+                    <LevelName>recruiterFirstName</LevelName>
+                    <UniqueName>[dim_Recruiter].[recruiterFirstName].[recruiterFirstName]</UniqueName>
+                  </ID>
+                  <ItemCaption>recruiterFirstName</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_Recruiter</DimensionName>
+                    <HierarchyName>recruiterLastName</HierarchyName>
+                    <HierarchyUniqueName>[dim_Recruiter].[recruiterLastName]</HierarchyUniqueName>
+                    <LevelName>recruiterLastName</LevelName>
+                    <UniqueName>[dim_Recruiter].[recruiterLastName].[recruiterLastName]</UniqueName>
+                  </ID>
+                  <ItemCaption>recruiterLastName</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Count of Contact Attempts</MeasureName>
+                    <UniqueName>[Measures].[Count of Contact Attempts]</UniqueName>
+                  </ID>
+                  <ItemCaption>Count of Contact Attempts</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Model</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('dim_Recruiter'[recruiterFirstName], 'dim_Recruiter'[recruiterLastName], "Count of Contact Attempts", [Count of Contact Attempts])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="recruiterFirstName">
+        <DataField>dim_Recruiter[recruiterFirstName]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="recruiterLastName">
+        <DataField>dim_Recruiter[recruiterLastName]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Count_of_Contact_Attempts">
+        <DataField>[Count of Contact Attempts]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
