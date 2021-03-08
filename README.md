@@ -43,8 +43,11 @@ This project aims to support Revature's internal BI Team by providing meaningful
 * Bryan Blue
 * Anuradha Edirisuriya
 
+## Links
+* [Prototype ERD](https://lucid.app/lucidchart/invitations/accept/07b7b1ca-ea20-40ed-b03e-a00d5ba7dcb6)
+
 ## License
 This project uses the following license: 
-* [SQL Server Management Studio ](https://docs.microsoft.com/en-us/legal/sql/sql-server-management-studio-license-terms)
+* [SQL Server Management Studio](https://docs.microsoft.com/en-us/legal/sql/sql-server-management-studio-license-terms)
 * [SQL Server Data Tools ](https://docs.microsoft.com/en-us/legal/sql/sql-server-management-studio-license-terms)
 * [Microsoft Office 365](https://www.microsoft.com/en-us/Useterms/Retail/OfficeinMicrosoft365/Personal/Useterms_Retail_OfficeinMicrosoft365_Personal_English.htm)
