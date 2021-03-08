@@ -44,7 +44,7 @@ This project aims to support Revature's internal BI Team by providing meaningful
 * Anuradha Edirisuriya
 
 ## Links
-* [Prototype ERD](https://lucid.app/lucidchart/invitations/accept/07b7b1ca-ea20-40ed-b03e-a00d5ba7dcb6)
+* [Prototype ERD](https://lucid.app/lucidchart/99e84d1a-d519-458d-9221-44f3a14678bf/view?page=0_0#)
 
 ## License
 This project uses the following license: 
