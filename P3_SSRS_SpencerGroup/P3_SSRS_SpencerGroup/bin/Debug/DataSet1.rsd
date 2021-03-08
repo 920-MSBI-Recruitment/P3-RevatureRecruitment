@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('dim_QualifiedLeads'[state], "Count of Offers", [Count of Offers], "Total Acceptance Count", [Total Acceptance Count], "Total Acceptance Rate", [Total Acceptance Rate], "Total Acceptance Rate With Delay", [Total Acceptance Rate With Delay], "Total Delay Count", [Total Delay Count], "Total NonDelayed Count", [Total NonDelayed Count], "Total Reject Count", [Total Reject Count])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_QualifiedLeads</DimensionName>
+                    <HierarchyName>state</HierarchyName>
+                    <HierarchyUniqueName>[dim_QualifiedLeads].[state]</HierarchyUniqueName>
+                    <LevelName>state</LevelName>
+                    <UniqueName>[dim_QualifiedLeads].[state].[state]</UniqueName>
+                  </ID>
+                  <ItemCaption>state</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Count of Offers</MeasureName>
+                    <UniqueName>[Measures].[Count of Offers]</UniqueName>
+                  </ID>
+                  <ItemCaption>Count of Offers</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total Acceptance Count</MeasureName>
+                    <UniqueName>[Measures].[Total Acceptance Count]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total Acceptance Count</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total Acceptance Rate</MeasureName>
+                    <UniqueName>[Measures].[Total Acceptance Rate]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total Acceptance Rate</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total Acceptance Rate With Delay</MeasureName>
+                    <UniqueName>[Measures].[Total Acceptance Rate With Delay]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total Acceptance Rate With Delay</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total Delay Count</MeasureName>
+                    <UniqueName>[Measures].[Total Delay Count]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total Delay Count</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total NonDelayed Count</MeasureName>
+                    <UniqueName>[Measures].[Total NonDelayed Count]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total NonDelayed Count</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total Reject Count</MeasureName>
+                    <UniqueName>[Measures].[Total Reject Count]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total Reject Count</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Model</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('dim_QualifiedLeads'[state], "Count of Offers", [Count of Offers], "Total Acceptance Count", [Total Acceptance Count], "Total Acceptance Rate", [Total Acceptance Rate], "Total Acceptance Rate With Delay", [Total Acceptance Rate With Delay], "Total Delay Count", [Total Delay Count], "Total NonDelayed Count", [Total NonDelayed Count], "Total Reject Count", [Total Reject Count])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="state">
+        <DataField>dim_QualifiedLeads[state]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Count_of_Offers">
+        <DataField>[Count of Offers]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total_Acceptance_Count">
+        <DataField>[Total Acceptance Count]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total_Acceptance_Rate">
+        <DataField>[Total Acceptance Rate]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total_Acceptance_Rate_With_Delay">
+        <DataField>[Total Acceptance Rate With Delay]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total_Delay_Count">
+        <DataField>[Total Delay Count]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total_NonDelayed_Count">
+        <DataField>[Total NonDelayed Count]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total_Reject_Count">
+        <DataField>[Total Reject Count]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
