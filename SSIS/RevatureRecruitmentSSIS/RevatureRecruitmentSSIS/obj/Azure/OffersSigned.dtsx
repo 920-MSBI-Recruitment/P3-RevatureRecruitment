@@ -11,109 +11,16 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="OffersSigned"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{E5BE4A02-FCDE-4BAE-B691-2D3781CA7003}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{6B6E0330-5A4E-4A60-9FEE-A5C1247CCF48}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{86DD0384-0BF3-466A-8A80-4DE4B5E28824}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-OffersSigned-{86DD0384-0BF3-466A-8A80-4DE4B5E28824}920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAzjU8j2bsLuHgGDcWE4KQz9GX3juXB3kx3OSTwg7vTTQAAAAAOgAAAAAIAACAAAABKv3+cnd3zdGbeYn9bYSCK4RGJcf+U2PEfkfZbvxY5EiAAAAA4/0TKVmq5bEVmiUzkt8x6Vu6moiZVYHkNUN6ivOvmm0AAAAA5lfraH02ndq115jSJeHYiY4aMGLN7PDCzDrEcE5uClEf0tSrzgh/e+3aellJqITfe4TUt4lWBXdXua9L9c6vn</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{AA7AAE11-5E84-4CD9-9A81-AADE1E2FCFAE}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-OffersSigned-{AA7AAE11-5E84-4CD9-9A81-AADE1E2FCFAE}920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABvEkwhDSTZhr6AHKZMZvW3d7VzjYbgm4T21lr9PdqKFAAAAAAOgAAAAAIAACAAAADO4kUHdXA+/ddl4ZEED4XOY6c2DXnHRQh++l142NKjPSAAAACkjuEFwTNvXVzkgwjb8CCZS4EnSZdAMa0vHLQDnejCJEAAAAC2jyzhtEdShi0a24noyMLoQHEdxkKIsjzoBfJ08fDhMMVK2RsqXzXgbfQ8zoUlAfPauveCxbXXV1b1z0IZJ1oG</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 2]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{428930CF-F7B9-41EC-BBA1-E11A5C746EEA}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACDzmYOoXoCMf2ignqI4GYyNrCfqvnlR2QqE2/aiZTFIwAAAAAOgAAAAAIAACAAAAAfRv1ddgzon0OnacZrrXWH+z03BbdlHIMeDQRbKAEhMyAAAABsIBTpaH4FRGJS2KcTqGUvPxRmCud2bVGsSius4TojX0AAAADxZoe+Kv5EDT2dkKo7A4vkT9Ouwk5AAh8XNCmjwaVnjFVFQOPmGUi/ZFv6Cx5HMVP0G4cCVJErPhM2R5fnzQb4</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{7DED9384-C1A4-407C-A7FF-CD853852CAC4}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-OffersSigned-{7DED9384-C1A4-407C-A7FF-CD853852CAC4}920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACnecskE3hrrUiN21IEISpdU5u4zROcQt8PCXd0alNJQAAAAAAOgAAAAAIAACAAAABXMdRx4/dFoIGAVhIBMpHTfUSULbVhhmoeYgx95qyIbSAAAAAmi0hXCIVkQOzKRaiHsk/frUnHOsJk+qi7DytSkN8VxEAAAADrWzQZ3+vdBZNPARobTo7IfHNW9TGsYTufG8TjGaHbrT53E9jKGXodc/mJaufYKQfeLUvGZBqXBe040506M1zb</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{0C8999BA-C896-4134-9733-D7D74EE95875}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-OffersSigned-{0C8999BA-C896-4134-9733-D7D74EE95875}920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADhruOC03tp0jYsZExlI2A6flekd9S1CsE5R0mNMIePKgAAAAAOgAAAAAIAACAAAAD5PeuB1JM+icULVejndJRMYwet3tXqbaPZXO2lpLXwEyAAAADM7lQmuT8uDlZvcWw3Vl+vxqOktKVwENIjZ0+ZYVA4ykAAAADjw4G3y/XNKl6UBv7zeXhwhbbV46w/H1Zh6l2F98z/foSbzhSN8qWyUjbeNLCzdXAiGRqRq9VIimcWeFHyO4Fq</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 2]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{50705D33-27F1-4C77-927B-4D3A31B42433}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACMptRkkTq/pgRk4W2RT/qVkev+Ikg58CQFcJscNnQD6wAAAAAOgAAAAAIAACAAAACM6/EvMv8jZCpGkgP9ERmX+k85v8hL8jRiHcRjBOlEtSAAAABAG5QBTAjKvQRNIk40rdlXdM35dXjqr+jOjxKD6FGK10AAAAAHb5oVztAbgXJWZjEWOsdBOJMPFaCWD/JVG+kTOhwF1bSaupQlBS3dBbHz7IV0IC5buCqzpy+BfV4L3Tan2ClN</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Dimension Container"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{BCE5A51C-ED8D-44CB-9BC2-D0C48C7250C9}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -193,8 +100,8 @@
                   <connections>
                     <connection
                       refId="Package\Dimension Container\dimContactType\Contact Type Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 1]"
+                      connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -306,8 +213,8 @@
                   <connections>
                     <connection
                       refId="Package\Dimension Container\dimContactType\Contact Type Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 1]"
+                      connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -434,11 +341,11 @@
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepIdentity">false</property>
+                      name="FastLoadKeepIdentity">true</property>
                     <property
                       dataType="System.Boolean"
                       description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">false</property>
+                      name="FastLoadKeepNulls">true</property>
                     <property
                       dataType="System.String"
                       description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
@@ -451,8 +358,8 @@
                   <connections>
                     <connection
                       refId="Package\Dimension Container\dimRecruiter\Recruiter Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 2]"
-                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3 2]"
+                      connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -584,8 +491,8 @@
                   <connections>
                     <connection
                       refId="Package\Dimension Container\dimRecruiter\Recruiter Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 2]"
-                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3 2]"
+                      connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -704,7 +611,6 @@
       DTS:refId="Package\factContactAttempts"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{16B679F3-BCFF-40AF-B978-F0725C96EE13}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -766,8 +672,8 @@
               <connections>
                 <connection
                   refId="Package\factContactAttempts\Contact Attempts Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1000,8 +906,8 @@
               <connections>
                 <connection
                   refId="Package\factContactAttempts\fctContactAttempts Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1164,8 +1070,8 @@ where [refTable].[contactType] = ?</property>
               <connections>
                 <connection
                   refId="Package\factContactAttempts\Lookup ContactTypeId.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1324,8 +1230,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\factContactAttempts\Lookup DateId.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1504,7 +1410,7 @@ where [refTable].[contactType] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Offers fact table\162:invalid};</property>
+                  name="ParameterMap">#{Package\Offers fact table\Revature DB Source.Outputs[OLE DB Source Output].Columns[contact method]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1517,8 +1423,8 @@ where [refTable].[contactType] = ?</property>
               <connections>
                 <connection
                   refId="Package\Offers fact table\ContactTypeID.Connections[OleDbConnection]"
-                  connectionManagerID="{39E21D49-7860-4225-AC58-DFE0B8D7B41F}:invalid"
-                  connectionManagerRefId="{39E21D49-7860-4225-AC58-DFE0B8D7B41F}:invalid"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1664,7 +1570,7 @@ where [refTable].[date] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Offers fact table\163:invalid};</property>
+                  name="ParameterMap">#{Package\Offers fact table\Revature DB Source.Outputs[OLE DB Source Output].Columns[offer action date]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1677,8 +1583,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Offers fact table\OfferActionDateID.Connections[OleDbConnection]"
-                  connectionManagerID="{39E21D49-7860-4225-AC58-DFE0B8D7B41F}:invalid"
-                  connectionManagerRefId="{39E21D49-7860-4225-AC58-DFE0B8D7B41F}:invalid"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1824,8 +1730,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Offers fact table\Offers Fact Table.Connections[OleDbConnection]"
-                  connectionManagerID="{39E21D49-7860-4225-AC58-DFE0B8D7B41F}:invalid"
-                  connectionManagerRefId="{39E21D49-7860-4225-AC58-DFE0B8D7B41F}:invalid"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2003,7 +1909,7 @@ where [refTable].[date] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Offers fact table\164:invalid};</property>
+                  name="ParameterMap">#{Package\Offers fact table\Revature DB Source.Outputs[OLE DB Source Output].Columns[offer start date]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2016,8 +1922,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Offers fact table\OfferStartDateID.Connections[OleDbConnection]"
-                  connectionManagerID="{39E21D49-7860-4225-AC58-DFE0B8D7B41F}:invalid"
-                  connectionManagerRefId="{39E21D49-7860-4225-AC58-DFE0B8D7B41F}:invalid"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2168,8 +2074,8 @@ on o.recId = r.recId</property>
               <connections>
                 <connection
                   refId="Package\Offers fact table\Revature DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2379,6 +2285,14 @@ on o.recId = r.recId</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\factContactAttempts" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{FF8028FA-813F-4FBB-89D2-CA1D6846DEF7}"
+      DTS:From="Package\factContactAttempts"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Offers fact table" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -2397,50 +2311,60 @@ on o.recId = r.recId</property>
           Id="Package\Dimension Container\dimContactType"
           TopLeft="209,5" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="138.4,41.6"
           Id="Package\Dimension Container\dimRecruiter"
           TopLeft="9,3" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="384.8,150.4"
+          PanelSize="384.8,149.6"
           Size="384.8,192.8"
           Id="Package\Dimension Container"
-          TopLeft="407,79" />
+          TopLeft="86.9999945504323,49.1764701699716" />
         <NodeLayout
-          Size="175.2,41.6"
+          Size="174.4,41.6"
           Id="Package\factContactAttempts"
-          TopLeft="410,398" />
+          TopLeft="190.714281979872,297.823528006827" />
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\Offers fact table"
-          TopLeft="774,352" />
+          TopLeft="201.142847387158,371.117647326941" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="599.5,272">
+          TopLeft="278.657138265152,241.976470169971">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-102,126"
+              EndConnector="0,55.847057836856"
               Start="0,0"
-              End="-102,118.5">
+              End="0,48.347057836856">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,59"
-                    Point2="0,63"
-                    Point3="-4,63" />
+                    End="0,48.347057836856" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="278.328564683515,339.423528006828">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.6941193201139"
+              Start="0,0"
+              End="0,24.1941193201139">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-98,63" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-98,63"
-                    Point2="-102,63"
-                    Point3="-102,67" />
-                  <mssgle:LineSegment
-                    End="-102,118.5" />
+                    End="0,24.1941193201139" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2458,11 +2382,11 @@ on o.recId = r.recId</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="197,42"
+          Size="196.8,41.6"
           Id="Package\Dimension Container\dimContactType\Contact Type Destination"
           TopLeft="283,227" />
         <NodeLayout
-          Size="177,42"
+          Size="176.8,41.6"
           Id="Package\Dimension Container\dimContactType\Contact Type Source"
           TopLeft="292,60" />
         <EdgeLayout
@@ -2492,6 +2416,27 @@ on o.recId = r.recId</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Container\dimContactType\Contact Type Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Container\dimContactType\Contact Type Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Dimension Container\dimRecruiter">
     <LayoutInfo>
@@ -2530,25 +2475,51 @@ on o.recId = r.recId</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Container\dimRecruiter\Recruiter Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Container\dimRecruiter\Recruiter Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\factContactAttempts">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="148,42"
+          Size="148,41.6"
           Id="Package\factContactAttempts\Lookup DateId"
           TopLeft="585,264" />
         <NodeLayout
-          Size="185,42"
+          Size="184.8,41.6"
           Id="Package\factContactAttempts\Lookup ContactTypeId"
           TopLeft="566,155" />
         <NodeLayout
-          Size="225,42"
+          Size="224.8,41.6"
           Id="Package\factContactAttempts\fctContactAttempts Destination"
           TopLeft="552,384" />
         <NodeLayout
-          Size="196,42"
+          Size="196,41.6"
           Id="Package\factContactAttempts\Contact Attempts Source"
           TopLeft="562,67" />
         <EdgeLayout
@@ -2626,54 +2597,106 @@ on o.recId = r.recId</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\factContactAttempts\Lookup DateId">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[dim_Date]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\factContactAttempts\Lookup ContactTypeId">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[dim_ContactType]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\factContactAttempts\fctContactAttempts Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\factContactAttempts\Contact Attempts Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Offers fact table">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="165,42"
-          Id="Package\Offers fact table\OfferActionDateID"
-          TopLeft="475.7,430.5" />
-        <NodeLayout
-          Size="173,42"
-          Id="Package\Offers fact table\Revature DB Source"
-          TopLeft="470.7,167" />
-        <NodeLayout
-          Size="159,42"
+          Size="159.2,41.6"
           Id="Package\Offers fact table\OfferStartDateID"
-          TopLeft="477.7,342" />
-        <EdgeLayout
-          Id="Package\Offers fact table.Paths[Lookup Match Output]"
-          TopLeft="557.7,384">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46.5"
-              Start="0,0"
-              End="0,39">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,13.6953125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="366.271426673811,257.117645868381" />
         <NodeLayout
-          Size="149,42"
+          Size="164.8,41.6"
+          Id="Package\Offers fact table\OfferActionDateID"
+          TopLeft="364.271426673811,345.617645868381" />
+        <NodeLayout
+          Size="172.8,41.6"
+          Id="Package\Offers fact table\Revature DB Source"
+          TopLeft="359.271426673811,82.1176458683806" />
+        <NodeLayout
+          Size="148.8,41.6"
           Id="Package\Offers fact table\ContactTypeID"
-          TopLeft="482.7,254.5" />
+          TopLeft="371.271426673811,169.617645868381" />
+        <NodeLayout
+          Size="160,41.6"
+          Id="Package\Offers fact table\Offers Fact Table"
+          TopLeft="367.571426673811,423.117645868381" />
         <EdgeLayout
           Id="Package\Offers fact table.Paths[Lookup Match Output1]"
-          TopLeft="557.2,296.5">
+          TopLeft="445.771426673811,211.617645868381">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2696,8 +2719,32 @@ on o.recId = r.recId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Offers fact table.Paths[Lookup Match Output]"
+          TopLeft="446.271426673811,299.117645868381">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.5"
+              Start="0,0"
+              End="0,39">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,13.6953125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Offers fact table.Paths[OLE DB Source Output]"
-          TopLeft="557.2,209">
+          TopLeft="445.771426673811,124.117645868381">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2714,16 +2761,14 @@ on o.recId = r.recId</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Offers fact table\Offers Fact Table"
-          TopLeft="479,508" />
         <EdgeLayout
           Id="Package\Offers fact table.Paths[Lookup Match Output2]"
-          TopLeft="558.6,472.5">
+          TopLeft="447.171426673811,387.617645868381">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2781,6 +2826,42 @@ on o.recId = r.recId</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Offers fact table\Offers Fact Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Offers fact table\ContactTypeID">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[dim_ContactType]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

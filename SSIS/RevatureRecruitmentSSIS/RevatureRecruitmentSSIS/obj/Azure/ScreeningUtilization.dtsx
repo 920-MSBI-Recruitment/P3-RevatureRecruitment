@@ -11,26 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ScreeningUtilization"
   DTS:PackageType="5"
-  DTS:VersionBuild="74"
-  DTS:VersionGUID="{814B334B-6F72-412D-A4CD-A0CD2F6ADFC0}">
+  DTS:VersionBuild="79"
+  DTS:VersionGUID="{CE88922D-4EDD-4221-B4ED-47EB2D2C42A8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.Sammy]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{352A5B5D-8418-4646-B535-CAFDAD2C1FDA}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.Sammy">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA1FfmyWv2qKaM3u8qLWRnT1yojn2kvoKdnwFCTlgqvdQAAAAAOgAAAAAIAACAAAACF4Gz10/3FhypPwqffhBi9QmuVvSL6Pnent6DfDnCuWSAAAABfcnGmNTAbrrExGu0FQ1cZefXzK+RPh/5IJEUX8G2J0kAAAADgcmSohP9VSIeuvCpA7XaE+DfdDnIHUIA3SWuACwwbxa7CEWlnf5J5/785KTGsvIR7NA1/9t0qa8Y6BaLJ4eLi</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DateIds]"
       DTS:CreationName="EXCEL"
@@ -38,7 +23,7 @@
       DTS:ObjectName="DateIds">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\ScreeningUtilization SSIS\DateIds.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\SSIS\ScreeningUtilization SSIS\DateIds.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -48,7 +33,7 @@
       DTS:ObjectName="Excel Connection Manager 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\ScreeningUtilization SSIS\ScreenerIDs.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\SSIS\ScreeningUtilization SSIS\ScreenerIDs.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -58,7 +43,7 @@
       DTS:ObjectName="Full Data Set Excel Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\Datasets\MSBI P3 Dataset_V3_Clean.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\Datasets\MSBI P3 Dataset_V4_Clean.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -68,7 +53,7 @@
       DTS:ObjectName="ScreenerIDs">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\ScreeningUtilization SSIS\ScreenerIDs.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\SSIS\ScreeningUtilization SSIS\ScreenerIDs.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -78,7 +63,7 @@
       DTS:ObjectName="ScreensByDate">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\ScreeningUtilization SSIS\ScreensByDate.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\SSIS\ScreeningUtilization SSIS\ScreensByDate.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -137,7 +122,6 @@
       DTS:AssignExpression="@LoopCounter = @LoopCounter + 1"
       DTS:CreationName="STOCK:FORLOOP"
       DTS:Description="For Loop Container"
-      DTS:Disabled="True"
       DTS:DTSID="{71FAECB1-7604-4D9A-AC22-8EB2E1BF23B2}"
       DTS:EvalExpression="@LoopCounter &lt; @UniqueDates"
       DTS:ExecutableType="STOCK:FORLOOP"
@@ -518,7 +502,6 @@
       DTS:AssignExpression="@DateLoop = @DateLoop + 1"
       DTS:CreationName="STOCK:FORLOOP"
       DTS:Description="For Loop Container"
-      DTS:Disabled="True"
       DTS:DTSID="{7A11458F-0445-4034-ACEE-E7C11AEC8547}"
       DTS:EvalExpression="@DateLoop &lt; @UniqueScreeners"
       DTS:ExecutableType="STOCK:FORLOOP"
@@ -699,8 +682,8 @@
                   <connections>
                     <connection
                       refId="Package\For Loop Container 1\Populate date ids\Import Dates.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.Sammy]"
-                      connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.Sammy]"
+                      connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1570,8 +1553,8 @@
               <connections>
                 <connection
                   refId="Package\Populate fct_ScreenerUtilization With default values\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.Sammy]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.Sammy]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1698,7 +1681,7 @@
           Id="Package\For Loop Container"
           TopLeft="54,242" />
         <NodeLayout
-          Size="160,41.6"
+          Size="159.2,41.6"
           Id="Package\For Loop Container 1\Populate date ids"
           TopLeft="16,4" />
         <ContainerLayout
@@ -1707,11 +1690,11 @@
           PanelSize="204.8,100.8"
           Size="204.8,144"
           Id="Package\For Loop Container 1"
-          TopLeft="62,65" />
+          TopLeft="69.1428572644993,26.7647053461174" />
         <NodeLayout
-          Size="321.6,41.6"
+          Size="320.8,41.6"
           Id="Package\Populate fct_ScreenerUtilization With default values"
-          TopLeft="625,197" />
+          TopLeft="360.714281213527,188.588235176146" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1799,7 +1782,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2102,7 +2087,7 @@
     design-time-name="Package\Populate fct_ScreenerUtilization With default values">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\Populate fct_ScreenerUtilization With default values\OLE DB Destination"
@@ -2130,7 +2115,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

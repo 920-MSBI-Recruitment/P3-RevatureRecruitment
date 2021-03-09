@@ -11,72 +11,10 @@
   DTS:LocaleID="8192"
   DTS:ObjectName="Screening"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{D1747729-69B5-45D0-8339-62614D0A0ED5}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{7A8665D7-8E35-4C80-AC46-9DCDE291C4D4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.Ben]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{E324D678-3D12-4213-ABC7-DB198D52EBE7}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.Ben">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=Ben;Initial Catalog=RevatureDatabase;Provider=MSOLEDBSQL.1;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{EAF5ED2A-AF2C-4B88-930A-A8AD5063E846}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACC+Yl9kd/VR5tBhEIFRz42PTeEiQ2zcgunLI8HKW9FKgAAAAAOgAAAAAIAACAAAABi0uC5lA/icfc9CVNNNZSwFz4+Q5uxjm5oPuBTgNfuQCAAAAAQdjJE0myFK2l8ul6GmrN9c1BR1mtxD2o0CkZWaN6tYkAAAAAzBrUN75HGmj7yqiztSMpu4KWbIcGcw7T7HYzmqIc8kef2GTQ+Fi6+9gyVwFrKP6g2zeEdL6AJnR1DNeitQ7oR</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{23961C10-FF25-41F2-BE61-C84CA96F948C}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACum8/zRtw6wJ9K5CzEtEfzYbzF2zRR1GmaS+poHQnEwwAAAAAOgAAAAAIAACAAAAD21Fc6j+/r/LrloTRzssX3B5dp/S/JXQTx3HZJox1yayAAAABSwok7Iun9oZKsZ9zwjdW29yyH5vf4XrOzJ2A4WzF4P0AAAAA+XJDPdSq3LqQYHsGPIjKe8HxvdjuDnVdlkt5/xopiknVzF6qcu1yayRg3k6YYOyh54OJ/5ortPU9SGQJzJeBQ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ASC-087\NYBENMCG.testing]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{9FF9F967-F5BB-486D-85F2-60803066921A}"
-      DTS:ObjectName="ASC-087\NYBENMCG.testing">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=ASC-087\NYBENMCG;Initial Catalog=testing;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{E0422967-D8AE-4099-86C6-171CC594E86B}"
-      DTS:ObjectName="Excel Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\Datasets\MSBI P3 Dataset_V3_Clean.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -144,8 +82,8 @@
               <connections>
                 <connection
                   refId="Package\Dim_Screeners - Team Jordan\920-msbi-recruitment - ScreenerTable.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -306,8 +244,8 @@
               <connections>
                 <connection
                   refId="Package\Dim_Screeners - Team Jordan\dim_Screeners Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -452,8 +390,8 @@ where [refTable].[screenerID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Dim_Screeners - Team Jordan\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -476,6 +414,50 @@ where [refTable].[screenerID] = ?</property>
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
                           name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Dim_Screeners - Team Jordan\Lookup.Inputs[Lookup Input].Columns[screenerFirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="scrFirstName"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Dim_Screeners - Team Jordan\920-msbi-recruitment - ScreenerTable.Outputs[OLE DB Source Output].Columns[scrFirstName]"
+                      name="screenerFirstName"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn" />
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">screenerFirstName</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Dim_Screeners - Team Jordan\Lookup.Inputs[Lookup Input].Columns[screenerLastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="scrLastName"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Dim_Screeners - Team Jordan\920-msbi-recruitment - ScreenerTable.Outputs[OLE DB Source Output].Columns[scrLastName]"
+                      name="screenerLastName"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn" />
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">screenerLastName</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -604,8 +586,8 @@ where [refTable].[screenerID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Dim_ScreenType - Team Jordan\920-msbi-recruitment - Screenings.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -758,8 +740,8 @@ where [refTable].[screenerID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Dim_ScreenType - Team Jordan\dim_ScreenTypes Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -891,8 +873,8 @@ where [refTable].[screenType] = ?</property>
               <connections>
                 <connection
                   refId="Package\Dim_ScreenType - Team Jordan\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1875,8 +1857,8 @@ where [refTable].[screenType] = ?</property>
               <connections>
                 <connection
                   refId="Package\Fct_Screening - Team Jordan\fct_Screening.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2048,12 +2030,12 @@ where [refTable].[screeningID] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="screeningID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="dateID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="screenerID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="qualifiedLeadID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="screenTypeID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="screensPerDay" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="questionsAsked" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="answersAccepted" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="offerStatus" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="screeningID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="dateID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="screenerID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="qualifiedLeadID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="screenTypeID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="questionsAsked" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="answersAccepted" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="offerStatus" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Fct_Screening - Team Jordan\419:invalid};</property>
+                  name="ParameterMap">#{Package\Fct_Screening - Team Jordan\Add ScreensPerDay.Outputs[Merge Join Output].Columns[screeningId]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2066,8 +2048,8 @@ where [refTable].[screeningID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Fct_Screening - Team Jordan\Filter for New Entries.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2168,7 +2150,7 @@ where [refTable].[date] = ?</property>
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
                   name="CacheType"
-                  typeConverter="CacheType">0</property>
+                  typeConverter="CacheType">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
@@ -2207,8 +2189,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Fct_Screening - Team Jordan\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2353,7 +2335,7 @@ where [refTable].[scrId] = ? and [refTable].[qlId] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Fct_Screening - Team Jordan\420:invalid};#{Package\Fct_Screening - Team Jordan\421:invalid};</property>
+                  name="ParameterMap">#{Package\Fct_Screening - Team Jordan\Screenings-DB.Outputs[OLE DB Source Output].Columns[scrId]};#{Package\Fct_Screening - Team Jordan\Screenings-DB.Outputs[OLE DB Source Output].Columns[qlId]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2366,8 +2348,8 @@ where [refTable].[scrId] = ? and [refTable].[qlId] = ?</property>
               <connections>
                 <connection
                   refId="Package\Fct_Screening - Team Jordan\Lookup OfferStatus.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2523,8 +2505,8 @@ where [refTable].[screenType] = ?</property>
               <connections>
                 <connection
                   refId="Package\Fct_Screening - Team Jordan\Lookup ScreenTypeID.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2665,8 +2647,8 @@ where [refTable].[screenType] = ?</property>
               <connections>
                 <connection
                   refId="Package\Fct_Screening - Team Jordan\Screenings-DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2897,8 +2879,8 @@ where [refTable].[screenType] = ?</property>
               <connections>
                 <connection
                   refId="Package\Fct_Screening - Team Jordan\ScreensPerDay.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3658,17 +3640,17 @@ where [refTable].[screenType] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="258,42"
+          Size="257.6,41.6"
+          Id="Package\Dim_Screeners - Team Jordan\Lookup"
+          TopLeft="339.666666666667,117.5" />
+        <NodeLayout
+          Size="257.6,41.6"
           Id="Package\Dim_Screeners - Team Jordan\dim_Screeners Destination"
           TopLeft="339.666666666667,226" />
         <NodeLayout
-          Size="258,42"
+          Size="257.6,41.6"
           Id="Package\Dim_Screeners - Team Jordan\920-msbi-recruitment - ScreenerTable"
           TopLeft="339.666666666667,9" />
-        <NodeLayout
-          Size="258,42"
-          Id="Package\Dim_Screeners - Team Jordan\Lookup"
-          TopLeft="339.666666666667,117.5" />
         <EdgeLayout
           Id="Package\Dim_Screeners - Team Jordan.Paths[OLE DB Source Output]"
           TopLeft="468.666666666667,51">
@@ -3688,7 +3670,9 @@ where [refTable].[screenType] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3773,19 +3757,19 @@ where [refTable].[screenType] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="248,42"
+          Size="248,41.6"
           Id="Package\Dim_ScreenType - Team Jordan\Lookup"
           TopLeft="342.25,306.333333333333" />
         <NodeLayout
-          Size="247,42"
+          Size="247.2,41.6"
           Id="Package\Dim_ScreenType - Team Jordan\920-msbi-recruitment - Screenings"
           TopLeft="343.25,87" />
         <NodeLayout
-          Size="251,42"
+          Size="251.2,41.6"
           Id="Package\Dim_ScreenType - Team Jordan\Remove Duplicate Screen Types"
           TopLeft="343.25,196.666666666667" />
         <NodeLayout
-          Size="252,42"
+          Size="252,41.6"
           Id="Package\Dim_ScreenType - Team Jordan\dim_ScreenTypes Destination"
           TopLeft="343.25,416" />
         <EdgeLayout
@@ -3807,7 +3791,9 @@ where [refTable].[screenType] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3829,7 +3815,9 @@ where [refTable].[screenType] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3914,103 +3902,87 @@ where [refTable].[screenType] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="147,42"
+          Size="148.8,41.6"
+          Id="Package\Fct_Screening - Team Jordan\ScreensPerDay"
+          TopLeft="331.5,311.5" />
+        <NodeLayout
+          Size="147.2,41.6"
           Id="Package\Fct_Screening - Team Jordan\Screenings-DB"
           TopLeft="145.5,5.5" />
         <NodeLayout
-          Size="260,42"
-          Id="Package\Fct_Screening - Team Jordan\Count Daily Screens for Each Screener"
-          TopLeft="276,413.5" />
+          Size="112.8,41.6"
+          Id="Package\Fct_Screening - Team Jordan\Lookup"
+          TopLeft="349.5,719.5" />
         <NodeLayout
-          Size="143,42"
-          Id="Package\Fct_Screening - Team Jordan\fct_Screening"
-          TopLeft="334.5,923.5" />
-        <NodeLayout
-          Size="149,42"
-          Id="Package\Fct_Screening - Team Jordan\ScreensPerDay"
-          TopLeft="331.5,311.5" />
-        <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[OLE DB Source Output]"
-          TopLeft="406,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Fct_Screening - Team Jordan\Sort"
-          TopLeft="357,515.5" />
-        <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Aggregate Output 1]"
-          TopLeft="406,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
+          Size="107.2,41.6"
           Id="Package\Fct_Screening - Team Jordan\Sort 1"
           TopLeft="189.5,515.5" />
         <NodeLayout
-          Size="171,42"
+          Size="97.6,41.6"
+          Id="Package\Fct_Screening - Team Jordan\Sort"
+          TopLeft="357,515.5" />
+        <NodeLayout
+          Size="148.8,41.6"
+          Id="Package\Fct_Screening - Team Jordan\Bring Together"
+          TopLeft="66.5000000000001,413.5" />
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Fct_Screening - Team Jordan\Lookup OfferStatus"
+          TopLeft="134,209.5" />
+        <NodeLayout
+          Size="100.8,41.6"
+          Id="Package\Fct_Screening - Team Jordan\True"
+          TopLeft="5.50000000000006,311.5" />
+        <NodeLayout
+          Size="260,41.6"
+          Id="Package\Fct_Screening - Team Jordan\Count Daily Screens for Each Screener"
+          TopLeft="276,413.5" />
+        <NodeLayout
+          Size="143.2,41.6"
+          Id="Package\Fct_Screening - Team Jordan\fct_Screening"
+          TopLeft="334.5,923.5" />
+        <NodeLayout
+          Size="183.2,41.6"
+          Id="Package\Fct_Screening - Team Jordan\Lookup ScreenTypeID"
+          TopLeft="127.5,107.5" />
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\Fct_Screening - Team Jordan\Filter for New Entries"
+          TopLeft="317,821.5" />
+        <NodeLayout
+          Size="171.2,41.6"
           Id="Package\Fct_Screening - Team Jordan\Add ScreensPerDay"
           TopLeft="320.5,617.5" />
+        <NodeLayout
+          Size="103.2,41.6"
+          Id="Package\Fct_Screening - Team Jordan\False"
+          TopLeft="167.5,311.5" />
         <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Sort Output]"
-          TopLeft="243,557.5">
+          Id="Package\Fct_Screening - Team Jordan.Paths[Union All Output 1]"
+          TopLeft="141,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="135.833333333333,60"
+              EndConnector="102,60"
               Start="0,0"
-              End="135.833333333333,52.5">
+              End="102,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.6662804171495" />
+                    End="0,26" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.6662804171495"
-                    Point2="0,35.6662804171495"
-                    Point3="4,35.6662804171495" />
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
                   <mssgle:LineSegment
-                    End="131.833333333333,35.6662804171495" />
+                    End="98,30" />
                   <mssgle:CubicBezierSegment
-                    Point1="131.833333333333,35.6662804171495"
-                    Point2="135.833333333333,35.6662804171495"
-                    Point3="135.833333333333,39.6662804171495" />
+                    Point1="98,30"
+                    Point2="102,30"
+                    Point3="102,34" />
                   <mssgle:LineSegment
-                    End="135.833333333333,52.5" />
+                    End="102,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4053,13 +4025,43 @@ where [refTable].[screenType] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="178,42"
-          Id="Package\Fct_Screening - Team Jordan\Filter for New Entries"
-          TopLeft="317,821.5" />
         <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Lookup No Match Output]"
-          TopLeft="406,863.5">
+          Id="Package\Fct_Screening - Team Jordan.Paths[Sort Output]"
+          TopLeft="243,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="135.833333333333,60"
+              Start="0,0"
+              End="135.833333333333,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.6662804171495" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.6662804171495"
+                    Point2="0,35.6662804171495"
+                    Point3="4,35.6662804171495" />
+                  <mssgle:LineSegment
+                    End="131.833333333333,35.6662804171495" />
+                  <mssgle:CubicBezierSegment
+                    Point1="131.833333333333,35.6662804171495"
+                    Point2="135.833333333333,35.6662804171495"
+                    Point3="135.833333333333,39.6662804171495" />
+                  <mssgle:LineSegment
+                    End="135.833333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fct_Screening - Team Jordan.Paths[OLE DB Source Output1]"
+          TopLeft="219,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4076,59 +4078,53 @@ where [refTable].[screenType] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,20.4453125,111.6127734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Fct_Screening - Team Jordan\Lookup OfferStatus"
-          TopLeft="134,209.5" />
-        <NodeLayout
-          Size="101,42"
-          Id="Package\Fct_Screening - Team Jordan\True"
-          TopLeft="5.50000000000006,311.5" />
         <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Lookup Match Output]"
-          TopLeft="192,251.5">
+          Id="Package\Fct_Screening - Team Jordan.Paths[OLE DB Source Output]"
+          TopLeft="406,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-136,60"
+              EndConnector="0,60"
               Start="0,0"
-              End="-136,52.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.3356643356643" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.3356643356643"
-                    Point2="0,24.3356643356643"
-                    Point3="-4,24.3356643356643" />
-                  <mssgle:LineSegment
-                    End="-132,24.3356643356643" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-132,24.3356643356643"
-                    Point2="-136,24.3356643356643"
-                    Point3="-136,28.3356643356643" />
-                  <mssgle:LineSegment
-                    End="-136,52.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-116.19138671875,29.3356643356643,96.3827734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="103,42"
-          Id="Package\Fct_Screening - Team Jordan\False"
-          TopLeft="167.5,311.5" />
+        <EdgeLayout
+          Id="Package\Fct_Screening - Team Jordan.Paths[Merge Join Output]"
+          TopLeft="406,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Fct_Screening - Team Jordan.Paths[Lookup No Match Output1]"
           TopLeft="246,251.5">
@@ -4165,42 +4161,112 @@ where [refTable].[screenType] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="149,42"
-          Id="Package\Fct_Screening - Team Jordan\Bring Together"
-          TopLeft="66.5000000000001,413.5" />
         <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Derived Column Output]"
-          TopLeft="56.0000000000001,353.5">
+          Id="Package\Fct_Screening - Team Jordan.Paths[Lookup No Match Output]"
+          TopLeft="406,863.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="61.5,60"
+              EndConnector="0,60"
               Start="0,0"
-              End="61.5,52.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.6175298804781" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.6175298804781"
-                    Point2="0,35.6175298804781"
-                    Point3="4,35.6175298804781" />
-                  <mssgle:LineSegment
-                    End="57.5,35.6175298804781" />
-                  <mssgle:CubicBezierSegment
-                    Point1="57.5,35.6175298804781"
-                    Point2="61.5,35.6175298804781"
-                    Point3="61.5,39.6175298804781" />
-                  <mssgle:LineSegment
-                    End="61.5,52.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,20.4453125,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fct_Screening - Team Jordan.Paths[Lookup Match Output2]"
+          TopLeft="406,761.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fct_Screening - Team Jordan.Paths[Lookup Match Output1]"
+          TopLeft="219,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fct_Screening - Team Jordan.Paths[Lookup Match Output]"
+          TopLeft="192,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-136,60"
+              Start="0,0"
+              End="-136,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3356643356643" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3356643356643"
+                    Point2="0,24.3356643356643"
+                    Point3="-4,24.3356643356643" />
+                  <mssgle:LineSegment
+                    End="-132,24.3356643356643" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-132,24.3356643356643"
+                    Point2="-136,24.3356643356643"
+                    Point3="-136,28.3356643356643" />
+                  <mssgle:LineSegment
+                    End="-136,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-116.19138671875,29.3356643356643,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4238,31 +4304,31 @@ where [refTable].[screenType] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Union All Output 1]"
-          TopLeft="141,455.5">
+          Id="Package\Fct_Screening - Team Jordan.Paths[Derived Column Output]"
+          TopLeft="56.0000000000001,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="102,60"
+              EndConnector="61.5,60"
               Start="0,0"
-              End="102,52.5">
+              End="61.5,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26" />
+                    End="0,31.6175298804781" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="4,30" />
+                    Point1="0,31.6175298804781"
+                    Point2="0,35.6175298804781"
+                    Point3="4,35.6175298804781" />
                   <mssgle:LineSegment
-                    End="98,30" />
+                    End="57.5,35.6175298804781" />
                   <mssgle:CubicBezierSegment
-                    Point1="98,30"
-                    Point2="102,30"
-                    Point3="102,34" />
+                    Point1="57.5,35.6175298804781"
+                    Point2="61.5,35.6175298804781"
+                    Point3="61.5,39.6175298804781" />
                   <mssgle:LineSegment
-                    End="102,52.5" />
+                    End="61.5,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4271,13 +4337,9 @@ where [refTable].[screenType] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="183,42"
-          Id="Package\Fct_Screening - Team Jordan\Lookup ScreenTypeID"
-          TopLeft="127.5,107.5" />
         <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[OLE DB Source Output1]"
-          TopLeft="219,47.5">
+          Id="Package\Fct_Screening - Team Jordan.Paths[Aggregate Output 1]"
+          TopLeft="406,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4295,80 +4357,6 @@ where [refTable].[screenType] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Lookup Match Output1]"
-          TopLeft="219,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="113,42"
-          Id="Package\Fct_Screening - Team Jordan\Lookup"
-          TopLeft="349.5,719.5" />
-        <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Merge Join Output]"
-          TopLeft="406,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Fct_Screening - Team Jordan.Paths[Lookup Match Output2]"
-          TopLeft="406,761.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4406,7 +4394,7 @@ where [refTable].[screenType] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -4416,30 +4404,7 @@ where [refTable].[screenType] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fct_Screening - Team Jordan\Lookup ScreenTypeID">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[dim_ScreenType]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4479,6 +4444,29 @@ where [refTable].[screenType] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fct_Screening - Team Jordan\Lookup ScreenTypeID">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[dim_ScreenType]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

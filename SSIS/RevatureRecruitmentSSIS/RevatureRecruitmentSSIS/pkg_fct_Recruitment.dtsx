@@ -11,50 +11,10 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="pkg_fct_Recruitment"
   DTS:PackageType="5"
-  DTS:VersionBuild="22"
-  DTS:VersionGUID="{B5EE7BCB-0E7E-4F53-8989-DA4BD8AB3BEC}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{E8FF7B1E-D9F2-446B-BED8-D3DEC49AC1FA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[RevatureDB]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{1918CB40-6056-4317-A0AD-669CBF0BC74C}"
-      DTS:ObjectName="RevatureDB">
-      <DTS:PropertyExpression
-        DTS:Name="Password">@[$Package::RevatureDB_Password]</DTS:PropertyExpression>
-      <DTS:PropertyExpression
-        DTS:Name="UserName">@[$Package::RevatureDB_UserName]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAChxpriFdYThxZQWejrGzTZUz8gzIowIYeEvF66s5lV3QAAAAAOgAAAAAIAACAAAADA2ViM/PIMx5qBnVLytQZDKEYVhAPXSMzk3Cj8Z2uxYyAAAACA+3wqqV6OWmEvH8uGLgFoxaD7icVNE8DAf+xNi0zTMUAAAADfbTdv89qRqiGK0Kl2y3ve2ETOY7p/b1lm1XE8csp7UdqsXYK7CR82IKCH64md3DuciuNYFhJN0CHkldKUxWqQ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[RevatureDW]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{0FF82C55-E3DE-45FC-8DC8-023806808B9B}"
-      DTS:ObjectName="RevatureDW">
-      <DTS:PropertyExpression
-        DTS:Name="Password">@[$Package::RevatureDW_Password]</DTS:PropertyExpression>
-      <DTS:PropertyExpression
-        DTS:Name="UserName">@[$Package::RevatureDW_UserName]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD533Zg0AMbXxyjSWCK1jySjRbBnr2C8fU4ETf7oxJ3lQAAAAAOgAAAAAIAACAAAAA+AV05ilCimzK2DolE0W4nuOF66oIPRSPG84+6n8yfqSAAAAC/AbZ2VWwnjBDLG+DCGD69l5DIekZG8pYXs/7N4v5DMEAAAACBi8zN6pi7wplJROLfwHQyP64nlxLlnJsevopkZr7nRLTokpnySyHx1k0CoRh9pTBg8Q9JKRd1QCCzLScQj9Vr</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:PackageParameters>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -77,7 +37,7 @@
         <DTS:Property
           DTS:DataType="8"
           DTS:Name="ParameterValue"
-          Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACu2aqvKQHYvTxAeAU+83WvZ4WVJ0RUn1UFvcXzlV6Q3QAAAAAOgAAAAAIAACAAAABWBgHo42Mx0DzpGhmiwiDD47RGKXCrZTUPwUkBdW2NoSAAAAAKs5tpGcUvbautZ6uwUumNfa3tQKmRlrNiZA6vP83aM0AAAADINTQ/ZFqHLuKGLeaKtpq4aYEDEmpbQoBLMC8d9VHxRPT25vlKCHRs7x+JmOnkvZ2fNadXq+KiALJDzsk3RYvv</DTS:Property>
+          Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAQtXkxFmPW4siTRzvzzRKo9eZTOiUPLiUpFXLsbyCBBAAAAAAOgAAAAAIAACAAAADS/9PQZeaZWWEfnIwmOBFg/LtqvuwOK3/ZwtOjaEOnuyAAAADTw0J2DfmI8w7UYnunrDg0FH8pBa7FmCpwnOBvnROAIkAAAAB2FPpHJG8EefwB6WDQSxS/yaNXF4Whvetpa85dsNdXDFwVGZWmXiZzJi5FPcw/kKmwpvoguS0AU/o48eRUJovW</DTS:Property>
       </DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
@@ -100,7 +60,7 @@
         <DTS:Property
           DTS:DataType="8"
           DTS:Name="ParameterValue"
-          Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACMsTIkyutAEaNRa2sLDAJB4HhNnV/vVcF1Ea7gqldlDAAAAAAOgAAAAAIAACAAAACMUZR3sBJD8CdHN2QujYZSGPaSMXOklluP3sSF+CiDWyAAAAC8XqpACOo1xxvE7iJCSZjKNzxqNkBhNdQFJ/s1oQyeBkAAAADmBhfYWZlYU/4CRxAvHsC8uQ49J42krBak9W7+Vop2e9xFfTGcZI8gfUFuAEjUrlZC5Olfhem4aTf/WyazxsZy</DTS:Property>
+          Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAyRA1nKiQXOGhtNkz1JaAJQly/ApzAbscEmK/ztE1mjAAAAAAOgAAAAAIAACAAAAC5S/nVYJLNvgU3nCW+NkR6MwPihYqRHxtP+Ct4/b+BYSAAAACfZaoqXfAmtraGLq5uNTGV2WgAFi0Xc/dYzgoasjtX0kAAAAAj6hmCM4Yb/p7BH9K1BfrSFPT+HHtzGwfIDEC+cpp0Y29UH9Ne1awNVhACDb13Ucndat9IDrxt+wYdA+3P5rAO</DTS:Property>
       </DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
@@ -185,8 +145,8 @@
               <connections>
                 <connection
                   refId="Package\Load non-zero days\Attempts per recruiter per date.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDB]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -335,8 +295,8 @@
               <connections>
                 <connection
                   refId="Package\Load non-zero days\fct_Recruitment.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -483,8 +443,8 @@ where [refTable].[recruiterID] = ? and [refTable].[dateID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load non-zero days\Get deltas.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -640,8 +600,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load non-zero days\Lookup dateID.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -991,8 +951,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load zero days\distinct dateID.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1115,8 +1075,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load zero days\distinct recruiterID.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1247,8 +1207,8 @@ where [refTable].[date] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load zero days\fct_Recruitment.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1395,8 +1355,8 @@ where [refTable].[recruiterID] = ? and [refTable].[dateID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load zero days\Get deltas.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1875,7 +1835,7 @@ where [refTable].[recruiterID] = ? and [refTable].[dateID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1885,7 +1845,7 @@ where [refTable].[recruiterID] = ? and [refTable].[dateID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1919,7 +1879,7 @@ where [refTable].[recruiterID] = ? and [refTable].[dateID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1929,7 +1889,7 @@ where [refTable].[recruiterID] = ? and [refTable].[dateID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2178,7 +2138,7 @@ where [refTable].[recruiterID] = ? and [refTable].[dateID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2188,7 +2148,7 @@ where [refTable].[recruiterID] = ? and [refTable].[dateID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

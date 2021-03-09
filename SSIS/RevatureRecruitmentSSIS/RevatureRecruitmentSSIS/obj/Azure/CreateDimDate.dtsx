@@ -11,26 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="CreateDimDate"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{5F9A4C1A-A052-4C40-9733-7929EEF317BE}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{D881872E-01B7-4F14-9A37-72DA3CA084F2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{FBA67F69-0BB2-4977-8F5E-C56167A84ABE}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-CreateDimDate-{FBA67F69-0BB2-4977-8F5E-C56167A84ABE}DESKTOP-AU7D43G\TRAININGSERVER.RevatureDW;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAQLiP1t+4Ocmptp2fVIMeLXaCE3myyl1+MSAHxPvF49gAAAAAOgAAAAAIAACAAAACV7GkZ0VoijLGQb4NqqHBps57faSWN9bcd/O08OOPmJiAAAABMguleHMH+iujhhRGDUM1Nf5CZ+9hhRk2MhuHSzkc8MUAAAADi/XUd8pvYfeIJcQuX4REtmtq/6jPHd97cnyzpCE8W/ozvidYfJQ/uDRtRYSM441Iphgxz32s9BhP6duYjQ+cS</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[dimDate]"
       DTS:CreationName="EXCEL"
@@ -492,8 +477,8 @@
               <connections>
                 <connection
                   refId="Package\dimDate\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -539,6 +524,12 @@
                       cachedName="Copy of yearNumber"
                       externalMetadataColumnId="Package\dimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[yearNumber]"
                       lineageId="Package\dimDate\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of yearNumber]" />
+                    <inputColumn
+                      refId="Package\dimDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date]"
+                      cachedDataType="date"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\dimDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      lineageId="Package\dimDate\Excel Source.Outputs[Excel Source Output].Columns[date]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">

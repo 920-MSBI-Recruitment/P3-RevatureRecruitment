@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-MOA0504"
   DTS:CreatorName="DESKTOP-MOA0504\Chase Hovel"
-  DTS:DTSID="{5966A6B4-3F62-4FAC-BF7C-2D3857849C05}"
+  DTS:DTSID="{10181252-7DC0-4454-8533-3FA52F9ABF27}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.150"
   DTS:LocaleID="1033"
-  DTS:ObjectName="InsertDataInto_fct_training"
+  DTS:ObjectName="InsertData_Into_fct_Training"
   DTS:PackageType="5"
-  DTS:VersionBuild="58"
-  DTS:VersionGUID="{68EF2745-ABF3-485B-9442-B61846C7D78C}">
+  DTS:VersionBuild="62"
+  DTS:VersionGUID="{F1EC0EFF-F583-47F4-BCFD-1D390090E9A0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2477,7 +2477,7 @@ public class Input0Buffer: ScriptBuffer
     <msb:CodeName>SC_9fda388d45334272b94096ec5bf8a886</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_9fda388d45334272b94096ec5bf8a886</msb:DisplayName>
-    <msb:ProjectId>{53D30EDB-2054-42F3-9F99-F225EB5ED33C}</msb:ProjectId>
+    <msb:ProjectId>{C6A56717-BAEB-46E4-9359-1D91E6D0FBBC}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_9fda388d45334272b94096ec5bf8a886.csproj" />
@@ -2624,7 +2624,7 @@ namespace SC_9fda388d45334272b94096ec5bf8a886.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAuzRmAAAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAGj0A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAQPR2AAAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAGj0A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMg8AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2746,7 +2746,7 @@ AHcAYQBpAHQAaQBuAGcAUABlAHIAaQBvAGQAAB9AAGMAdQByAHIAZQBuAHQAUQBMAEMAbwB1AG4A
 dAAAF0AAYQBjAGMAZQBwAHQAUgBhAHQAZQAAD0kAbgBwAHUAdAAgADAAAClSAGUAdgBhAHQAdQBy
 AGUARABXAEMAbwBuAG4AZQBjAHQAaQBvAG4AAHFTAEMAXwA5AGYAZABhADMAOAA4AGQANAA1ADMA
 MwA0ADIANwAyAGIAOQA0ADAAOQA2AGUAYwA1AGIAZgA4AGEAOAA4ADYALgBQAHIAbwBwAGUAcgB0
-AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAANYMXA2DQQpOkz8CNIJYYywABCABAQgDIAABBSAB
+AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAADILVYNfKKFErwxOligggYcABCABAQgDIAABBSAB
 ARERBCABAQ4FIAEBEXUQBwcRORE9EkESRRJJEkkRTQUgAQgROQUAAgIODgQgABE9BSABETkNBCAB
 HBwGIAIBDhJBBSAAEoCJByACEoCNDhwEIAASSQMgAAIEIAEcCAUAARFNCAgAAhFNEU0RTQcAAhFN
 EU0IAyAACAQAABE5BAcBETkJIAMBElUdCBJZAwYSVQMGHQgEIAEOCAQgAQIIBSABETkIBCABCAgH
@@ -5948,41 +5948,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Determine and update ConcurrentTrainers">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="225.6,41.6"
-          Id="Package\Determine and update ConcurrentTrainers\update numConcurrentTrainers"
-          TopLeft="81,230" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="134.4,41.6"
           Id="Package\Determine and update ConcurrentTrainers\fct_Training"
           TopLeft="122,37" />
         <NodeLayout
+          Size="225.6,41.6"
+          Id="Package\Determine and update ConcurrentTrainers\update numConcurrentTrainers"
+          TopLeft="81,230" />
+        <NodeLayout
           Size="224.8,41.6"
           Id="Package\Determine and update ConcurrentTrainers\Determine Concurrent Trainers"
           TopLeft="80.5,133.5" />
-        <EdgeLayout
-          Id="Package\Determine and update ConcurrentTrainers.Paths[Output 0]"
-          TopLeft="193.5,175.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54.5"
-              Start="0,0"
-              End="0,47">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Determine and update ConcurrentTrainers.Paths[OLE DB Source Output]"
           TopLeft="191.05,78.6">
@@ -6002,7 +5980,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Determine and update ConcurrentTrainers.Paths[Output 0]"
+          TopLeft="193.5,175.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.5"
+              Start="0,0"
+              End="0,47">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6102,7 +6106,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 2">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="124,41.6"
           Id="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 2\tbl_offers"
@@ -6134,9 +6138,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6158,9 +6160,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6183,7 +6183,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 3">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="124,41.6"
           Id="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 3\tbl_offers"
@@ -6215,9 +6215,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6239,9 +6237,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

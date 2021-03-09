@@ -5,93 +5,16 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-MOA0504"
   DTS:CreatorName="DESKTOP-MOA0504\Chase Hovel"
-  DTS:DTSID="{5966A6B4-3F62-4FAC-BF7C-2D3857849C05}"
+  DTS:DTSID="{10181252-7DC0-4454-8533-3FA52F9ABF27}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.150"
   DTS:LocaleID="1033"
-  DTS:ObjectName="InsertDataInto_fct_training"
+  DTS:ObjectName="InsertData_Into_fct_Training"
   DTS:PackageType="5"
-  DTS:VersionBuild="54"
-  DTS:VersionGUID="{95CCA553-EEF4-41DA-9D5D-3759803BB390}">
+  DTS:VersionBuild="62"
+  DTS:VersionGUID="{F1EC0EFF-F583-47F4-BCFD-1D390090E9A0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.Chase]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{E3DAE8BB-D809-4C78-ADBC-21706B929C63}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.Chase">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-InsertDataInto_fct_training-{E3DAE8BB-D809-4C78-ADBC-21706B929C63}920-msbi-recruitment.database.windows.net.RevatureDatab;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAqdvXTp8ArlrVi+xNDzwrFLbkvaBcGm1dSW9a4IE+96wAAAAAOgAAAAAIAACAAAACUXjoFGrp+StdrWxStrLGH7HJii0VLxHvMgFAXH10lhyAAAABiVLRUDo0jtIg3Urh9sB8ajEfOEZz5Xr4IEGMMEEsIOkAAAAAlgw7n8M4pBs71IlXolWd/4HjazKF6ORv/d4/HN1IBYgIjiDr7CiQ7q2ze5/E5gOJZw7Hf7OswfS0vDGE/16u0</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{9ED94F6D-CE39-46F7-924C-EC4B237079FB}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACgRGuOfpokIcAod2oytwkbgEI/LBuEwsunjWzPj8CZlgAAAAAOgAAAAAIAACAAAABvB2cMOP/ent+5xRGicgh2KX+/IKnFhmP1c47Ipr5aPSAAAACUELMFErTaXGRtwvtKf1ufTZ1v4ta26rvI+DdJKK4clUAAAACWU/h80wMt4JKYqqsbHhtJCveqpvCTMh7wR1xkYplf4x+lLevh8eYxHV6DZR861YkOFO6bY0Z12yyBWvUiv6T1</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.Chase]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{F4B1B8FC-D412-4017-9349-DDE3FF1B053C}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.Chase">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-InsertDataInto_fct_training-{F4B1B8FC-D412-4017-9349-DDE3FF1B053C}920-msbi-recruitment.database.windows.net.RevatureDW.Ch;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB2Pr81TMIA5dJ2g5swcxZBqC7rQYR8AGKUhaFykfaeeAAAAAAOgAAAAAIAACAAAAAas5ScxyNuAyVkUATqBmWECneWqo5dTKJrs5G/rVbmuiAAAAAXvvuhn/fcMLHy1PksGgMsRNYKVxjXkgRQiztC2SDo1EAAAACVmU3H3pW8P10o6+sB0PkfXIx8j1oCT0jQy8+DzuXEvxG/Nrnqzk1VDb1h3VMGEpy8xb84a2a5dtnniskNgeXY</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{E9A22691-8FC6-47FD-B4BB-D00E55A649E9}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACrWf29KH69wIk9l1GqM2pRD1sNDZGlVI8ScX6IyLetDwAAAAAOgAAAAAIAACAAAAB5xW+Mc1Bkan/Wj73ac6sW5mslPgjUfaKa6RZTnmLATSAAAADFGXOp3f30voi7MaNcYJBApyw4+LYZLe1inUDA2gt2iUAAAABIGccLwRX5L/7GMsZ/UpyFcIiPlv2R/DOyxPEqF7wrSjLhdK0vvjwkX3+yCkb7cj6wAjqtFB/b+LD9KtJ6jicq</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[RevatureDW]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{6A5CF9F1-9151-4E51-8DCD-29E8E806F113}"
-      DTS:ObjectName="RevatureDW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Persist Security Info=True;Application Name=SSIS-Package-{6A5CF9F1-9151-4E51-8DCD-29E8E806F113}920-msbi-recruitment.database.windows.net.RevatureDW.Chase;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABGst8cGh/uitKRuDrZlKQRdPSBlc21JhpW5O6Bf2ShWQAAAAAOgAAAAAIAACAAAACRcDJlQEdLTP54J3znSzi03mQcyrA8BYl0qRT3jclR2SAAAABxYMM8u1lFeohCOHu3oEaHKssNsR1TBsvEg+RZCL63F0AAAACueG6w3ujiE5JqHpZTUmxGG4kiI5DgF1sVL/JEV5POm17/nLIt+6EdA7dCitl0yWrOr2kCriYwuZc5hN4Z7KDg</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -1107,8 +1030,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Determine and update ConcurrentTrainers\Determine Concurrent Trainers.Connections[RevatureDWConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   name="RevatureDWConnection" />
               </connections>
               <inputs>
@@ -1202,8 +1125,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Determine and update ConcurrentTrainers\fct_Training.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1249,6 +1172,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       name="numConcurrentBatches"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Output].Columns[acceptanceRatePerPeriod]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Output].ExternalColumns[acceptanceRatePerPeriod]"
+                      lineageId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Output].Columns[acceptanceRatePerPeriod]"
+                      name="acceptanceRatePerPeriod"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Output].Columns[waitingPeriod]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
@@ -1281,15 +1213,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       dataType="i4"
                       name="numConcurrentBatches" />
                     <externalMetadataColumn
+                      refId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Output].ExternalColumns[acceptanceRatePerPeriod]"
+                      dataType="numeric"
+                      name="acceptanceRatePerPeriod"
+                      precision="3"
+                      scale="2" />
+                    <externalMetadataColumn
                       refId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Output].ExternalColumns[waitingPeriod]"
                       dataType="i4"
                       name="waitingPeriod" />
-                    <externalMetadataColumn
-                      refId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Output].ExternalColumns[acceptanceRatePerBatch]"
-                      dataType="numeric"
-                      name="acceptanceRatePerBatch"
-                      precision="3"
-                      scale="2" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1329,6 +1261,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       lineageId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Error Output].Columns[acceptanceRatePerPeriod]"
+                      dataType="numeric"
+                      lineageId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Error Output].Columns[acceptanceRatePerPeriod]"
+                      name="acceptanceRatePerPeriod"
+                      precision="3"
+                      scale="2" />
                     <outputColumn
                       refId="Package\Determine and update ConcurrentTrainers\fct_Training.Outputs[OLE DB Source Error Output].Columns[numConcurrentBatches]"
                       dataType="i4"
@@ -1370,8 +1309,8 @@ trainingID = ?</property>
               <connections>
                 <connection
                   refId="Package\Determine and update ConcurrentTrainers\update numConcurrentTrainers.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1484,7 +1423,7 @@ trainingID = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{E9A22691-8FC6-47FD-B4BB-D00E55A649E9}"
+          SQLTask:Connection="{DC532094-8D41-4717-8AE5-01D94F405863}"
           SQLTask:SqlStatementSource="truncate table fct_Training" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1712,8 +1651,8 @@ trainingID = ?</property>
               <connections>
                 <connection
                   refId="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 1\tbl_offers.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2538,7 +2477,7 @@ public class Input0Buffer: ScriptBuffer
     <msb:CodeName>SC_9fda388d45334272b94096ec5bf8a886</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_9fda388d45334272b94096ec5bf8a886</msb:DisplayName>
-    <msb:ProjectId>{8D90BD47-49B8-4973-9D89-D5C5CE3F8FAE}</msb:ProjectId>
+    <msb:ProjectId>{C6A56717-BAEB-46E4-9359-1D91E6D0FBBC}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_9fda388d45334272b94096ec5bf8a886.csproj" />
@@ -2685,7 +2624,7 @@ namespace SC_9fda388d45334272b94096ec5bf8a886.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAFY4QWAAAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAGj0A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAQPR2AAAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAGj0A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMg8AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2807,7 +2746,7 @@ AHcAYQBpAHQAaQBuAGcAUABlAHIAaQBvAGQAAB9AAGMAdQByAHIAZQBuAHQAUQBMAEMAbwB1AG4A
 dAAAF0AAYQBjAGMAZQBwAHQAUgBhAHQAZQAAD0kAbgBwAHUAdAAgADAAAClSAGUAdgBhAHQAdQBy
 AGUARABXAEMAbwBuAG4AZQBjAHQAaQBvAG4AAHFTAEMAXwA5AGYAZABhADMAOAA4AGQANAA1ADMA
 MwA0ADIANwAyAGIAOQA0ADAAOQA2AGUAYwA1AGIAZgA4AGEAOAA4ADYALgBQAHIAbwBwAGUAcgB0
-AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAACgrR1ZBrrxPusuwJc8wKsEABCABAQgDIAABBSAB
+AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAADILVYNfKKFErwxOligggYcABCABAQgDIAABBSAB
 ARERBCABAQ4FIAEBEXUQBwcRORE9EkESRRJJEkkRTQUgAQgROQUAAgIODgQgABE9BSABETkNBCAB
 HBwGIAIBDhJBBSAAEoCJByACEoCNDhwEIAASSQMgAAIEIAEcCAUAARFNCAgAAhFNEU0RTQcAAhFN
 EU0IAyAACAQAABE5BAcBETkJIAMBElUdCBJZAwYSVQMGHQgEIAEOCAQgAQIIBSABETkIBCABCAgH
@@ -2906,8 +2845,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 1\WaitWeek1Script.Connections[RevatureDWConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   name="RevatureDWConnection" />
               </connections>
               <inputs>
@@ -3192,8 +3131,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 2\tbl_offers.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4351,8 +4290,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 2\WaitWeeks 2 Script.Connections[RevatureDWConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   name="RevatureDWConnection" />
               </connections>
               <inputs>
@@ -4632,8 +4571,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 3\tbl_offers.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5790,8 +5729,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 3\WaitWeeks3 Script.Connections[RevatureDWConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RevatureDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[RevatureDW]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   name="RevatureDWConnection" />
               </connections>
               <inputs>
@@ -5899,6 +5838,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Id="Package\Determine and update ConcurrentTrainers"
           TopLeft="171.714285896749,388.117648420862" />
         <NodeLayout
+          Size="162.4,43.2"
+          Id="Package\Execute SQL Task"
+          TopLeft="227.142861011077,61.1764714462122" />
+        <NodeLayout
           Size="375.2,41.6"
           Id="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 1"
           TopLeft="123.714285896749,158.117648420862" />
@@ -5976,10 +5919,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162.4,43.2"
-          Id="Package\Execute SQL Task"
-          TopLeft="227.142861011077,61.1764714462122" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="309.828573453913,104.376471446212">
@@ -6009,19 +5948,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Determine and update ConcurrentTrainers">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="134.4,41.6"
+          Id="Package\Determine and update ConcurrentTrainers\fct_Training"
+          TopLeft="122,37" />
         <NodeLayout
           Size="225.6,41.6"
           Id="Package\Determine and update ConcurrentTrainers\update numConcurrentTrainers"
           TopLeft="81,230" />
         <NodeLayout
-          Size="135.2,41.6"
-          Id="Package\Determine and update ConcurrentTrainers\fct_Training"
-          TopLeft="122,37" />
-        <NodeLayout
           Size="224.8,41.6"
           Id="Package\Determine and update ConcurrentTrainers\Determine Concurrent Trainers"
           TopLeft="80.5,133.5" />
+        <EdgeLayout
+          Id="Package\Determine and update ConcurrentTrainers.Paths[OLE DB Source Output]"
+          TopLeft="191.05,78.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.9"
+              Start="0,0"
+              End="0,47.4">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.4" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Determine and update ConcurrentTrainers.Paths[Output 0]"
           TopLeft="193.5,175.5">
@@ -6041,29 +6004,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Determine and update ConcurrentTrainers.Paths[OLE DB Source Output]"
-          TopLeft="191.25,79">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54.5"
-              Start="0,0"
-              End="0,47">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6092,7 +6035,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Id="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 1\tbl_offers"
           TopLeft="122,28" />
         <NodeLayout
-          Size="159.2,41.6"
+          Size="158.4,41.6"
           Id="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 1\WaitWeek1Script"
           TopLeft="111,191" />
         <NodeLayout
@@ -6101,18 +6044,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           TopLeft="102.5,104.5" />
         <EdgeLayout
           Id="Package\Find Start Dates, End Dates, NumPeoplePerBatch WaitWeeks 1.Paths[Sort Output]"
-          TopLeft="190.75,146.5">
+          TopLeft="190.55,146.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44.5"
+              EndConnector="0,44.9"
               Start="0,0"
-              End="0,37">
+              End="0,37.4">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37" />
+                    End="0,37.4" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

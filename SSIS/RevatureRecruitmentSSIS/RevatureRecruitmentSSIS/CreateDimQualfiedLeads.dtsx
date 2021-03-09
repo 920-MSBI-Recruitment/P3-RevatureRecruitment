@@ -11,42 +11,10 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="CreateDimQualfiedLeads"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{25DC848E-B226-4B14-BC31-FB8955F07217}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{A022BE17-E0CF-4292-8CAF-75DA91403F46}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{7C5E5ACE-F802-4BFA-B220-B09C6CC0C155}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDatabase;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-CreateDimQualfiedLeads-{7C5E5ACE-F802-4BFA-B220-B09C6CC0C155}DESKTOP-AU7D43G\TRAININGSERVER.RevatureDatabase;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADy3NMNNrhpbc4kP3+k0FNZG2FLFIPZ9k9V+2zYLD9JhwAAAAAOgAAAAAIAACAAAAD6j/clDyuo4RNcBa6KLmjOAz/nUXV8sDZ0bd6aiVGk1yAAAAARWtaXsOf+uRQ3qM1iwLKvW787Ql1cn1gdRMemk7Igx0AAAACnRXVtakCM00t1LNIz6zBD1W2+aE/GTxpp71bxJg1ooEUbLpuMJIq90hzPK69YKvzGCd3gVJ7ItJw9sh9+QFbJ</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{3436B3F7-0B6F-439D-80CD-9ABD730CE9A8}"
-      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=msbi-p3;Initial Catalog=RevatureDW;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-CreateDimQualfiedLeads-{3436B3F7-0B6F-439D-80CD-9ABD730CE9A8}DESKTOP-AU7D43G\TRAININGSERVER.RevatureDW;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4WwHnkmGEEeBi1XJDI6dAgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA3D3MLQUwthcKT9wmVd4PLGVR2xf6OgYVptsgFBmSjVgAAAAAOgAAAAAIAACAAAACGbtAa8FR4J1eAraCrG3Jv7w+a0Ly0PMWOJZ23DAD3QyAAAACYk2DLu8dxCGOIGTFePKCT/tZhe/snKHQY/Y1ooZP4rkAAAAAFbahZ6RTG0koVSfaf4ycX7f9HChSdkmY/U8W81t08Rb8BDBHRVY7IUPn+pNZHUYdHdG+grREccxAj9yflm3Ve</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -133,8 +101,8 @@ where [refTable].[stateAbbrev] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -276,8 +244,8 @@ where [refTable].[stateAbbrev] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\RevatureDatabase.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDatabase.msbi-p3]"
+                  connectionManagerID="{00FDC104-ECFA-42FB-B227-7E7796D6EAF1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -534,8 +502,8 @@ where [refTable].[stateAbbrev] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\RevatureDW.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
-                  connectionManagerRefId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.msbi-p3]"
+                  connectionManagerID="{DC532094-8D41-4717-8AE5-01D94F405863}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[RevatureDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -699,8 +667,8 @@ where [refTable].[stateAbbrev] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{3436B3F7-0B6F-439D-80CD-9ABD730CE9A8}"
-          SQLTask:SqlStatementSource="update dim_QualifiedLeads set stem = 0" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{DC532094-8D41-4717-8AE5-01D94F405863}"
+          SQLTask:SqlStatementSource="update dim_QualifiedLeads set stem = 0&#xA;update dim_QualifiedLeads set stem = 1 where degree IN('Mathematics', 'Physics', 'Computer Science', 'Mechanical Engineering')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -795,7 +763,9 @@ where [refTable].[stateAbbrev] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
