@@ -7,7 +7,8 @@ create table dim_Date(
 	engNameOfDay varchar(10),
 	monthNumber int,
 	engNameOfMonth varchar(15),
-	yearNumber int
+	yearNumber int,
+	date date
 );
 
 create table dim_QualifiedLeads(
@@ -17,13 +18,8 @@ create table dim_QualifiedLeads(
 	universityName varchar(100),
 	degree varchar(30),
 	state varchar(30),
-	twoStateCode char(2)
-);
-
-create table dim_Trainer(
-	trainerID int primary key identity,
-	trainerFirstName varchar(30),
-	trainerLastName varchar(30)
+	twoStateCode char(2),
+	stem bit
 );
 
 create table dim_Recruiter(
@@ -48,43 +44,29 @@ create table dim_ScreenType(
 	screenType varchar(20)
 );
 
-create table fct_Batch(
-	batchID int primary key identity,
-	qualifiedLeadID int,
-	trainerID int,
-	startDateID int,
-	endDateID int,
-
-	constraint fk_batch_qualifiedLeadID foreign key (qualifiedLeadID) references dim_QualifiedLeads,
-	constraint fk_batch_trainerID foreign key (trainerID) references dim_Trainer,
-	constraint fk_batch_startDateID foreign key (startDateID) references dim_Date,
-	constraint fk_batch_endDateID foreign key (endDateID) references dim_Date
-);
-
 create table fct_Training(
 	trainingID int primary key identity,
 	startDateID int,
 	endDateID int,
-	batchID int,
-	trainerID int,
+	waitingPeriod int,
 	numPeoplePerBatch int,
 	numConcurrentBatches int,
 	acceptanceRatePerPeriod int
 
 	constraint fk_training_startDateID foreign key (startDateID) references dim_Date,
-	constraint fk_training_endDateID foreign key (endDateID) references dim_Date,
-	constraint fk_training_batchID foreign key (batchID) references fct_Batch,
-	constraint fk_training_trainerID foreign key (trainerID) references dim_Trainer,
+	constraint fk_training_endDateID foreign key (endDateID) references dim_Date
 );
 
 create table fct_Latency(
 	latencyID int primary key identity,
+	qlId int,
 	contactDateID int,
 	screeningDateID int,
 	offerDateID int,
 	actionDateID int,
 	actionType varchar(10),
 	
+	constraint fk_latency_qlId foreign key (qlId) references dim_QualifiedLeads,
 	constraint fk_latency_contactDateID foreign key (contactDateID) references dim_Date,
 	constraint fk_latency_screeningDateID foreign key (screeningDateID) references dim_Date,
 	constraint fk_latency_offerDateID foreign key (offerDateID) references dim_Date,
@@ -106,6 +88,7 @@ create table fct_Offers(
 	constraint fk_offers_offerActionDateID foreign key (offerActionDateID) references dim_Date,
 	constraint fk_offers_qualifiedID foreign key (qualifiedLeadID) references dim_QualifiedLeads,
 	constraint fk_offers_recruiterID foreign key (recruiterID) references dim_Recruiter,
+	constraint fk_offers_screenerID foreign key (screenerID) references dim_Screener
 );
 
 create table fct_Recruitment(
@@ -124,7 +107,6 @@ create table fct_Screening(
 	screenerID int,
 	qualifiedLeadID int,
 	screenTypeID int,
-	screensPerDay int,
 	questionsAsked int,
 	answersAccepted int,
 	offerStatus varchar(10),
@@ -153,14 +135,10 @@ create table fct_ContactAttempt(
 	qualifiedLeadID int,
 	contactDateID int,
 	contactTypeID int,
+	recruiterID int,
 
 	constraint fk_contactAttempt_qualifiedLeadID foreign key (qualifiedLeadID) references dim_QualifiedLeads,
 	constraint fk_contactAttempt_contactDateID foreign key (contactDateID) references dim_Date,
 	constraint fk_contactAttempt_contactTypeID foreign key (contactTypeID) references dim_ContactType,
+	constraint fk_contactAttempt_recruiterID foreign key (recruiterID) references dim_Recruiter
 );
-
-alter table fct_ContactAttempt ADD recruiterID int
-
-ALTER TABLE fct_ContactAttempt ADD FOREIGN KEY (recruiterID) REFERENCES dim_Recruiter(recruiterID);
-
-select * from dim_Date
