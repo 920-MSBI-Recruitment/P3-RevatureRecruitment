@@ -11,11 +11,26 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="71"
-  DTS:VersionGUID="{0D85F369-7DD5-4F47-82E7-9944E469AB1B}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{A5CE4D5B-A176-44AB-8DEC-5BF2A7BCC513}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{B49DF49B-1460-4441-A680-57E569DC7A1F}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=Sammy;Connect Timeout=30;">
+          <DTS:Password
+            DTS:Name="PWD"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1iotLNcF5Ui9PSxESB7NKQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACaeXAuX9gjiqaorksuUsvd0BAsXppZAIedIdW91dGjRwAAAAAOgAAAAAIAACAAAADokGYMjg8FvCgPLbOLvyPaYkOMcJXwEmDXl2D2b4iSyyAAAABs+r6zrkOC0PhuAoBaqO/d04U0oFSTjRP/mdewlPdkp0AAAACakogvhA9aqDQ8fCRhEFOnc7RT5EyhxyCHxMCXHfOg8ChVObR85enEbD1y+W/S1ghx6SzPpfZZRKNqlDMK/CKs</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.Sammy]"
       DTS:CreationName="OLEDB"
@@ -27,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1iotLNcF5Ui9PSxESB7NKQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABlh4q0MMLXsF3Ng5HGMo7wzirDVRQA9HQilFDKxWKExQAAAAAOgAAAAAIAACAAAADrExC3y0ocqboHtkMPjmgVFrnwNwj5EOqh8LI6q/9wSCAAAAC+h4kJLuCPAxV+X4M8foIKiGTWofjsBeoIhG2xfuun1EAAAAAWkmX6F1Gw+2mT2AuckZokC5T0Jw56nk2o9ceYWnff0wBsOnxYcQSgCyvtZAhbxD4aJDn21d9S3qn3c94e/3Sm</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1iotLNcF5Ui9PSxESB7NKQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABm4jGaC1ZbmSMXuMRu5N5JbzEqT539Xip8XpzMFotRAwAAAAAOgAAAAAIAACAAAABQFMvyijSdyfk09/24gZLMLj2MjDfnBw1RembBoXBLzCAAAADHD2lu6Z3Vn2+9clQJHuj8d3O+b+ut+/W9QMoy5eqP2UAAAADdxhDRUnpe1mr4174FyplqJlOzfmE87d/VrQdIwvlfChQtuTOfaviEN0OYDVQpEMZtHX4Cs3jVRtXtqPE96voz</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -58,7 +73,7 @@
       DTS:ObjectName="Full Data Set Excel Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\frogmoney\Desktop\Revature_Projects\Project_3\Github\P3-RevatureRecruitment\MSBI P3 Dataset_V3_Clean.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\frogmoney\Desktop\Revature_Projects\Project_3\Github\P3-RevatureRecruitment\ScreeningUtilization SSIS\MSBI P3 Dataset.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -119,7 +134,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="UniqueDates">
       <DTS:VariableValue
-        DTS:DataType="3">1059</DTS:VariableValue>
+        DTS:DataType="3">1049</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1673,6 +1688,29 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update"
+      DTS:CreationName="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:Description="Execute T-SQL Statement Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{8868C564-CFF7-4B65-89C0-047AF41CEC87}"
+      DTS:ExecutableType="Microsoft.DbMaintenanceTSQLExecuteTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update"
+      DTS:TaskContact="Execute T-SQL Statement Task; Microsoft Corporation; Microsoft SQL Server v9; © 2004 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B49DF49B-1460-4441-A680-57E569DC7A1F}"
+          SQLTask:SqlStatementSource="update fct_screenerUtilization&#xA;set screeningsCompleted = arg.screeningsCompleted,&#xA;&#x9;utilizationRate = arg.utilizationRate&#xA;from &#xA;&#x9;(SELECT distinct [screenerId]&#xA;&#x9;&#x9;  ,[dateID]&#xA;&#x9;&#x9;  ,screeningsCompleted &#xA;&#x9;&#x9;  ,(CAST(screeningsCompleted as decimal(9,2))/4) as utilizationRate&#xA;&#x9; from(&#xA;&#x9;&#x9;  select screenerId, dateid, count(screenerID) as screeningsCompleted from fct_Screening&#xA;&#x9;&#x9;&#x9;group by screenerID, dateID&#xA;&#x9;&#x9;) as result) as arg&#xA;where &#xA;&#x9;fct_screenerUtilization.screenerID = arg.screenerID and&#xA;&#x9;fct_ScreenerUtilization.dateID = arg.dateID"
+          SQLTask:ServerVersion="9"
+          SQLTask:ExtendedLogging="True"
+          SQLTask:LocalConnectionForLogging=""
+          SQLTask:TaskName=""
+          SQLTask:IgnoreDatabasesInNotOnlineState="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1687,10 +1725,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="322,42"
-          Id="Package\Populate fct_ScreenerUtilization With default values"
-          TopLeft="625,197" />
-        <NodeLayout
           Size="169,42"
           Id="Package\For Loop Container\Populate Screeners"
           TopLeft="5.5,2" />
@@ -1700,7 +1734,7 @@
           PanelSize="270,99"
           Size="270,142"
           Id="Package\For Loop Container"
-          TopLeft="54,242" />
+          TopLeft="402,181" />
         <NodeLayout
           Size="160,42"
           Id="Package\For Loop Container 1\Populate date ids"
@@ -1712,73 +1746,17 @@
           Size="205,144"
           Id="Package\For Loop Container 1"
           TopLeft="62,65" />
+        <NodeLayout
+          Size="322,42"
+          Id="Package\Populate fct_ScreenerUtilization With default values"
+          TopLeft="391,363" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Update"
+          TopLeft="424,455" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <TaskHost
-    design-time-name="Package\Populate fct_ScreenerUtilization With default values">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Populate fct_ScreenerUtilization With default values\OLE DB Destination"
-          TopLeft="421,408" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Populate fct_ScreenerUtilization With default values\Excel Source"
-          TopLeft="442,170" />
-        <EdgeLayout
-          Id="Package\Populate fct_ScreenerUtilization With default values.Paths[Excel Source Output]"
-          TopLeft="509,212">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,196"
-              Start="0,0"
-              End="0,188.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,188.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Populate fct_ScreenerUtilization With default values\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Populate fct_ScreenerUtilization With default values\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\For Loop Container\Populate Screeners">
     <LayoutInfo>
@@ -2151,6 +2129,70 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\For Loop Container 1\Populate date ids\Import Dates">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Populate fct_ScreenerUtilization With default values">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Populate fct_ScreenerUtilization With default values\OLE DB Destination"
+          TopLeft="421,408" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Populate fct_ScreenerUtilization With default values\Excel Source"
+          TopLeft="442,170" />
+        <EdgeLayout
+          Id="Package\Populate fct_ScreenerUtilization With default values.Paths[Excel Source Output]"
+          TopLeft="509,212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,196"
+              Start="0,0"
+              End="0,188.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,188.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate fct_ScreenerUtilization With default values\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate fct_ScreenerUtilization With default values\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
