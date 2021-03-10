@@ -19,4 +19,5 @@ the Power Bi Web Service. Following this startup file will allow anyone who cont
   * In this directory is a collection of all the SSIS solutions/packages that the teams developed.
 * Open the RevatureRecruitmentSSIS directory, right click the .sln file, and open with Microsoft Visual Studio 2017.
   * This is the master solution for all things SSIS related for this project. Opening with VS 2017 ensures that you use the standalone SSDT you should have installed.
-* 
+![VS 2017](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/OpenWithVS2017.PNG)
+* In the Solution Explorer, you will see a list of packages the solution contains. Double click Controller.dtsx to open the main execution of this solution.
