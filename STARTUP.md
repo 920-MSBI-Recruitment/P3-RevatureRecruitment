@@ -85,5 +85,6 @@ Many packages in this solution use the project connections, but a few use connec
 * This package uses Username and Password parameters in it's data flow. 
   * If you are using Windows Authentication then the following steps are unecessary.
 * In the Design window, click the Parameters tab.
+
 ![fctRecruitmentParamters](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/fctRecruitmentParameters.PNG)
 * If using SQL Server Authentication, and using the same server for both the database and data warehouse, enter the username and password in the ```Value``` field for both DB     and DW.
