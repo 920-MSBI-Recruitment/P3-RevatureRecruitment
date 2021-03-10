@@ -79,4 +79,9 @@ Many packages in this solution use the project connections, but a few use connec
 * Double click ```RevatureDW_ADO``` in the Connection Managers pane.
   * This connection is an ADO.NET connection. The script files are not compatible with the OLE DB Connection that the project connections use, so it is necessary to have this       package connection.
 * Like with the project connections, insert the server name the data warehouse is hosted on. Select Windows Authentication, or SQL Server Authentication if necessary, and point   to RevatureDW.
-* Click ```Test Connection``` to ensure the connection is working properly.
+* Click ```Test Connection``` to ensure the connection is working properly. If so, click OK.
+---
+* Double click pkg_fct_Recruitment.dtsx. This package is responsible for loading the fct_Recruitment table.
+* This package uses Username and Password parameters in it's data flow. 
+  * If you are using Windows Authentication then the following steps are unecessary.
+* 
