@@ -18,8 +18,12 @@ to ensure that the following SSIS steps work properly
 * Navigate to the P3-RevatureRecruitment\Backups and Schemas directory and double click the RevatureDBSetup.sql file.
  * This should automatically open the script in SSMS. Alternatively, open the file in SSMS by clicking File->Open->File and navigating to the same folder.
 * Execute the script by clicking Execute, next to the green play button.
+ * If done properly, the Messages box at the bottom of the screen should say ```Commands completed successfully.```
+* Repeat this process for the RevatureDW_Schema.sql file.
 
 ### SSIS
+This section will detail how to use the SSIS packages to load the relational database and data warehouse with the information found the the dataset. These steps will detail the process for loading to a local SQL instance, though loading to an Azure SQL Server is a very similar process and will be explained where applicable.
+
 #### Requirements
 * Microsoft SQL Server 2016 or greater.
 * Microsoft SQL Server Management Studio
@@ -27,6 +31,7 @@ to ensure that the following SSIS steps work properly
 * Microsoft Visual Studio 2017 (SSDT)
 * Microsoft Excel
 ---
+##### Acquiring the Solution
 * Clone the Git Repository to your machine.
   * ```git clone "https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment.git"```
 * Navigate to the P3-RevatureRecruitment\SSIS directory.
@@ -37,8 +42,20 @@ to ensure that the following SSIS steps work properly
 * In the Solution Explorer, you will see a list of packages the solution contains. Double click Controller.dtsx to open the main package of this solution.
 * The center of the screen should now show the Design window, with the Data Flow of this package. The bottom of the screen shows the Connection Managers used by this package.
  * If you see a lot of red X's in this window, this is not unusual. There is some tidying that must be done before the package can be executed.
-* Each component in this design window is linked to a package listed in the Solution Explorer. We must now begin the process of setting our data connections.
+
+##### Setting the Project Connections
+Each component in this design window is linked to a package listed in the Solution Explorer. We must now begin the process of setting our data connections.
 * In the Controller.dtsx package, there will be two connections listed in the Connection Managers pane:
 ![Controller Connections](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ControllerPackageConnections.PNG)
-* 
+ * Notice that these two connections are prefixed with (project). This states that these connections are used throughout the entire project.
+* Double click ```(project)RevatureDB``` to open the Connection Manager window.
+* Input the server name of the instance you loaded the RevatureDatabase schema onto. 
+* For authentication, use Windows Authentication is it is setup on your server. Otherwise, use SQL Server Authentication and whichever account you use to access the engine.
+ * For Azure SQL Servers, input the Azure server name and select SQL Server Authentication. Ensure you enter the proper credentials used to access the cloud database.
+* In the ```Connect to a database``` portion of the window, click the button for ```Select or enter a database name:```.
+* Extend the dropdown, and if done correctly, you should see RevatureDatabase listed here. Select it and hit OK.
+* Repeat these exact steps for ```(project)RevatureDW```, pointing to RevatureDW instead.
+
+##### Setting the Package Connections
+Many packages in this solution use the project connections, but a few use connections to Excel or Flat Files. We must set these up as well.
 * Double click the ExceltoDB.dtsx. This is the package that extracts the data from the dataset and loads it into a Relational Database.
