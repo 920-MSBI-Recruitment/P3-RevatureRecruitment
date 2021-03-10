@@ -53,7 +53,8 @@ Each component in this design window is linked to a package listed in the Soluti
 * For authentication, use Windows Authentication is it is setup on your server. Otherwise, use SQL Server Authentication and whichever account you use to access the engine.
  * For Azure SQL Servers, input the Azure server name and select SQL Server Authentication. Ensure you enter the proper credentials used to access the cloud database.
 * In the ```Connect to a database``` portion of the window, click the button for ```Select or enter a database name:```.
-* Extend the dropdown, and if done correctly, you should see RevatureDatabase listed here. Select it and hit OK.
+* Extend the dropdown, and if done correctly, you should see RevatureDatabase listed here. Click it to select the database.
+* Click ```Test Connection``` to ensure the connection is working properly. If so, click OK.
 * Repeat these exact steps for ```(project)RevatureDW```, pointing to RevatureDW instead.
 
 ##### Setting the Package Connections
@@ -66,4 +67,16 @@ Many packages in this solution use the project connections, but a few use connec
   * The program should automatically detect the proper Excel version, but in the event it does not choose Microsoft Excel 2007-2010.
 * Double click the Flat File Connection and Browse to P3-RevatureRecruitment\Datasets\50_us_states_all_data.csv.
 * Ensure that all configurations match the following image.
-![FlatFileCofiguration]()
+![FlatFileCofiguration](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/FlatFileConfiguration.PNG)
+  * Click Columns in the left pane. If done correctly, you should see two columns: StateFull and StateAbbrev.
+---
+* Double click CreateDimDate.dstx. This package loads dim_Date from an Excel file.
+* Double click ```dimDate``` in the Connection Managers pane, underneath the Design window.
+* Browse to P3-RevatureRecruitment\Datasets\dimDate.xlsx and hit OK.
+  * Like before, select Microsoft Excel 2007-2010 for the Excel version if it does not detect it automatically.
+---
+* Double click InsertData_Into_fct_Training.dtsx. This package loads the fct_Training table.
+* Double click ```RevatureDW_ADO``` in the Connection Managers pane.
+  * This connection is an ADO.NET connection. The script files are not compatible with the OLE DB Connection that the project connections use, so it is necessary to have this       package connection.
+* Like with the project connections, insert the server name the data warehouse is hosted on. Select Windows Authentication, or SQL Server Authentication if necessary, and point   to RevatureDW.
+* Click ```Test Connection``` to ensure the connection is working properly.
