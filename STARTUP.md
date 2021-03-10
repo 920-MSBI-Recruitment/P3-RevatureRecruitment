@@ -47,11 +47,11 @@ This section will detail how to use the SSIS packages to load the relational dat
 Each component in this design window is linked to a package listed in the Solution Explorer. We must now begin the process of setting our data connections.
 * In the Controller.dtsx package, there will be two connections listed in the Connection Managers pane:
 ![Controller Connections](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ControllerPackageConnections.PNG)
- * Notice that these two connections are prefixed with (project). This states that these connections are used throughout the entire project.
+  * Notice that these two connections are prefixed with (project). This states that these connections are used throughout the entire project.
 * Double click ```(project)RevatureDB``` to open the Connection Manager window.
 * Input the server name of the instance you loaded the RevatureDatabase schema onto. 
 * For authentication, use Windows Authentication is it is setup on your server. Otherwise, use SQL Server Authentication and whichever account you use to access the engine.
- * For Azure SQL Servers, input the Azure server name and select SQL Server Authentication. Ensure you enter the proper credentials used to access the cloud database.
+  * For Azure SQL Servers, input the Azure server name and select SQL Server Authentication. Ensure you enter the proper credentials used to access the cloud database.
 * In the ```Connect to a database``` portion of the window, click the button for ```Select or enter a database name:```.
 * Extend the dropdown, and if done correctly, you should see RevatureDatabase listed here. Click it to select the database.
 * Click ```Test Connection``` to ensure the connection is working properly. If so, click OK.
