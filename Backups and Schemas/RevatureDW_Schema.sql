@@ -51,7 +51,7 @@ create table fct_Training(
 	waitingPeriod int,
 	numPeoplePerBatch int,
 	numConcurrentBatches int,
-	acceptanceRatePerPeriod int
+	acceptanceRatePerPeriod numeric(3,2),
 
 	constraint fk_training_startDateID foreign key (startDateID) references dim_Date,
 	constraint fk_training_endDateID foreign key (endDateID) references dim_Date
