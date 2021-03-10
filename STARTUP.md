@@ -5,7 +5,21 @@ There are several components of this project that need to be setup in order to c
 Relational Database and Data Warehouse, properly deploying the several Tabular Analysis models to an Analysis Service, and publishing the various SSRS and Power Bi reports to
 the Power Bi Web Service. Following this startup file will allow anyone who continues this project in the future a good starting point.
 
-### Getting Started - SSIS
+### Getting Started - Setting up the Schema
+Provided with this project are the Schema files for the relational database (RevatureDatabase) and the data warehouse (RevatureDW). It is essential that we execute these scripts
+to ensure that the following SSIS steps work properly
+
+#### Requirements
+* Microsoft SQL Server 2016 or greater.
+* Microsoft SQL Server Management Studio.
+---
+* Open SQL Server Management Studio and connect to the instance you want to host these databases on.
+ * This can be a local instance of SQL Server or an Azure SQL Server.
+* Navigate to the P3-RevatureRecruitment\Backups and Schemas directory and double click the RevatureDBSetup.sql file.
+ * This should automatically open the script in SSMS. Alternatively, open the file in SSMS by clicking File->Open->File and navigating to the same folder.
+* Execute the script by clicking Execute, next to the green play button.
+
+### SSIS
 #### Requirements
 * Microsoft SQL Server 2016 or greater.
 * Microsoft SQL Server Management Studio
@@ -24,6 +38,7 @@ the Power Bi Web Service. Following this startup file will allow anyone who cont
 * The center of the screen should now show the Design window, with the Data Flow of this package. The bottom of the screen shows the Connection Managers used by this package.
  * If you see a lot of red X's in this window, this is not unusual. There is some tidying that must be done before the package can be executed.
 * Each component in this design window is linked to a package listed in the Solution Explorer. We must now begin the process of setting our data connections.
-* In the Controller.dtsx package, there will be two connections listed in the Connection Managers pane
-![Controller Connections]()
+* In the Controller.dtsx package, there will be two connections listed in the Connection Managers pane:
+![Controller Connections](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ControllerPackageConnections.PNG)
+* 
 * Double click the ExceltoDB.dtsx. This is the package that extracts the data from the dataset and loads it into a Relational Database.
