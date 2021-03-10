@@ -95,8 +95,18 @@ Now that all the packge connections are set, all that remains is to configure th
   * This is an Execute SQL Task that updates date fields in fct_Offers and fct_Latency to differentiate the data a little more.
 * In the Task Editor, locate the Connection field in the SQL Statement section, and click the drop down menu.
 * Select the RevatureDW connection. Click OK.
-![ActionDateQuery]()
+![ActionDateQuery](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ActionDateQueryConfiguration.PNG)
 ##### Running the Package
 * Assuming the following steps were followed properly, and the schemas are in place on the server, the package can now be run.
 * Ensure that the Controller.dtsx package is open. Click the Start button, next to the green play button.
 * The package will now run in it's entirety. As the package executes, the other packages will open themselves and mark themselves complete as the package goes. 
+* If everything goes to plan, the package should finish with every component having a green check mark. The database and data warehouse are now loaded.
+
+### SSAS
+This section will detail how to setup the tabular models for each domain relevant to the business questions asked by the project owner.
+
+#### Requirements
+* Microsoft SQL Server 2016 or greater.
+* Microsoft SQL Server Management Studio
+* Microsoft SQL Server Analysis Services
+* Microsoft Visual Studio 2017 (SSDT)
