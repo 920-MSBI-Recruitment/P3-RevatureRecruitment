@@ -1,7 +1,0 @@
-C:\Users\V\Documents\Revature\RevatureFactTrainingTabular\RevatureFactTrainingTabular\bin\Model.asdatabase
-C:\Users\V\Documents\Revature\RevatureFactTrainingTabular\RevatureFactTrainingTabular\bin\Model.deploymenttargets
-C:\Users\V\Documents\Revature\RevatureFactTrainingTabular\RevatureFactTrainingTabular\bin\Model.deploymentoptions
-C:\Users\V\Documents\Revature\RevatureFactTrainingTabular\RevatureFactTrainingTabular\obj\Development\RevatureFactTrainingTabular.smproj.CoreCompileInputs.cache
-C:\Users\V\Documents\Revature\RevatureFactTrainingTabular\RevatureFactTrainingTabular\obj\Development\Model.asdatabase
-C:\Users\V\Documents\Revature\RevatureFactTrainingTabular\RevatureFactTrainingTabular\obj\Development\Model.deploymentoptions
-C:\Users\V\Documents\Revature\RevatureFactTrainingTabular\RevatureFactTrainingTabular\obj\Development\Model.deploymenttargets
