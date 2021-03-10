@@ -1,7 +1,7 @@
 create database RevatureDatabase
-
+GO
 use RevatureDatabase
-
+GO
 create table tbl_Screeners
 (
 	scrId int primary key,

@@ -1,6 +1,7 @@
 create database RevatureDW
+GO
 use RevatureDW
-
+GO
 create table dim_Date(
 	dateID int primary key identity,
 	dateDay int,
