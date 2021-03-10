@@ -88,3 +88,15 @@ Many packages in this solution use the project connections, but a few use connec
 
 ![fctRecruitmentParamters](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/fctRecruitmentParameters.PNG)
 * If using SQL Server Authentication, and using the same server for both the database and data warehouse, enter the username and password in the ```Value``` field for both DB     and DW.
+---
+Now that all the packge connections are set, all that remains is to configure the final SQL Task.
+* Double click the Controller.dtsx, or navigate to it's tab if it is still open in the Design window. 
+* At the end of the flow, double click ```Change ActionDate for STEM Majors```.
+  * This is an Execute SQL Task that updates date fields in fct_Offers and fct_Latency to differentiate the data a little more.
+* In the Task Editor, locate the Connection field in the SQL Statement section, and click the drop down menu.
+* Select the RevatureDW connection. Click OK.
+![ActionDateQuery]()
+##### Running the Package
+* Assuming the following steps were followed properly, and the schemas are in place on the server, the package can now be run.
+* Ensure that the Controller.dtsx package is open. Click the Start button, next to the green play button.
+* The package will now run in it's entirety. As the package executes, the other packages will open themselves and mark themselves complete as the package goes. 
