@@ -8,6 +8,7 @@ This project aims to support Revature's internal BI Team by providing meaningful
 * Microsoft Azure SQL Database
 * Microsoft Azure Analysis Services
 * Microsoft SQL Server Management Studio (SSMS)
+* Microsoft Visual Studio 2017 (SSDT)
 * SQL Server Integration Services
 * SQL Server Analysis Services
 * SQL Server Reporting Services
