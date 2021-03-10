@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource1">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=asazure://eastus.asazure.windows.net/msbirecruitment920;Initial Catalog=LatencyTabular</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>dace8060-3ec0-4981-a56b-67d0db10bb04</DataSourceID>
+</RptDataSource>

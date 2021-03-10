@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource_LatencyTabular</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('dim_Date'[engNameOfMonth], 'dim_Date'[monthNumber], 'dim_Date'[yearNumber], "Average Screening Latency", [Average Screening Latency])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_Date</DimensionName>
+                    <HierarchyName>engNameOfMonth</HierarchyName>
+                    <HierarchyUniqueName>[dim_Date].[engNameOfMonth]</HierarchyUniqueName>
+                    <LevelName>engNameOfMonth</LevelName>
+                    <UniqueName>[dim_Date].[engNameOfMonth].[engNameOfMonth]</UniqueName>
+                  </ID>
+                  <ItemCaption>engNameOfMonth</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_Date</DimensionName>
+                    <HierarchyName>monthNumber</HierarchyName>
+                    <HierarchyUniqueName>[dim_Date].[monthNumber]</HierarchyUniqueName>
+                    <LevelName>monthNumber</LevelName>
+                    <UniqueName>[dim_Date].[monthNumber].[monthNumber]</UniqueName>
+                  </ID>
+                  <ItemCaption>monthNumber</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_Date</DimensionName>
+                    <HierarchyName>yearNumber</HierarchyName>
+                    <HierarchyUniqueName>[dim_Date].[yearNumber]</HierarchyUniqueName>
+                    <LevelName>yearNumber</LevelName>
+                    <UniqueName>[dim_Date].[yearNumber].[yearNumber]</UniqueName>
+                  </ID>
+                  <ItemCaption>yearNumber</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Average Screening Latency</MeasureName>
+                    <UniqueName>[Measures].[Average Screening Latency]</UniqueName>
+                  </ID>
+                  <ItemCaption>Average Screening Latency</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Model</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('dim_Date'[engNameOfMonth], 'dim_Date'[monthNumber], 'dim_Date'[yearNumber], "Average Screening Latency", [Average Screening Latency])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="engNameOfMonth">
+        <DataField>dim_Date[engNameOfMonth]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="monthNumber">
+        <DataField>dim_Date[monthNumber]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="yearNumber">
+        <DataField>dim_Date[yearNumber]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Average_Screening_Latency">
+        <DataField>[Average Screening Latency]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
