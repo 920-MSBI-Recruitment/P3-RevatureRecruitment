@@ -14,11 +14,11 @@ to ensure that the following SSIS steps work properly
 * Microsoft SQL Server Management Studio.
 ---
 * Open SQL Server Management Studio and connect to the instance you want to host these databases on.
- * This can be a local instance of SQL Server or an Azure SQL Server.
+  * This can be a local instance of SQL Server or an Azure SQL Server.
 * Navigate to the P3-RevatureRecruitment\Backups and Schemas directory and double click the RevatureDBSetup.sql file.
- * This should automatically open the script in SSMS. Alternatively, open the file in SSMS by clicking File->Open->File and navigating to the same folder.
+  * This should automatically open the script in SSMS. Alternatively, open the file in SSMS by clicking File->Open->File and navigating to the same folder.
 * Execute the script by clicking Execute, next to the green play button.
- * If done properly, the Messages box at the bottom of the screen should say ```Commands completed successfully.```
+  * If done properly, the Messages box at the bottom of the screen should say ```Commands completed successfully.```
 * Repeat this process for the RevatureDW_Schema.sql file.
 
 ### SSIS
