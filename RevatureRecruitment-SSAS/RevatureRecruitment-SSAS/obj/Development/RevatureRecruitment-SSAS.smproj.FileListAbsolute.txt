@@ -1,7 +1,0 @@
-C:\Users\snype\source\repos\RevatureRecruitment-SSAS\RevatureRecruitment-SSAS\bin\Model.asdatabase
-C:\Users\snype\source\repos\RevatureRecruitment-SSAS\RevatureRecruitment-SSAS\bin\Model.deploymenttargets
-C:\Users\snype\source\repos\RevatureRecruitment-SSAS\RevatureRecruitment-SSAS\bin\Model.deploymentoptions
-C:\Users\snype\source\repos\RevatureRecruitment-SSAS\RevatureRecruitment-SSAS\obj\Development\RevatureRecruitment-SSAS.smproj.CoreCompileInputs.cache
-C:\Users\snype\source\repos\RevatureRecruitment-SSAS\RevatureRecruitment-SSAS\obj\Development\Model.asdatabase
-C:\Users\snype\source\repos\RevatureRecruitment-SSAS\RevatureRecruitment-SSAS\obj\Development\Model.deploymentoptions
-C:\Users\snype\source\repos\RevatureRecruitment-SSAS\RevatureRecruitment-SSAS\obj\Development\Model.deploymenttargets
