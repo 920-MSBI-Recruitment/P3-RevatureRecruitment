@@ -10,7 +10,7 @@ the Power Bi Web Service. Following this startup file will allow anyone who cont
 * Microsoft SQL Server 2016 or greater.
 * Microsoft SQL Server Management Studio
 * Microsoft SQL Server Integration Services (SSIS)
-* Microsft SQL Server Data Tools (SSDT) 2017
+* Microsoft Visual Studio 2017 (SSDT)
 * Microsoft Excel
 ---
 * Clone the Git Repository to your machine.
@@ -20,4 +20,10 @@ the Power Bi Web Service. Following this startup file will allow anyone who cont
 * Open the RevatureRecruitmentSSIS directory, right click the .sln file, and open with Microsoft Visual Studio 2017.
   * This is the master solution for all things SSIS related for this project. Opening with VS 2017 ensures that you use the standalone SSDT you should have installed.
 ![VS 2017](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/OpenWithVS2017.PNG)
-* In the Solution Explorer, you will see a list of packages the solution contains. Double click Controller.dtsx to open the main execution of this solution.
+* In the Solution Explorer, you will see a list of packages the solution contains. Double click Controller.dtsx to open the main package of this solution.
+* The center of the screen should now show the Design window, with the Data Flow of this package. The bottom of the screen shows the Connection Managers used by this package.
+ * If you see a lot of red X's in this window, this is not unusual. There is some tidying that must be done before the package can be executed.
+* Each component in this design window is linked to a package listed in the Solution Explorer. We must now begin the process of setting our data connections.
+* In the Controller.dtsx package, there will be two connections listed in the Connection Managers pane
+![Controller Connections]()
+* Double click the ExceltoDB.dtsx. This is the package that extracts the data from the dataset and loads it into a Relational Database.
