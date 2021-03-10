@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Project3RevatureTrainingData">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=DESKTOP-BN01JAD\TABULARANALYSIS;Initial Catalog=RevatureFactTrainingTabular</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>0eb0358d-89d9-44a6-955e-dd50ba98a8c5</DataSourceID>
+</RptDataSource>

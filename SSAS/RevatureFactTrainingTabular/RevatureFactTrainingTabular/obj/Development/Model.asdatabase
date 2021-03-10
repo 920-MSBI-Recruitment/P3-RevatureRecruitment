@@ -1,0 +1,418 @@
+{
+  "name": "RevatureFactTrainingTabular",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "SqlAzure 920-msbi-recruitment.database.windows.net RevatureDW",
+        "connectionString": "Data Source=920-msbi-recruitment.database.windows.net;User ID=Virgil;Persist Security Info=true;Encrypt=true;TrustServerCertificate=false;Initial Catalog=RevatureDW",
+        "impersonationMode": "impersonateServiceAccount",
+        "provider": "System.Data.SqlClient",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlAzure"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "dim_Date",
+        "columns": [
+          {
+            "name": "dateID",
+            "dataType": "int64",
+            "sourceColumn": "dateID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "dateDay",
+            "dataType": "int64",
+            "sourceColumn": "dateDay",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "engNameOfDay",
+            "dataType": "string",
+            "sourceColumn": "engNameOfDay",
+            "sourceProviderType": "varchar"
+          },
+          {
+            "name": "monthNumber",
+            "dataType": "int64",
+            "sourceColumn": "monthNumber",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "engNameOfMonth",
+            "dataType": "string",
+            "sourceColumn": "engNameOfMonth",
+            "sourceProviderType": "varchar"
+          },
+          {
+            "name": "yearNumber",
+            "dataType": "int64",
+            "sourceColumn": "yearNumber",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "date",
+            "dataType": "dateTime",
+            "isKey": true,
+            "sourceColumn": "date",
+            "formatString": "General Date",
+            "sourceProviderType": "date"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_Date",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[dim_Date].* FROM [dbo].[dim_Date] ",
+              "dataSource": "SqlAzure 920-msbi-recruitment.database.windows.net RevatureDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[dim_Date].* FROM [dbo].[dim_Date] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_Date"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "fct_Training",
+        "columns": [
+          {
+            "name": "trainingID",
+            "dataType": "int64",
+            "sourceColumn": "trainingID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "startDateID",
+            "dataType": "int64",
+            "sourceColumn": "startDateID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "endDateID",
+            "dataType": "int64",
+            "sourceColumn": "endDateID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "waitingPeriod",
+            "dataType": "int64",
+            "sourceColumn": "waitingPeriod",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "numPeoplePerBatch",
+            "dataType": "int64",
+            "sourceColumn": "numPeoplePerBatch",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "numConcurrentBatches",
+            "dataType": "int64",
+            "sourceColumn": "numConcurrentBatches",
+            "sourceProviderType": "int",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "acceptanceRatePerBatch",
+            "dataType": "double",
+            "sourceColumn": "acceptanceRatePerBatch",
+            "sourceProviderType": "numeric"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fct_Training",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[fct_Training].* FROM [dbo].[fct_Training] ",
+              "dataSource": "SqlAzure 920-msbi-recruitment.database.windows.net RevatureDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[fct_Training].* FROM [dbo].[fct_Training] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "fct_Training"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "dim_Recruiter",
+        "columns": [
+          {
+            "name": "recruiterID",
+            "dataType": "int64",
+            "sourceColumn": "recruiterID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "recruiterFirstName",
+            "dataType": "string",
+            "sourceColumn": "recruiterFirstName",
+            "sourceProviderType": "varchar"
+          },
+          {
+            "name": "recruiterLastName",
+            "dataType": "string",
+            "sourceColumn": "recruiterLastName",
+            "sourceProviderType": "varchar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_Recruiter",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[dim_Recruiter].* FROM [dbo].[dim_Recruiter] ",
+              "dataSource": "SqlAzure 920-msbi-recruitment.database.windows.net RevatureDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[dim_Recruiter].* FROM [dbo].[dim_Recruiter] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_Recruiter"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "dim_Screener",
+        "columns": [
+          {
+            "name": "screenerID",
+            "dataType": "int64",
+            "sourceColumn": "screenerID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "screenerFirstName",
+            "dataType": "string",
+            "sourceColumn": "screenerFirstName",
+            "sourceProviderType": "varchar"
+          },
+          {
+            "name": "screenerLastName",
+            "dataType": "string",
+            "sourceColumn": "screenerLastName",
+            "sourceProviderType": "varchar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_Screener",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[dim_Screener].* FROM [dbo].[dim_Screener] ",
+              "dataSource": "SqlAzure 920-msbi-recruitment.database.windows.net RevatureDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[dim_Screener].* FROM [dbo].[dim_Screener] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_Screener"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "fct_Recruitment",
+        "columns": [
+          {
+            "name": "recruitmentID",
+            "dataType": "int64",
+            "sourceColumn": "recruitmentID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "recruiterID",
+            "dataType": "int64",
+            "sourceColumn": "recruiterID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "dateID",
+            "dataType": "int64",
+            "sourceColumn": "dateID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "communicationAttemptsPerDay",
+            "dataType": "int64",
+            "sourceColumn": "communicationAttemptsPerDay",
+            "sourceProviderType": "int"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fct_Recruitment",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[fct_Recruitment].* FROM [dbo].[fct_Recruitment] ",
+              "dataSource": "SqlAzure 920-msbi-recruitment.database.windows.net RevatureDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[fct_Recruitment].* FROM [dbo].[fct_Recruitment] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "fct_Recruitment"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "fct_ScreenerUtilization",
+        "columns": [
+          {
+            "name": "utilizationID",
+            "dataType": "int64",
+            "sourceColumn": "utilizationID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "screenerID",
+            "dataType": "int64",
+            "sourceColumn": "screenerID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "dateID",
+            "dataType": "int64",
+            "sourceColumn": "dateID",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "screeningsCompleted",
+            "dataType": "int64",
+            "sourceColumn": "screeningsCompleted",
+            "sourceProviderType": "int"
+          },
+          {
+            "name": "utilizationRate",
+            "dataType": "double",
+            "sourceColumn": "utilizationRate",
+            "sourceProviderType": "decimal",
+            "summarizeBy": "average"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fct_ScreenerUtilization",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[fct_ScreenerUtilization].* FROM [dbo].[fct_ScreenerUtilization] ",
+              "dataSource": "SqlAzure 920-msbi-recruitment.database.windows.net RevatureDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[fct_ScreenerUtilization].* FROM [dbo].[fct_ScreenerUtilization] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "fct_ScreenerUtilization"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "d9d21271-137b-4c1f-89e6-aa4e981b4581",
+        "fromTable": "fct_Training",
+        "fromColumn": "endDateID",
+        "toTable": "dim_Date",
+        "toColumn": "dateID",
+        "isActive": false
+      },
+      {
+        "name": "bec1c607-2cb7-4222-bf36-acb304b70b31",
+        "fromTable": "fct_Training",
+        "fromColumn": "startDateID",
+        "toTable": "dim_Date",
+        "toColumn": "dateID"
+      },
+      {
+        "name": "8696d765-0a0f-487f-a8b3-d75b3ed9984d",
+        "fromTable": "fct_Recruitment",
+        "fromColumn": "recruiterID",
+        "toTable": "dim_Recruiter",
+        "toColumn": "recruiterID"
+      },
+      {
+        "name": "8339527e-0caf-44f2-9af6-8da4446fa204",
+        "fromTable": "fct_ScreenerUtilization",
+        "fromColumn": "screenerID",
+        "toTable": "dim_Screener",
+        "toColumn": "screenerID"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  }
+}
