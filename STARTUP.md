@@ -59,3 +59,11 @@ Each component in this design window is linked to a package listed in the Soluti
 ##### Setting the Package Connections
 Many packages in this solution use the project connections, but a few use connections to Excel or Flat Files. We must set these up as well.
 * Double click the ExceltoDB.dtsx. This is the package that extracts the data from the dataset and loads it into a Relational Database.
+* In addtion to the two project connections, there will be an Excel Connection and a Flat File connection.
+![ExcelToDBConnections](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ExcelToDBConnections.PNG)
+  * The Excel connection connects to the dataset, while the Flat File connection connects to a csv file with US States information.
+* Doube click the Excel Connection and browse to P3-RevatureRecruitment\Datasets\MSBI P3 Dataset_V4_Clean.xlsx. Click OK.
+  * The program should automatically detect the proper Excel version, but in the event it does not choose Microsoft Excel 2007-2010.
+* Double click the Flat File Connection and Browse to P3-RevatureRecruitment\Datasets\50_us_states_all_data.csv.
+* Ensure that all configurations match the following image.
+![FlatFileCofiguration]()
