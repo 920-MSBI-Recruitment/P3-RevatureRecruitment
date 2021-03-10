@@ -110,3 +110,16 @@ This section will detail how to setup the tabular models for each domain relevan
 * Microsoft SQL Server Management Studio
 * Microsoft SQL Server Analysis Services
 * Microsoft Visual Studio 2017 (SSDT)
+
+TBD
+
+### Power Bi and SSRS
+This section will detail how to setup and publish the Power Bi to a Power Bi Web Service workspace, as well as how to migrate SSRS reports to Power Bi.
+
+#### Requirements
+* Microsoft SQL Server 2016 or greater.
+* Microsoft SQL Server Reporting Services
+* Microsoft Power Bi
+* Microsoft Visual Studio 2017 (SSDT)
+
+TBD
