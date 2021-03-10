@@ -2,58 +2,58 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>RevatureRecruitmentSSIS</Name>
-    <LastWriteTime>2021-03-10T06:45:46.0349874Z</LastWriteTime>
+    <LastWriteTime>2021-03-10T22:16:46.6227789Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>ExceltoDB.dtsx</Name>
-      <LastWriteTime>2021-03-10T06:45:46.0089881Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T22:16:43.8444827Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CreateDimDate.dtsx</Name>
-      <LastWriteTime>2021-03-08T21:49:13.4531555Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T22:14:39.260053Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CreateDimQualfiedLeads.dtsx</Name>
-      <LastWriteTime>2021-03-08T21:41:32.8926759Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T07:07:31.9843313Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Screening.dtsx</Name>
-      <LastWriteTime>2021-03-08T21:49:37.8611934Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T07:07:32.0003371Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>RevatureDBtoDW-fctLatency.dtsx</Name>
-      <LastWriteTime>2021-03-08T21:54:35.6593409Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T07:07:31.9943296Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>OffersSigned.dtsx</Name>
-      <LastWriteTime>2021-03-08T21:52:35.4381456Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T07:07:31.9913291Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Controller.dtsx</Name>
-      <LastWriteTime>2021-03-09T23:59:45.1838743Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T22:17:42.0060506Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>pkg_fct_Recruitment.dtsx</Name>
-      <LastWriteTime>2021-03-08T20:56:23.8255995Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T07:07:32.0313303Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ScreenerUtilization.dtsx</Name>
-      <LastWriteTime>2021-03-09T05:37:32.9195453Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T07:07:31.997331Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>InsertData_Into_fct_Training.dtsx</Name>
-      <LastWriteTime>2021-03-09T23:57:12.3193893Z</LastWriteTime>
+      <LastWriteTime>2021-03-10T07:07:31.9893283Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

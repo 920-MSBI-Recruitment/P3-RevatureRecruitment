@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="CreateDimDate"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{D881872E-01B7-4F14-9A37-72DA3CA084F2}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{E54FBCB9-A218-4BEC-99EA-4EA470B563CD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -623,7 +623,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="117.6,41.6"
+          Size="118.4,41.6"
           Id="Package\dimDate"
           TopLeft="5.5,5.5" />
       </GraphLayout>

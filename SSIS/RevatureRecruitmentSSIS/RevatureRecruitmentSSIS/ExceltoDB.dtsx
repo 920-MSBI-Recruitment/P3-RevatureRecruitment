@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-AU7D43G\dakot"
   DTS:DTSID="{5E9D3EA6-3781-41B0-A7F7-715420230F26}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.128"
+  DTS:LastModifiedProductVersion="15.0.2000.150"
   DTS:LocaleID="1033"
   DTS:ObjectName="ExceltoDB"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{AE1326C6-EE1D-445B-A186-9B66EEF98A76}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{1887B5FC-D110-4850-BA0A-53920A0B57B3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="Excel Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\dakot\Documents\Revature\Project 3\P3-RevatureRecruitment\Datasets\MSBI P3 Dataset_V4_Clean.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\Datasets\MSBI P3 Dataset_V4_Clean.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -39,7 +39,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\dakot\Documents\Revature\Project 3\P3-RevatureRecruitment\Datasets\50_us_states_all_data.csv">
+          DTS:ConnectionString="C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\Datasets\50_us_states_all_data.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StateFull"
-              DTS:DTSID="{A83D6C6F-31F0-4A7D-891E-2ECACB125528}"
+              DTS:DTSID="{A0BBACC2-F797-4F66-A89F-1B89A83FBCFA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StateAbbrev"
-              DTS:DTSID="{97002062-B2AF-4A65-925B-D3CF0C074F4F}"
+              DTS:DTSID="{68EE69E2-0B46-41B0-8E30-A8550DA4F94C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -3731,45 +3731,45 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="147,42"
+          Size="147.2,41.6"
           Id="Package\Employees\QualifiedLeads"
           TopLeft="328,5.5" />
         <NodeLayout
-          Size="126,42"
+          Size="126.4,41.6"
           Id="Package\Employees\Recruiters"
           TopLeft="164.625,5.5" />
         <NodeLayout
-          Size="125,42"
+          Size="124.8,41.6"
           Id="Package\Employees\Screeners"
           TopLeft="5.5,5.5" />
         <NodeLayout
-          Size="108,42"
+          Size="108,41.6"
           Id="Package\Employees\States"
           TopLeft="173.625,74" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="495,173"
-          Size="495,216"
+          PanelSize="495.2,172.8"
+          Size="495.2,216"
           Id="Package\Employees"
           TopLeft="161.333333333333,30" />
         <NodeLayout
-          Size="157,42"
+          Size="156.8,41.6"
           Id="Package\Events\ContactAttempts"
           TopLeft="9,19" />
         <NodeLayout
-          Size="108,42"
+          Size="108,41.6"
           Id="Package\Events\Offers"
           TopLeft="363,19" />
         <NodeLayout
-          Size="130,42"
+          Size="129.6,41.6"
           Id="Package\Events\Screenings"
           TopLeft="199.5,19" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="495,121"
-          Size="495,164"
+          PanelSize="495.2,120.8"
+          Size="495.2,164"
           Id="Package\Events"
           TopLeft="161.333333333333,281" />
         <EdgeLayout
@@ -3991,15 +3991,15 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150,42"
+          Size="150.4,41.6"
           Id="Package\Employees\Screeners\Screener Sheet"
           TopLeft="8.50000000000001,5.5" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Employees\Screeners\Data Conversion"
           TopLeft="5.50000000000003,107.5" />
         <NodeLayout
-          Size="149,42"
+          Size="148.8,41.6"
           Id="Package\Employees\Screeners\Screener Table"
           TopLeft="9.00000000000003,209.5" />
         <EdgeLayout

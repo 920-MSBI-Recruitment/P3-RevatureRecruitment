@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-AU7D43G\dakot"
   DTS:DTSID="{15D435FE-040A-4E63-BA94-D50186D4FE0B}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.128"
+  DTS:LastModifiedProductVersion="15.0.2000.150"
   DTS:LocaleID="1033"
   DTS:ObjectName="CreateDimDate"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{074B805A-3D1A-4858-9CBF-1F8799EB6897}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{E54FBCB9-A218-4BEC-99EA-4EA470B563CD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="dimDate">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\dakot\Documents\Revature\Project 3\P3-RevatureRecruitment\Datasets\dimDate.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\jagge\Desktop\Revature Notes\Projects\P3-RevatureRecruitment\Datasets\dimDate.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -623,7 +623,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="118,42"
+          Size="118.4,41.6"
           Id="Package\dimDate"
           TopLeft="5.5,5.5" />
       </GraphLayout>
@@ -635,15 +635,15 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\dimDate\OLE DB Destination"
           TopLeft="5.50000000000003,209.5" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\dimDate\Data Conversion"
           TopLeft="13,107.5" />
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\dimDate\Excel Source"
           TopLeft="21.5,5.5" />
         <EdgeLayout
