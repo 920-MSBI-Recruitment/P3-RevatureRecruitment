@@ -1,7 +1,0 @@
-C:\Users\S\Desktop\Offers and Contacts\bin\Model.asdatabase
-C:\Users\S\Desktop\Offers and Contacts\bin\Model.deploymenttargets
-C:\Users\S\Desktop\Offers and Contacts\bin\Model.deploymentoptions
-C:\Users\S\Desktop\Offers and Contacts\obj\Development\Offers and Contacts.smproj.CoreCompileInputs.cache
-C:\Users\S\Desktop\Offers and Contacts\obj\Development\Model.asdatabase
-C:\Users\S\Desktop\Offers and Contacts\obj\Development\Model.deploymentoptions
-C:\Users\S\Desktop\Offers and Contacts\obj\Development\Model.deploymenttargets
