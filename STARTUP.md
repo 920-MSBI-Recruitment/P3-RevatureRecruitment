@@ -163,7 +163,7 @@ This section will detail how to setup and publish the Power Bi to a Power Bi Web
 * Inside each folder is a ```Power Bi``` folder and a ```SSRS``` folder. These instructions will be identical for each Power Bi file, so I will explain the process for one         report.
 * Navigate into ```P3_Reports_DakotaGroup\PowerBI```. Open ```Action_Latency_Misc.pbix```.
 * In the top left, click File->Options and settings->Data source settings.
-![DataSourceSettings]()
+![DataSourceSettings](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/DataSourceSettings.PNG)
 * Enter the tabular server name you hosted the LatencyTabular model on. Enter the name of the model, LatencyTabular.
   * This can either a local Analysis Instance or a Azure one.
 * A navigator window should open next, click Model and click OK.
