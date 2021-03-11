@@ -149,15 +149,24 @@ This section will detail how to setup the tabular models for each domain relevan
 * If done successfully, the model will deploy to the Azure service and be available to access.
 * Repeart this process for each solution in the SSAS\Azure directory.
 
-### Power Bi and SSRS
-This section will detail how to setup and publish the Power Bi to a Power Bi Web Service workspace, as well as how to migrate SSRS reports to Power Bi.
+### Power Bi
+This section will detail how to setup and publish the Power Bi to a Power Bi Web Service workspace. 
 
 #### Requirements
 * Microsoft SQL Server 2016 or greater.
 * Microsoft SQL Server Reporting Services
-* Microsoft Power Bi
+* Microsoft Power Bi Desktop
 * Microsoft Visual Studio 2017 (SSDT)
 
-##### Publishing the Power Bi Reports
-* Navigate to ```P3-RevatureRecruitment\Reports``` directory. Here are the reports for this project, seperated by teams.
-* Inside each folder is a ```Power Bi``` folder and a ```SSRS``` folder. These instructions will be identical for each Power Bi, so I will explain the p
+##### Publishing Power Bi Reports
+* Navigate to ```P3-RevatureRecruitment\Reports\Local Reports``` directory. Here are the reports for this project, seperated by teams.
+* Inside each folder is a ```Power Bi``` folder and a ```SSRS``` folder. These instructions will be identical for each Power Bi file, so I will explain the process for one         report.
+* Navigate into ```P3_Reports_DakotaGroup\PowerBI```. Open ```Action_Latency_Misc.pbix```.
+* In the top left, click File->Options and settings->Data source settings.
+![DataSourceSettings]()
+* Enter the tabular server name you hosted the LatencyTabular model on. Enter the name of the model, LatencyTabular.
+  * This can either a local Analysis Instance or a Azure one.
+* A navigator window should open next, click Model and click OK.
+  * With the Latency Reports in particular, some of the data is randomly generated when you run the SSIS package, so you may have to adjust Y-axis scales for the visuals.
+* At this point, a Power Bi Pro subscription is required. Click Publish at the top of Home tab. 
+* Click My Workspace and Select. The report should now publish to your Power Bi Web Service.
