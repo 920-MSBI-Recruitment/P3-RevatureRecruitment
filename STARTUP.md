@@ -115,13 +115,14 @@ Thusly, we will be creating entirely new models for each domain.
 ##### Latency Domain
 * Open Visual Studio 2017 (SSDT) and in the top left corner, click File->New->Project.
 * Click the drop down menu next to Analysis Services and select Tabular. Name the project and ensure ```Analysis Services Tabular Project``` is selected.
-![NewTabularProject]()
+![NewTabularProject](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/NewSSASProject.PNG)
 * Click OK, and on the next screen select ```Integrated Workspace``` and click OK again. You will now be presented with a blank Tabular SSAS project.
 * In the Tabular Model Explorer on the left, right click Data Sources and select Import From Data Source.
 * In the Get Data window that appears, click SQL Server database and click Connect.
 * Enter the Server name you hosted the RevatureDW database on, and enter RevatureDW as the database. Click OK.
 * Ensure Windows is selected and the Impersonation Mode is set to ```Impersonate Account```. Enter the user name and password of the account you are currently logged into.
   * If you are not sure exactly what your user name is, navigate to ```C:\Users```. The folders here are tied to the users of the computer you are on. Choose the one that you're     currently using.
+![ConnectToSqlServer](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ConnectToSQLServerSSAS.PNG)
 * Click connect. Click OK on the Encryption Support warning.
   * At this point, if you get an Impersonation Mode error of some kind, close the project and reopin SSDT in Administrator Mode. This should fix the issue.
 * You will now be asked to select the tables you wish to build your model with.
