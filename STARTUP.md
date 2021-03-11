@@ -112,12 +112,12 @@ This section will detail how to setup the tabular models for each domain relevan
 * Microsoft Visual Studio 2017 (SSDT)
 
 ##### Deploying to Local Instance
-* These instruction will detail how to deploy the LatencyTabularLocal model, but the instructions are identical for each model.
+* These instructions will detail how to deploy the LatencyTabularLocal model, but the instructions are identical for each model.
 * Navigate to ```P3-RevatureRecruitment\SSAS\Local``` and extract the LatencyTabularLocal zip wherever you'd like.
 * Open the LatencyTabularLocal folder and right click the .sln file and Open With Visual Studio 2017.
 * In the Solution Explorer, right click the bold ```LatencyTabularLocal``` and click Properties.
 * In the Deployment Property Page that opens, change the Deployment Server to the name of the tabular analysis service you wish to deploy this model to.
-![LocalAnalysisServerProperty]()
+![LocalAnalysisServerProperty](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/LocalAnalysisServerProperty.PNG)
 * Click OK and double click on ```Model.bim``` to open the tabular model.
 * Click the drop down next to ```Data Sources```. Right click the data source and select Change Source.
 * Enter the server name you hosted the RevatureDW database on, and enter RevatureDW in the Database field. Click OK.
@@ -131,7 +131,22 @@ This section will detail how to setup the tabular models for each domain relevan
 * Repeat this process for each solution in the SSAS\Local directory.
 
 ##### Deploying to Azure Instance
-* 
+* These instructions will detail how to deploy the LatencyTabular model to an Azure Analysis Service, but the instructions are identical for each model.
+* Navigate to ```P3-RevatureRecruitment\SSAS\Azure``` and extract the LatencyTabular zip to wherever you'd like.
+* Open the LatencyTabular folder and right click the .sln file and Open With Visual Studio 2017.
+* In the Solution Explorer, right click the bold ```LatencyTabular``` and click Properties.
+* In the Deployment Property Page that opens, change the Deployment Server to the address of the tabular Azure Analysis Service you wish to deploy this model to.
+* Click OK and double click Model.bim to open the tabular model.
+* Click the drop down next to ```Data Sources```. Right click the data source and select Edit Source.
+* Enter the server address that the database is hosted on in the Server Name field.
+* Select SQL Server Authentication and enter the user name and password of an account with read/write access levels.
+* Click ```Test Connection``` to ensure the connection is valid, then click Save.
+* Return to the Solution Explorer. Right click the bold ```LatencyTabular``` and select ```Deploy```.
+* Sign in with a user account that has the correct privileges to write to the Analysis service.
+* When prompted, enter your Windows account information that you are currently using as your impersonation information.
+* When prompted, enter the account credentials with read/write access levels for the Azure SQL Server the database is hosted on.
+* If done successfully, the model will deploy to the Azure service and be available to access.
+* Repeart this process for each solution in the SSAS\Azure directory.
 
 ### Power Bi and SSRS
 This section will detail how to setup and publish the Power Bi to a Power Bi Web Service workspace, as well as how to migrate SSRS reports to Power Bi.
