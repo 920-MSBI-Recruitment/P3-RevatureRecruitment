@@ -103,15 +103,28 @@ Now that all the packge connections are set, all that remains is to configure th
 * If everything goes to plan, the package should finish with every component having a green check mark. The database and data warehouse are now loaded.
 
 ### SSAS
-This section will detail how to setup the tabular models for each domain relevant to the business questions asked by the project owner.
+This section will detail how to setup the tabular models for each domain relevant to the business questions asked by the project owner. Unfortunately, it's impossible to use the models in their current form, so we will need to create entirely new Tabular models from scratch. The reason for this is that the Azure Analysis Service that hosted these models will most likely be taken down at some point, as well as the Azure SQL Server the Data Warehose is hosted on. Because the tabular model uses the Azure SQL Connection for its data source, it is not possible to connect it to a local instance of SQL Server. In addition, the Data Source itself cannot be deleted without deleting the associated tables, and these tables cannot be deleted without deleting the calculated measures associated with them. A new data source can be added, but it forces you to import the tables again, which solves nothing. 
 
+Thusly, we will be creating entirely new models for each domain.
 #### Requirements
 * Microsoft SQL Server 2016 or greater.
 * Microsoft SQL Server Management Studio
 * Microsoft SQL Server Analysis Services
 * Microsoft Visual Studio 2017 (SSDT)
 
-TBD
+##### Latency Domain
+* Open Visual Studio 2017 (SSDT) and in the top left corner, click File->New->Project.
+* Click the drop down menu next to Analysis Services and select Tabular. Name the project and ensure ```Analysis Services Tabular Project``` is selected.
+![NewTabularProject]()
+* Click OK, and on the next screen select ```Integrated Workspace``` and click OK again. You will now be presented with a blank Tabular SSAS project.
+* In the Tabular Model Explorer on the left, right click Data Sources and select Import From Data Source.
+* In the Get Data window that appears, click SQL Server database and click Connect.
+* Enter the Server name you hosted the RevatureDW database on, and enter RevatureDW as the database. Click OK.
+* Ensure Windows is selected and the Impersonation Mode is set to ```Impersonate Account```. Enter the user name and password of the account you are currently logged into.
+  * If you are not sure exactly what your user name is, navigate to ```C:\Users```. The folders here are tied to the users of the computer you are on. Choose the one that you're     currently using.
+* Click connect. Click OK on the Encryption Support warning.
+  * At this point, if you get an Impersonation Mode error of some kind, close the project and reopin SSDT in Administrator Mode. This should fix the issue.
+* You will now be asked to select the tables you wish to build your model with.
 
 ### Power Bi and SSRS
 This section will detail how to setup and publish the Power Bi to a Power Bi Web Service workspace, as well as how to migrate SSRS reports to Power Bi.
