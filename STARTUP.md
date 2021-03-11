@@ -118,6 +118,7 @@ This section will detail how to setup the tabular models for each domain relevan
 * In the Solution Explorer, right click the bold ```LatencyTabularLocal``` and click Properties.
 * In the Deployment Property Page that opens, change the Deployment Server to the name of the tabular analysis service you wish to deploy this model to.
 ![LocalAnalysisServerProperty](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/LocalAnalysisServerProperty.PNG)
+
 * Click OK and double click on ```Model.bim``` to open the tabular model.
 * Click the drop down next to ```Data Sources```. Right click the data source and select Change Source.
 * Enter the server name you hosted the RevatureDW database on, and enter RevatureDW in the Database field. Click OK.
