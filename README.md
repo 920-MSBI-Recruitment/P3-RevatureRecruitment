@@ -6,9 +6,11 @@ This project aims to support Revature's internal BI Team by providing meaningful
 ## Tech Stack
 * Microsoft Excel
 * Microsoft Azure SQL Database
+* Microsoft Azure Analysis Services
 * Microsoft SQL Server Management Studio (SSMS)
+* Microsoft Visual Studio 2017 (SSDT)
 * SQL Server Integration Services
-* SQLServer Analysis Services
+* SQL Server Analysis Services
 * SQL Server Reporting Services
 * Microsoft Power Bi
 
@@ -42,3 +44,14 @@ This project aims to support Revature's internal BI Team by providing meaningful
 * Travis Unangst
 * Bryan Blue
 * Anuradha Edirisuriya
+
+## Links
+* [P3 Progress Documentation](https://docs.google.com/document/d/1g8N7tVH7jQJbZx-G32HgeHtxiSYXzdzk393V5BRPf2g/edit?usp=sharing)
+* [Data Warehouse ERD](https://lucid.app/lucidchart/99e84d1a-d519-458d-9221-44f3a14678bf/view?page=0_0#)
+* [Revature Style Guide](https://docs.google.com/document/d/1JtIEld--FTtoXD8oNWrNewGXk-reial5MLLuybnecEo/edit)
+
+## License
+This project uses the following license: 
+* [SQL Server Management Studio](https://docs.microsoft.com/en-us/legal/sql/sql-server-management-studio-license-terms)
+* [SQL Server Data Tools ](https://docs.microsoft.com/en-us/legal/sql/sql-server-management-studio-license-terms)
+* [Microsoft Office 365](https://www.microsoft.com/en-us/Useterms/Retail/OfficeinMicrosoft365/Personal/Useterms_Retail_OfficeinMicrosoft365_Personal_English.htm)

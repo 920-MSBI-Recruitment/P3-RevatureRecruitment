@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "RevatureExceltoDB", "RevatureExceltoDB\RevatureExceltoDB.dtproj", "{ED111107-A695-4384-94AE-D929234995FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED111107-A695-4384-94AE-D929234995FA}.Development|Default.ActiveCfg = Development
+		{ED111107-A695-4384-94AE-D929234995FA}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5C17905-5851-4A44-B93F-39B15C1EBDD7}
+	EndGlobalSection
+EndGlobal

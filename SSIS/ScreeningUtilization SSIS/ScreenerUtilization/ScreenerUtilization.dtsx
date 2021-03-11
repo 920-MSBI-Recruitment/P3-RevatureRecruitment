@@ -1,0 +1,242 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/3/2021 2:43:13 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SAMMY"
+  DTS:CreatorName="SAMMY\frogmoney"
+  DTS:DTSID="{8BCA0584-FE1C-4C41-9449-375CE1D9DD9F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.150"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="ScreenerUtilization"
+  DTS:PackageType="5"
+  DTS:VersionBuild="83"
+  DTS:VersionGUID="{36CC3D8E-62A0-456D-A3AE-BE1F5D0F61C3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{21A40FA4-E234-4BD4-AFA3-BD3DEB20E2CF}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=Sammy;Connect Timeout=30;">
+          <DTS:Password
+            DTS:Name="PWD"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1iotLNcF5Ui9PSxESB7NKQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABk3DGxr5h7aiNLhcL6xHJ2emGSHWekuWECshDrmXOzLgAAAAAOgAAAAAIAACAAAACTBZUCQcPfCQJ8T5VJHkS069QlfTKMAxBq8s7J+DU0AiAAAADyo75pC4yWNc9KTpx9a9E1axhKFdg05SQnjdbiY682M0AAAACx300LqzgweYyfv4wQeOZWAi1Y1vodq8OfjbUNHylCK13ij9xF9I+G+mkv0vaQUvX+2FoAR80/OMReuYzNy9ug</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[920-msbi-recruitment.database.windows.net.RevatureDW.Sammy]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6141970C-BE2E-4492-985A-B06D9F410BD8}"
+      DTS:ObjectName="920-msbi-recruitment.database.windows.net.RevatureDW.Sammy">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=920-msbi-recruitment.database.windows.net;User ID=Sammy;Initial Catalog=RevatureDW;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1iotLNcF5Ui9PSxESB7NKQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADhRzkKjfZ80quv261BrgUpnlihX/E/b/kmVYszRYa3uwAAAAAOgAAAAAIAACAAAABmfs2edcl+BfCez38waIAooZC7bYLALRmXWrYSOSzDeiAAAAA0Wk9m8hnjA/tPXpyNclHct5H1eZUnYCw7L8xynXZx1kAAAADwIUeIBIFY4O5VtDuH3MLdiCRharZvoJIKP44EgLmJc/WBRu+WTGnf4DItLAoKWEz5rqrh2BqLlG1AIN18Vigq</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{818C75A0-421C-4698-8798-EA00FE8964CA}"
+      DTS:ObjectName="Parameter">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2F8A4061-AE85-46CA-8989-1671E5D962FC}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="DateLoop">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FD1A0AE8-7D1A-4146-BD23-A2D2D94ADF84}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="LoopCounter">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CACC4C60-59BA-4E69-9BB9-501D7C26EA15}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="UniqueDates">
+      <DTS:VariableValue
+        DTS:DataType="3">1049</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BEF36ACF-40D6-4281-AE1F-A96F38056B94}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="UniqueScreeners">
+      <DTS:VariableValue
+        DTS:DataType="3">50</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Truncate Existing Data"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{37B2A7CA-7502-43CB-873D-370392491021}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate Existing Data"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6141970C-BE2E-4492-985A-B06D9F410BD8}"
+          SQLTask:SqlStatementSource="truncate table fct_ScreenerUtilization" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update fct_ScreenerUtilization With Default Zero Values"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{87815585-0B75-4A72-BA57-69DAABE0756D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update fct_ScreenerUtilization With Default Zero Values"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6141970C-BE2E-4492-985A-B06D9F410BD8}"
+          SQLTask:SqlStatementSource="insert into fct_ScreenerUtilization  (screenerID,dateID,screeningsCompleted,utilizationRate)&#xA;select screenerId, dateID, 0 as screeningsCompleted, 0.0 as utilizationRate from dim_Screener&#xA;cross join&#xA;(select distinct dateID from fct_Screening) as arg" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update fct_ScreenerUtilization With Screenings Completed and Utilization Rate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{62907E3B-157E-4BDA-8AC2-FBC16A0375E6}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update fct_ScreenerUtilization With Screenings Completed and Utilization Rate"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{6141970C-BE2E-4492-985A-B06D9F410BD8}"
+          SQLTask:SqlStatementSource="update fct_screenerUtilization&#xA;&#xA;set screeningsCompleted = arg.screeningsCompleted,&#xA;&#x9;utilizationRate = arg.utilizationRate&#xA;from &#xA;&#x9;(SELECT distinct [screenerId]&#xA;&#x9;&#x9;  ,[dateID]&#xA;&#x9;&#x9;  ,screeningsCompleted &#xA;&#x9;&#x9;  ,(CAST(screeningsCompleted as decimal(9,2))/4) as utilizationRate&#xA;&#x9; from(&#xA;&#x9;&#x9;  select screenerId, dateid, count(screenerID) as screeningsCompleted from fct_Screening&#xA;&#x9;&#x9;&#x9;group by screenerID, dateID&#xA;&#x9;&#x9;) as result) as arg&#xA;where &#xA;&#x9;fct_screenerUtilization.screenerID = arg.screenerID and&#xA;&#x9;fct_ScreenerUtilization.dateID = arg.dateID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{98246057-BEB5-4FFE-BA9F-C25B72E6B5C1}"
+      DTS:From="Package\Truncate Existing Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Update fct_ScreenerUtilization With Default Zero Values" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{3683A877-295E-4809-BAA2-C83BA430C0FB}"
+      DTS:From="Package\Update fct_ScreenerUtilization With Default Zero Values"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Update fct_ScreenerUtilization With Screenings Completed and Utilization Rate" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Truncate Existing Data"
+          TopLeft="543,126" />
+        <NodeLayout
+          Size="342,42"
+          Id="Package\Update fct_ScreenerUtilization With Default Zero Values"
+          TopLeft="458,299" />
+        <NodeLayout
+          Size="448,42"
+          Id="Package\Update fct_ScreenerUtilization With Screenings Completed and Utilization Rate"
+          TopLeft="407,433" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="632.5,168">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,131"
+              Start="0,0"
+              End="0,123.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,123.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="630,341">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,92"
+              Start="0,0"
+              End="0,84.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,84.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

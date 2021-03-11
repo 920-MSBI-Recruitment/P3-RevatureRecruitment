@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "P3_SSRS_SpencerGroup", "P3_SSRS_SpencerGroup\P3_SSRS_SpencerGroup.rptproj", "{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}.Debug|Default.ActiveCfg = Debug
+		{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}.Debug|Default.Build.0 = Debug
+		{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}.Debug|Default.Deploy.0 = Debug
+		{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}.DebugLocal|Default.Build.0 = DebugLocal
+		{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}.Release|Default.ActiveCfg = Release
+		{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}.Release|Default.Build.0 = Release
+		{95B5FF7E-A6F4-4F3E-9F5D-3CA9AC7F4560}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D0CAB52-4350-4B04-91F2-ADB7D4113666}
+	EndGlobalSection
+EndGlobal

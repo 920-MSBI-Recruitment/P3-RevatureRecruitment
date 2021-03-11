@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource2">
+      <DataSourceReference>Tabular Model</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>d56335fb-f4b8-4605-a6ca-59d040f2099f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource2</DataSourceName>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('dim_Screener_new'[screenerID], 'dim_Screener_new'[screenerFirstName], 'dim_Screener_new'[screenerLastName], "numberOfLenient", [numberOfLenient], "numberOfStrict", [numberOfStrict], "numberOfTrue", [numberOfTrue])</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>dim_Screener_new</DimensionName>
+                      <HierarchyName>screenerID</HierarchyName>
+                      <HierarchyUniqueName>[dim_Screener_new].[screenerID]</HierarchyUniqueName>
+                      <LevelName>screenerID</LevelName>
+                      <UniqueName>[dim_Screener_new].[screenerID].[screenerID]</UniqueName>
+                    </ID>
+                    <ItemCaption>screenerID</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>dim_Screener_new</DimensionName>
+                      <HierarchyName>screenerFirstName</HierarchyName>
+                      <HierarchyUniqueName>[dim_Screener_new].[screenerFirstName]</HierarchyUniqueName>
+                      <LevelName>screenerFirstName</LevelName>
+                      <UniqueName>[dim_Screener_new].[screenerFirstName].[screenerFirstName]</UniqueName>
+                    </ID>
+                    <ItemCaption>screenerFirstName</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>dim_Screener_new</DimensionName>
+                      <HierarchyName>screenerLastName</HierarchyName>
+                      <HierarchyUniqueName>[dim_Screener_new].[screenerLastName]</HierarchyUniqueName>
+                      <LevelName>screenerLastName</LevelName>
+                      <UniqueName>[dim_Screener_new].[screenerLastName].[screenerLastName]</UniqueName>
+                    </ID>
+                    <ItemCaption>screenerLastName</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>numberOfLenient</MeasureName>
+                      <UniqueName>[Measures].[numberOfLenient]</UniqueName>
+                    </ID>
+                    <ItemCaption>numberOfLenient</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>numberOfStrict</MeasureName>
+                      <UniqueName>[Measures].[numberOfStrict]</UniqueName>
+                    </ID>
+                    <ItemCaption>numberOfStrict</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>numberOfTrue</MeasureName>
+                      <UniqueName>[Measures].[numberOfTrue]</UniqueName>
+                    </ID>
+                    <ItemCaption>numberOfTrue</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('dim_Screener_new'[screenerID], 'dim_Screener_new'[screenerFirstName], 'dim_Screener_new'[screenerLastName], "numberOfLenient", [numberOfLenient], "numberOfStrict", [numberOfStrict], "numberOfTrue", [numberOfTrue])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+      </Query>
+      <Fields>
+        <Field Name="screenerID">
+          <DataField>dim_Screener_new[screenerID]</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="screenerFirstName">
+          <DataField>dim_Screener_new[screenerFirstName]</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="screenerLastName">
+          <DataField>dim_Screener_new[screenerLastName]</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="numberOfLenient">
+          <DataField>[numberOfLenient]</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="numberOfStrict">
+          <DataField>[numberOfStrict]</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="numberOfTrue">
+          <DataField>[numberOfTrue]</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.86458in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.89062in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.07292in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.52083in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox15">
+                          <CanGrow>true</CanGrow>
+                          <UserSort>
+                            <SortExpression>=Sum(Fields!numberOfLenient.Value)/(Fields!numberOfLenient.Value+Fields!numberOfStrict.Value+Fields!numberOfTrue.Value)</SortExpression>
+                            <SortExpressionScope>screenerID</SortExpressionScope>
+                          </UserSort>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Leniency</Value>
+                                  <Style>
+                                    <FontFamily>Futura Std Medium</FontFamily>
+                                    <FontSize>18pt</FontSize>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#f26925</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox17">
+                          <CanGrow>true</CanGrow>
+                          <UserSort>
+                            <SortExpression>=Sum(Fields!numberOfStrict.Value)/(Fields!numberOfLenient.Value+Fields!numberOfStrict.Value+Fields!numberOfTrue.Value)</SortExpression>
+                            <SortExpressionScope>screenerID</SortExpressionScope>
+                          </UserSort>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Strictness</Value>
+                                  <Style>
+                                    <FontFamily>Futura Std Medium</FontFamily>
+                                    <FontSize>18pt</FontSize>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#f26925</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox19">
+                          <CanGrow>true</CanGrow>
+                          <UserSort>
+                            <SortExpression>=Sum(Fields!numberOfTrue.Value)/(Fields!numberOfLenient.Value+Fields!numberOfStrict.Value+Fields!numberOfTrue.Value)</SortExpression>
+                            <SortExpressionScope>screenerID</SortExpressionScope>
+                          </UserSort>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Accuracy</Value>
+                                  <Style>
+                                    <FontFamily>Futura Std Medium</FontFamily>
+                                    <FontSize>18pt</FontSize>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#f26925</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.34375in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="numberOfLenient">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!numberOfLenient.Value)/(Fields!numberOfLenient.Value+Fields!numberOfStrict.Value+Fields!numberOfTrue.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Futura Std Medium</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>0.00%</Format>
+                                    <Color>#474c55</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>numberOfLenient</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>10pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="numberOfStrict">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!numberOfStrict.Value)/(Fields!numberOfLenient.Value+Fields!numberOfStrict.Value+Fields!numberOfTrue.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Futura Std Medium</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>0.00%</Format>
+                                    <Color>#474c55</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>numberOfStrict</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>10pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="numberOfTrue">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!numberOfTrue.Value)/(Fields!numberOfLenient.Value+Fields!numberOfStrict.Value+Fields!numberOfTrue.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Futura Std Medium</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>0.00%</Format>
+                                    <Color>#474c55</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>numberOfTrue</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>10pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>2.05208in</Size>
+                    <CellContents>
+                      <Textbox Name="Textbox7">
+                        <CanGrow>true</CanGrow>
+                        <UserSort>
+                          <SortExpression>=Fields!screenerID.Value</SortExpression>
+                          <SortExpressionScope>screenerID</SortExpressionScope>
+                        </UserSort>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Screener ID</Value>
+                                <Style>
+                                  <FontFamily>Futura Std Medium</FontFamily>
+                                  <FontSize>18pt</FontSize>
+                                  <Color>White</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox7</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <BackgroundColor>#f26925</BackgroundColor>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>3.10417in</Size>
+                        <CellContents>
+                          <Textbox Name="Textbox8">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Name</Value>
+                                    <Style>
+                                      <FontFamily>Futura Std Medium</FontFamily>
+                                      <FontSize>18pt</FontSize>
+                                      <Color>White</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox8</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <BackgroundColor>#f26925</BackgroundColor>
+                              <VerticalAlign>Middle</VerticalAlign>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="screenerID">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!screenerID.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!screenerID.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>2.05208in</Size>
+                    <CellContents>
+                      <Textbox Name="screenerID">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!screenerID.Value</Value>
+                                <Style>
+                                  <FontFamily>Futura Std Medium</FontFamily>
+                                  <FontSize>12pt</FontSize>
+                                  <Color>#474c55</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>screenerID</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <BackgroundColor>White</BackgroundColor>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>10pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>3.10417in</Size>
+                        <CellContents>
+                          <Textbox Name="recruiterFirstName1">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>=Fields!screenerFirstName.Value</Value>
+                                    <Style>
+                                      <FontFamily>Futura Std Medium</FontFamily>
+                                      <FontSize>12pt</FontSize>
+                                      <Color>#474c55</Color>
+                                    </Style>
+                                  </TextRun>
+                                  <TextRun>
+                                    <Value xml:space="preserve"> </Value>
+                                    <Style>
+                                      <FontFamily>Futura Std Medium</FontFamily>
+                                      <FontSize>12pt</FontSize>
+                                      <Color>#474c55</Color>
+                                    </Style>
+                                  </TextRun>
+                                  <TextRun>
+                                    <Value>=Fields!screenerLastName.Value</Value>
+                                    <Style>
+                                      <FontFamily>Futura Std Medium</FontFamily>
+                                      <FontSize>12pt</FontSize>
+                                      <Color>#474c55</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>recruiterFirstName1</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <BackgroundColor>White</BackgroundColor>
+                              <VerticalAlign>Middle</VerticalAlign>
+                              <PaddingLeft>10pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>0.06944in</Top>
+            <Height>0.86458in</Height>
+            <Width>10.98437in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+                <Width>2pt</Width>
+              </Border>
+              <BottomBorder>
+                <Color>#333333</Color>
+                <Style>Solid</Style>
+              </BottomBorder>
+              <RightBorder>
+                <Color>#333333</Color>
+                <Style>Solid</Style>
+              </RightBorder>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>5.375in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>#474c55</BackgroundColor>
+        </Style>
+      </Body>
+      <Width>14.29167in</Width>
+      <Page>
+        <PageHeader>
+          <Height>1in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Image Name="logo">
+              <Source>Embedded</Source>
+              <Value>revlogo</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.01041in</Top>
+              <Left>5.53646in</Left>
+              <Height>0.97917in</Height>
+              <Width>3.21875in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="ExecutionTime">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime</Value>
+                      <Style>
+                        <FontFamily>Futura Std Book</FontFamily>
+                        <Color>White</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>ExecutionTime</rd:DefaultName>
+              <Top>0.01041in</Top>
+              <Height>0.25in</Height>
+              <Width>3.27083in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BackgroundColor>#474c55</BackgroundColor>
+          </Style>
+        </PageHeader>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="revlogo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>4df35510-290f-4c53-9490-00a8ac6ce36a</rd:ReportID>
+</Report>

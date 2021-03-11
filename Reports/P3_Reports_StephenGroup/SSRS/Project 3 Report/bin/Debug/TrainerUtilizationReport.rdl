@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="GetNextTrainerHiringDate">
+      <DataSourceReference>Project3RevatureTrainingData</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>038bd1aa-7c5f-419a-8c76-3f1d983416d8</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="GraphDataSet">
+      <Query>
+        <DataSourceName>GetNextTrainerHiringDate</DataSourceName>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('fct_Training'[startDateID], 'fct_Training'[numConcurrentBatches], 'fct_Training'[waitingPeriod])</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>fct_Training</DimensionName>
+                      <HierarchyName>startDateID</HierarchyName>
+                      <HierarchyUniqueName>[fct_Training].[startDateID]</HierarchyUniqueName>
+                      <LevelName>startDateID</LevelName>
+                      <UniqueName>[fct_Training].[startDateID].[startDateID]</UniqueName>
+                    </ID>
+                    <ItemCaption>startDateID</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>fct_Training</DimensionName>
+                      <HierarchyName>numConcurrentBatches</HierarchyName>
+                      <HierarchyUniqueName>[fct_Training].[numConcurrentBatches]</HierarchyUniqueName>
+                      <LevelName>numConcurrentBatches</LevelName>
+                      <UniqueName>[fct_Training].[numConcurrentBatches].[numConcurrentBatches]</UniqueName>
+                    </ID>
+                    <ItemCaption>numConcurrentBatches</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>fct_Training</DimensionName>
+                      <HierarchyName>waitingPeriod</HierarchyName>
+                      <HierarchyUniqueName>[fct_Training].[waitingPeriod]</HierarchyUniqueName>
+                      <LevelName>waitingPeriod</LevelName>
+                      <UniqueName>[fct_Training].[waitingPeriod].[waitingPeriod]</UniqueName>
+                    </ID>
+                    <ItemCaption>waitingPeriod</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('fct_Training'[startDateID], 'fct_Training'[numConcurrentBatches], 'fct_Training'[waitingPeriod])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+      </Query>
+      <Fields>
+        <Field Name="startDateID">
+          <DataField>fct_Training[startDateID]</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="numConcurrentBatches">
+          <DataField>fct_Training[numConcurrentBatches]</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="waitingPeriod">
+          <DataField>fct_Training[waitingPeriod]</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Filters>
+        <Filter>
+          <FilterExpression>=Fields!waitingPeriod.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!WaitingPeriod.Value</FilterValue>
+          </FilterValues>
+        </Filter>
+      </Filters>
+    </DataSet>
+    <DataSet Name="GettingFirstBatch">
+      <Query>
+        <DataSourceName>GetNextTrainerHiringDate</DataSourceName>
+        <CommandText>EVALUATE SUMMARIZECOLUMNS('fct_Training'[startDateID], 'fct_Training'[numConcurrentBatches])</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>DAX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>fct_Training</DimensionName>
+                      <HierarchyName>startDateID</HierarchyName>
+                      <HierarchyUniqueName>[fct_Training].[startDateID]</HierarchyUniqueName>
+                      <LevelName>startDateID</LevelName>
+                      <UniqueName>[fct_Training].[startDateID].[startDateID]</UniqueName>
+                    </ID>
+                    <ItemCaption>startDateID</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>fct_Training</DimensionName>
+                      <HierarchyName>numConcurrentBatches</HierarchyName>
+                      <HierarchyUniqueName>[fct_Training].[numConcurrentBatches]</HierarchyUniqueName>
+                      <LevelName>numConcurrentBatches</LevelName>
+                      <UniqueName>[fct_Training].[numConcurrentBatches].[numConcurrentBatches]</UniqueName>
+                    </ID>
+                    <ItemCaption>numConcurrentBatches</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Model</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties>
+                <IncludeMemberValue>true</IncludeMemberValue>
+              </QueryProperties>
+            </QuerySpecification>
+            <Query>
+              <Statement>EVALUATE SUMMARIZECOLUMNS('fct_Training'[startDateID], 'fct_Training'[numConcurrentBatches])</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+      </Query>
+      <Fields>
+        <Field Name="startDateID">
+          <DataField>fct_Training[startDateID]</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="numConcurrentBatches">
+          <DataField>fct_Training[numConcurrentBatches]</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Chart Name="Chart1">
+            <ChartCategoryHierarchy>
+              <ChartMembers>
+                <ChartMember>
+                  <Group Name="Chart1_CategoryGroup">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!startDateID.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!startDateID.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <ChartMembers>
+                    <ChartMember>
+                      <Group Name="Chart1_CategoryGroup1">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!numConcurrentBatches.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!numConcurrentBatches.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <Label>Batches Running</Label>
+                    </ChartMember>
+                  </ChartMembers>
+                  <Label>Date ID</Label>
+                </ChartMember>
+              </ChartMembers>
+            </ChartCategoryHierarchy>
+            <ChartSeriesHierarchy>
+              <ChartMembers>
+                <ChartMember>
+                  <Label>num Concurrent Batches</Label>
+                </ChartMember>
+              </ChartMembers>
+            </ChartSeriesHierarchy>
+            <ChartData>
+              <ChartSeriesCollection>
+                <ChartSeries Name="numConcurrentBatches">
+                  <ChartDataPoints>
+                    <ChartDataPoint>
+                      <ChartDataPointValues>
+                        <X>=Fields!startDateID.Value</X>
+                        <Y>=Avg(Fields!numConcurrentBatches.Value)</Y>
+                      </ChartDataPointValues>
+                      <ChartDataLabel>
+                        <Style />
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                      </ChartDataLabel>
+                      <Style>
+                        <Border>
+                          <Color>DeepSkyBlue</Color>
+                          <Width>1.5pt</Width>
+                        </Border>
+                      </Style>
+                      <ChartMarker>
+                        <Style />
+                      </ChartMarker>
+                      <DataElementOutput>Output</DataElementOutput>
+                    </ChartDataPoint>
+                  </ChartDataPoints>
+                  <Type>Line</Type>
+                  <Style />
+                  <ChartEmptyPoints>
+                    <Style />
+                    <ChartMarker>
+                      <Style />
+                    </ChartMarker>
+                    <ChartDataLabel>
+                      <Style />
+                    </ChartDataLabel>
+                  </ChartEmptyPoints>
+                  <ChartItemInLegend>
+                    <LegendText>Concurrent Batches</LegendText>
+                  </ChartItemInLegend>
+                  <ValueAxisName>Primary</ValueAxisName>
+                  <CategoryAxisName>Primary</CategoryAxisName>
+                  <ChartSmartLabel>
+                    <CalloutLineColor>Black</CalloutLineColor>
+                    <MinMovingDistance>0pt</MinMovingDistance>
+                  </ChartSmartLabel>
+                </ChartSeries>
+              </ChartSeriesCollection>
+            </ChartData>
+            <ChartAreas>
+              <ChartArea Name="Default">
+                <ChartCategoryAxes>
+                  <ChartAxis Name="Primary">
+                    <Visible>False</Visible>
+                    <Style>
+                      <Border>
+                        <Color>Gainsboro</Color>
+                        <Style>None</Style>
+                      </Border>
+                      <FontSize>8pt</FontSize>
+                      <Color>#5c5c5c</Color>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontSize>9pt</FontSize>
+                        <Color>#5c5c5c</Color>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMajorTickMarks>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </ChartMajorTickMarks>
+                    <ChartMinorTickMarks>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                      <Length>0.5</Length>
+                    </ChartMinorTickMarks>
+                    <CrossAt>NaN</CrossAt>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <ChartAxisScaleBreak>
+                      <Style />
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                  <ChartAxis Name="Secondary">
+                    <Style>
+                      <Border>
+                        <Color>Gainsboro</Color>
+                        <Style>None</Style>
+                      </Border>
+                      <FontSize>8pt</FontSize>
+                      <Color>#5c5c5c</Color>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontSize>9pt</FontSize>
+                        <Color>#5c5c5c</Color>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMajorTickMarks>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </ChartMajorTickMarks>
+                    <ChartMinorTickMarks>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                      <Length>0.5</Length>
+                    </ChartMinorTickMarks>
+                    <CrossAt>NaN</CrossAt>
+                    <Location>Opposite</Location>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <ChartAxisScaleBreak>
+                      <Style />
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                </ChartCategoryAxes>
+                <ChartValueAxes>
+                  <ChartAxis Name="Primary">
+                    <Style>
+                      <Border>
+                        <Color>Gainsboro</Color>
+                        <Style>None</Style>
+                      </Border>
+                      <FontSize>8pt</FontSize>
+                      <Color>#5c5c5c</Color>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontSize>9pt</FontSize>
+                        <Color>#5c5c5c</Color>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMajorTickMarks>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </ChartMajorTickMarks>
+                    <ChartMinorTickMarks>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                      <Length>0.5</Length>
+                    </ChartMinorTickMarks>
+                    <CrossAt>NaN</CrossAt>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <ChartAxisScaleBreak>
+                      <Style />
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                  <ChartAxis Name="Secondary">
+                    <Style>
+                      <Border>
+                        <Color>Gainsboro</Color>
+                        <Style>None</Style>
+                      </Border>
+                      <FontSize>8pt</FontSize>
+                      <Color>#5c5c5c</Color>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontSize>9pt</FontSize>
+                        <Color>#5c5c5c</Color>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMajorTickMarks>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </ChartMajorTickMarks>
+                    <ChartMinorTickMarks>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                      <Length>0.5</Length>
+                    </ChartMinorTickMarks>
+                    <CrossAt>NaN</CrossAt>
+                    <Location>Opposite</Location>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <ChartAxisScaleBreak>
+                      <Style />
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                </ChartValueAxes>
+                <Style>
+                  <BackgroundColor>#00ffffff</BackgroundColor>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                </Style>
+              </ChartArea>
+            </ChartAreas>
+            <ChartLegends>
+              <ChartLegend Name="Default">
+                <Style>
+                  <Border>
+                    <Color>White</Color>
+                  </Border>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontSize>8pt</FontSize>
+                  <Color>White</Color>
+                </Style>
+                <Position>TopLeft</Position>
+                <ChartLegendTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </ChartLegendTitle>
+                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
+                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
+              </ChartLegend>
+            </ChartLegends>
+            <ChartTitles>
+              <ChartTitle Name="Default">
+                <Caption>Trainer Utilization</Caption>
+                <Style>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontFamily>Arial</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextAlign>Left</TextAlign>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <Color>#f26925</Color>
+                </Style>
+                <Position>TopLeft</Position>
+                <DockOutsideChartArea>true</DockOutsideChartArea>
+              </ChartTitle>
+            </ChartTitles>
+            <Palette>Pacific</Palette>
+            <ChartBorderSkin>
+              <Style>
+                <BackgroundColor>Gray</BackgroundColor>
+                <BackgroundGradientType>None</BackgroundGradientType>
+                <Color>White</Color>
+              </Style>
+            </ChartBorderSkin>
+            <ChartNoDataMessage Name="NoDataMessage">
+              <Caption>No Data Available</Caption>
+              <Style>
+                <BackgroundGradientType>None</BackgroundGradientType>
+                <FontWeight>Bold</FontWeight>
+                <TextAlign>General</TextAlign>
+                <VerticalAlign>Top</VerticalAlign>
+              </Style>
+            </ChartNoDataMessage>
+            <DataSetName>GraphDataSet</DataSetName>
+            <Top>0.2175in</Top>
+            <Left>1.75222in</Left>
+            <Height>4.35416in</Height>
+            <Width>7.69791in</Width>
+            <Style>
+              <Border>
+                <Color>#f26925</Color>
+                <Style>Solid</Style>
+              </Border>
+              <BackgroundColor>#484c55</BackgroundColor>
+              <BackgroundGradientType>None</BackgroundGradientType>
+            </Style>
+          </Chart>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Textbox Name="Textbox1">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Revature will need:</Value>
+                        <Style>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>#f26925</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Height>0.23958in</Height>
+                <Width>1.5625in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox2">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>trainers to start</Value>
+                        <Style>
+                          <FontFamily>Arial</FontFamily>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>#f26925</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>0.89583in</Top>
+                <Height>0.23958in</Height>
+                <Width>1.5625in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox3">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=First(Fields!numConcurrentBatches.Value, "GettingFirstBatch")</Value>
+                        <Style>
+                          <FontFamily>Arial</FontFamily>
+                          <FontSize>20pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>0.23958in</Top>
+                <Height>0.64236in</Height>
+                <Width>1.5625in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.155in</Top>
+            <Left>0.10639in</Left>
+            <Height>1.13541in</Height>
+            <Width>1.5625in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Color>#f26925</Color>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Image Name="Logo">
+            <Source>Embedded</Source>
+            <Value>revlogo</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.2175in</Top>
+            <Left>0.10639in</Left>
+            <Height>0.54167in</Height>
+            <Width>1.5625in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Rectangle Name="Rectangle2">
+            <ReportItems>
+              <Textbox Name="Textbox4">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>HIre more trainers by</Value>
+                        <Style>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>#f26925</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Height>0.23958in</Height>
+                <Width>1.57639in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox6">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value> May 1, 2017</Value>
+                        <Style>
+                          <FontFamily>Arial</FontFamily>
+                          <FontSize>20pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <Color>White</Color>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Center</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox1</rd:DefaultName>
+                <Top>0.25347in</Top>
+                <Height>0.75in</Height>
+                <Width>1.5625in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <VerticalAlign>Middle</VerticalAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.84251in</Top>
+            <Left>0.10639in</Left>
+            <Height>1.0243in</Height>
+            <Width>1.57639in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Color>#f26925</Color>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>4.78in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>#484c55</BackgroundColor>
+        </Style>
+      </Body>
+      <Width>9.61458in</Width>
+      <Page>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="WaitingPeriod">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>1</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Enter Waiting Period</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>1</Value>
+            <Label>="1 Week"</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>2</Value>
+            <Label>="2 Weeks"</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>3</Value>
+            <Label>="3 Weeks"</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>WaitingPeriod</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="revlogo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAASwAAABeCAYAAACZ4CkLAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AgeDhcT0YUyDQAAGv5JREFUeNrtnXmcHEXZx781uUnSBAQSOQwJpL3gBYkoAkoAJQ3ZBgTsjagvGuXIJODBJQgeeL5eaCANovD6ohxpEyTpDemAaCJGbgRUwE44AgaSSEyYTUKO3an3j+6Nsz21uzPTPbuTTf0+n/0kUzVTXV3Hr57nqaeeEmhoaHSJQt7EcMO6ld+anzCewcMC2bZ9PO1tMxHiZ4Cs5zN3ZgjdBBoaPZLWqYAH+ICTJaEU8mYxMQ8nGm74RHaEaDIyrmu9ybc3kNPDUUOjW0I5FpgPDAHOAv6eIVkdqxAaPppl/SUYhbw5r5A3lwJH7uz9oQlLQ6N7TE18fmchb+6ZUdmnKtJuy6riG/PmYOBV4AzgQ8Ajhbw5XhOWhkbfS0Kd1KAMcVwyYehQ1mdUtp18DeDVQgb1L+RNinAiMDyR9V+asDQ0+h6fKOTNBwp5824Jw9NO+tYZO35/SCLr2cE/DmUGhLIX8I5E8grDDQtpVc4SW9V1iuxXNGFpaPStdDUO+DVwLHAa8HjaST9ydkjrDPMQRdbcjKr9NUXaZVkUbLghhbx5GnBQIut1ww0f7w0pVxOWhkbX+Gzi89s3zjRHpy1USo5VJP8hg4k9gGi3sRSbDTe8PyPiEMDViqwP1IOgWvPmPoW8OTomSk1YGho9YA8F2WQBFWEtSTMp49/uDeww3Iton3BRhu2xOzAxkbbccMMVGRNKrpA3F0hYA6wu5M0/1NttQhOWRn9AUUFYbRlIDwcnktcAIs2kjH97mhAMTJDrohK7WVosVKRdW/L8TCAEH6DzxsGkQt606tnRA/VY1+gHOFRBDOvSzkdgn0Taq0KQhex2RVICzIE3YnZKY/t0EwTvAI5OZLUZbnhDxuqg
+kJIliqzBWsLS6LfISEXZM9M6TTcx3FACYxNZL46cnW6HsJA336Yo98ERbtiatt7GDSHABYqsz9Sh676vEHhWGG64QEtYGv2JoN5LZLgeAXzLcMOrW2eYjEwnXRSzrKNxQ0ghb+6vWNCzODLzSUXapRlW//NJ7RhYnHEfjgQuUfTBpHqPHy1hafQ2Ho3JCuCq1hnmESnJCsp9pf6RQT2nKdIWZlDu5MTnN4HnMnIW/T9F8ncNN/xXVp1XvMwEeFaRNc9ww1V6l1Cj32DjDPPAZJqUnJFB0QMUUkValHm4G274ZJoC5dWmIDoiU4o1wLo0xvASkpiSyNpCka9n2YebNmIB+yWS1xlu6MRtpAlLo39gxOzwJUVyPY6KbMugjBMSn59LW2DrOqXUdn3aSR77P50LvCWRNd+4MdyekRpIIW8Olmr3iyvqZD5IfJ6gCUujz7F3ykGtCpH0eMoyVU6nT2Xwrt9SkM2PMmrHmxRpV2blKhGT6k8VWc8ZbvjzrFXBQn5CBxGfUMibvy/kJziGu1wb3TV6HS8C40o+H5WyvLeotK+UZe6vSLsvzeQDsReRQ2cpHshIEpmqSPYMN3whOwI5+K2U70BuB06qhypouMs7pMaYiMXxhQsONrSEpdHbeD6ZsHGmWfPCmVOTU9pdw/GV1LuayQccAQxLZLVk1KZfUaR9JwuppzVSBQXkHlJk32O4YaaHqQvTzQ4SPiQpNYrhxs81YWn0Nsp2rIrFshAoFaMIo5JpQvBIyjpOVKStSlmmys7jpyWVOBpqcpd0peGGT2Uh9cTRSk8A3pbIWm+44elZD47YlwzgT2WZbW2LtEqo0dt4HPh4Im1f4I0ayyuzgUmZWsI6TpH2Uq2Fbb7IHNbWVuaj9Krhhs+mJKsccI0i66yMVE2IIq2q1OEvZD0wOsLiFPLm7xTqM3Lb5nO1hKXR0yAyCnnz8ELenFAyiNNANfGNFOUV66ASJu1qqw23tt22Qt6kra0sMgPA
+VzPontHAYYm0pw03fCwDya3DLnU9iTDOIpLgbs1cuorIagZR4MEkjjduWLFKE5ZGd4N2X2Ad8BcgLOTNb2fgL6Q64zcqRTVVv300RR0PUCT/Js0kBM5MKjdEF1qkxe2KtJtKnpuWPAzgc4ms7RLel/VYi21lH4oJMonrDTdcUsib2q1Bo1tMp/PxrS8X8ubuKSfvOoUE9NYU2+8qt4j2FO88SZFWk4d7iZTz4UTWOqg9zHLsE3WIoq5vGG44OwvVbEOkbv5VkT3HcMO1WQ80GZ1+ULXzUsMNL+wYP5qwNKpRtwQwIWWZmyjf2dsrxfGcYsbvfKSCaBfXomLFUsrxlO8OLqxZxZy+Q1U7R5H9paxUswHRBRlJQ/s6ww0/lbEU3xHQsPTIVulYOb207TVhaahF9EjiCRSElXZnSDVR35qivN0V6tbmGiePoFzdeb2QN2uOgSXgO4rky2smkxtCCmebOcoPH7cDv83mTOK4wRJ+q8i6MCE5ZkKORLHn36HINg033FDa9pqwNJSIJR6V783FKYtWqYTvSlGeyt1gS03kEpmWByYkwNXU6IhayJu7y3Kj+HLDDV9PNelHKb3abzLccH02ZxIH/ULRLo8bbnhHCcmklqzif0+PTQ9JXGq4YdkNQpqwNLpb/SQwL5E8tJA3j0hR5mZRTgB7pyjPB+6PSWoz4BpuuKZGkpbAlfxnV6xIurN+4xTq4F21TvpYfRpCuRF/i+GG+bSST6zC7gd0UvukZDtgZTy2iO93VElyLYYb/lDVTpqwNHqCyuHxrDRn1CS8llS7UtbxI8AYYIzhhp+vdeLGW/n3AnuKyJdpH8MNf5aiXv+tSLu31vrFk7eZ8p3R32Yh+cS2pKcVWXemlgrLiXcA6jOfrfE7dqVia2h0PbCEYKiUvFY6SQQ8NNINP5Ci3DHA34jOAUpgouGGf+mH7fcpoNRfabvhhoNTlDeUKH5WEmOBl9MSVusMs1lK7kwkrzHccEwd2mau
+QlLcDhzU3XEfLWFpdLuiS8lWYGVCQjoyZdGrDTfcCzjEcMNcPyUriPy3lsXq6hrSt5tqw2Oe4YYvp7VdFfLmIAVZAeQzbhMKefN8BVl1PKvbs4lawtKoZKBdAvwgMXBOH+mG83Xr9Nh2QkTS6eaRbri1xIO8WlWVQt4M6exWUgQONdzwmQzqOYfyuxKfMdzw3bXUuZvnvB11bLFrDTfs0S1DE1Y/VeU6BlgWg62QP2gEDEhektBiuKGtW7vX+vRE4HeJ5BWGG07IoOzxlEej2CYEo0fODjdkKF0NItp1TV4aspLolur2nsaqPvzcPzGskDePA4YDCwv5w7cYbu3RfQ33+Y2FvPlHOof3na2buVdxnSJtanoSaRdER6+SuC1LsoolxPsUZLXVcMMDKy1L27D6n90E4GGiULZzgacM98nUzn5CcDJwD7ACOMdww6DeFw5odMLqxOenDDd8PE0fRNLMgKmUHz5fb7jhtIzJ6lLUUTA+mhi7WiXcxUhLZSOYbbjhzFSz5dMmY34Z6gbuu37dnej4ygQiN5Am4OFa1f2YIEYAGyi/xOPU2L8tE7TmzUkyutotia8bbviNasrSElb/g0qMPy92CKwZmqz6HG8YbmgKwVjDDfdmn3RkFf/2NgVZ/TVLsirkzT2kOjLF08A11UqIWsLqZyphLH7fBpyd6Og1I+vgT6PRe8jgwtnSsfIu4O+J5C3AaMMNCxmOyVVEARpLsXbgQPbdbVZYdVQNLWH1IxhuSGu0YpVdVy5hdCFvXqBbaedFFmTV4XMFLFFk35QFWZX4W/1UQVYAdltbbSGANGH1t0Hthhhu2Ep5DCZE4oyYxq65qBEdfUme31yX5lhTqRQYS/lTgIsUX/ms4YaP1KrOasLqv6rh/SSM77JcBdDYNfErRdonSggtlRTYOsPcm2iHOoklhhvekoYUtQ2rfxPXYGAB8F6iUDHNwKZ6Xyeu0dBjwqL89uYHDTc8OiNVcDCRE+r+nddK
+XjLccHxaR2ZNWP1f0urys8YuOSYE0QHqIXHSNsMNh7TmzY4rvdKW/0vU0VBNolhgqcrXhKWhseuR1oGACwxHcgE5njWyMehfDnxPkTU5DtuTGpqwNDR2dQKbbpZeYForWb0deFbBKf9ruOG0rKR7TVgaGhqpzA4DB5Lrwk3hScMN35OlKULvEmpoaNRMVoYb0tbGYuUXJCdkbTfV0Ro0NDRqJqtC3vwWCp8/4BjjhnB91s/VKmGDDoTWvDkcwQApaY0vg9DQaLSxeiRRZJAdPCIESMmNhhtOr8czNWE15kC4HLgqloCfBY4y3HCbbhmNRllUiS79eDXBIRIIDDc8pV4uNJqwGm8wjKH8VpmZWVxBrqGR4TidB5yRTAYOAAr18vfTNqzGw0hFmo6yoNFoSF5j3wYcnmWkBxX0LmGDwXDD5bFdoBS/1i2j0WDodMGuEMw03PBFHYV217QPUMibFxXy5qxC3pygW0WjQcfquYW8eWMhb54BUaQGDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDY2asbjFa+j6BYvmEfhzuv+OX/936HhGkKK9uvttb7xDr/ZbncZVte2UdT2CFk+TRpUQge99N6OytgAhsAF4jRzLrSnOpo6BYdlOJR04DMk1RCe/s8YAYKllOwu7q0/Q4u0DTEPyL+CXlu2012GivJMoNMczSHxytFlNTnVlLPByCL5DFIOoFIOAKy3b2VZlnd4LnBr/vu7jDnjUsp15qr7oSAtavNOQTATusmznyezafw6W3Uzge3sBH0ewGcl84PWexmnge98mm6ABW4guut0MvEKOF6wpTqHK+TIAyeWoI3xk0UdPIpmLoK2S+vQWYdUzmuVi4GzLdv4d+HOx7LN6GgyjgPV1fufzLdu5qYvn7wX8qyTpmVyOQ4tFill1WNDiDUWyMSZQEPzGanKcGkjv58Dnusj+rGU7t1RR1tHAsj4Yf9db
+tnNhF3X6I/DBkqQPW7Zzf8YLx5vA0PjjSst2DqzgN9upX1imh+P58kIlxBX43iBgJfDWOi4t11lNzkWNImHVO7zMZGBd4Ht3WvZZPapjvUPRzOom9+LE53cVixyc6eoiuX8HWUWfPxb43luqUWMC39sD+Ew3X7uqSpXnuD7qjZMWt3g5xTvuBxyVSL4sY3Xsm4gdZAUwNvC9E/p4dL4feD7wvfkNo4NJHBoIvRUPqzlo8W6OxfC+7oCvdZP7vCLt7qzsJYHvHQIcnRS8LdtZV2k5MXmegyghvXKMC3zv9CqI9s991Bv3TG5yior0IYqxuVvGzx5ZpkyLThJdX+LUwPeWAbkGsEfObSTC6kq0/TawtSptVzIYODKWqiTJ8MuSaYHvXW/Zzl+qrOObwAMZiOGDgJ+8yba7OmwYCjL4RaxqleKdge8dZdnOQ+lsJg6B752nINDLqyG9tawVwLWJyXY7MAo4ZUeXCGYF/pwWED3aHyzbWbq4xRsvJbP5zxXm3fV3O5KPKHKWVThuBPBjy3ZaKrXX1GHhUqXVaq+8pGpCjdrwBOBE5XyJFrZJlu38vsq6tAFLSR/+vAgssGznuj7ro2oIy7KdN2uUJHLAh4DflwzODvwKOKTKIldZtjO5F9vko8BvE2lfBk6vteMsu5lFC+4whOBCKZNEL2+ptNyY9L6ZSN4C5IH3IzilYyJKyQEgjrRs58Geyl3c4jG5yXmxlPAq6GfVlD/Lsp3V1RL5zg7Ldn5U40+/E7flIcA9RPHQS3EzMK7aBd6ynQ9npjo3EFl1pxIOStF5Rct2lsSklWT5/YIWb3jVVqdeQuyWcS/Qmsg6LVjojai14wLfQ4gBt0hZtqLPsuzm16ss99zE54eANyzbuRfJc4m8imwhk5syG5CDqyVyDQD+DtiKkX7gvfd4w/qYjBuqoepiwwpaPCzb+RPwzzIilBWoHH2EyU0Olu1shoRhXgBFFqUoeihwUiKtYNnO56uxUQS+
+9xVgn0TyeSWDaloib+/A907VfNDwEpq0bOcpZPkOebG9ao2kX6MuhFXiU7QqkTUEGLYTDKCriPzJSu0d7w98b48ajaBXUO4rc0elK1hssB8FZRsGd1u2szzKnwOCR4iuWirFl0qkR43GxstlC6VguG6WOhNWSYMnpaltVGPM71vMKpMOBV+uRkQuIZqvKrK/XKVY/jGFqv6TWJrFspuxmpx24MJEHxwX+N5hGap9GvXDwITJAKJNJ426qoQdUojk8ETWVgSbG71R4iMT15RlSC4LfG/vKolGcWW3/IFlOxuqrFbS2XW1ZTtLkx7ylu3ciuDFToNeMP++Fk9fmtvAWBptVr1bMeae0a3TFaNnp1IR+J6vyHrOanKqJayBge/tCYyokoqFNcVZGbR4VHvsJf5+e+B7lwI/SGRf2IXE1BWuKRuCQszqyrWiiwXge4rk7naCbgC+X/LEse1wMLBcD/nGxJuC7ytcLZ6ybKe1Wr0mWOjtT7EqYURYtrOy0XYEKyYsIdgt8L32CokhWsUlw4G3IBiH5CrgA2VfzXF+DXUcC6yr+ldFCFq8pVaTMymFlHgz8C06+ybNrJSwAt/7mqKNF1lNzj8rrUM8gD6ZyFoBPNcl6bUzi1wJYUW4E5ioqaFOUrlf2e63ENFfscgwYE+iG5SvRHK8wqQyrYaqjKDIKzXUf5llO8fulCqhlLxKtLXf81+RViStwGrg70gWlpFVpIy4J01x/tqrxl/JcYHv1bRkRHYhZz3lrgF7dCHxlHT+HALfG6JQB6VlO1OqlFRnAvslsr5r2U57VxKadZqzFWTS/eGIwJ9z9KJGOB7V/8iqvdL5IiWtxSKtwFqiw8/3gYKs4EmryXmiFz3djwl87+M7JWHRsT9R258Kt1LkosD36HXjr6h+tUngbMqjR5wf+N6wrgZTTCSnA6MTWbdXORF2A5JOif/q6WBzdGZT3IVIbHAIcfHJjXA8qv8hl9l8iVL+JBATOxatXsQ/
+d1bCyrIBLrWanHPI0V5j47cBLxFt+Vb791OryXkwTdyhOLxM0uA9Cjixh/dRkdOl1T6ecmfMS3quczOW7fwbyfxOU0JyRuB7+/YH7/J+itVI/seynQ8WKRZrLKNY21yRsy3beaDRF7PMje4SnhLIuSDuQPK8dapDypVipWU7B8dHfqruvMCv3uhebsuS14LIJ7LmQqfT/gAs9j0kTFUsBj+3bOe1Kh//a0XaXfFRmkrItlmhEi8CDtvlqSE6/6qWb3oV8gkQS0DeLsg9IZEypfF7k2U7Y6ufL6K4MxyV6oqwjgA29vDb4xH8LNnpAm607OYb/zPZs4FlO8W+aKC4A1cEvncnERF1YEis89/R0cmB7zE5sjt9v2zVE3y34sBsUbtdStLJVrAKyXQpGVxh27YBrwL7lqS9K/C90cCaBh6cW4F26BSRYkS2PMHBCrp6oEY9ZTRFdu/hW2Nje1XyoU9YtnMxwCJ/DidndFypr+ZLXxHW85btFHr47fI4SmXSuHtD4Hu/s2xnRX9RPWKpaTpwJp2dNy+zbOeODiKKo2R+SkgOSPD4E1Z0uLgisoqN7TMUk2w/KNv9q6XPXct2zmxg6WeLInLCQaXtkwbB3R7A3or2faMmcpjirCUyovc0X64FvphI/1zgezdbtvPQyfpsZd1tWDO7kMQeDHxvt/5i3J0ckdEG4NFE1uGB7x1ZImENQPK1ck2jOKkaiS7wvbPjFble2tAZwULv4AYmrE2Ub3SMzMz+NpBBCamzo+3/Us/XsmznS8CSLubLGL0ZUmfCsmxnGzneEYvvpdgLaOmHxt0zFGm3B/5tHe14aIckUIIFlj11U6XRVoMF3lDglnq+hIyU1CsatZGtKc4W4GlF1o8yaoAJwP6J1Bfq/V4xITWjjsZ1T7xYaVaqo4QFJ7IKuECRc3zgexeXdNROjVgVWSMESQ/+cTBoQvx/lXf/VdFvmyvtkSbKg+g9QxTEsNa/P1J6mDvCtMD3Bjds
+gwu+okg9Lba/pSEM1LYkHq47EUeS+lrgfYrs9wS+d6NlO/qgeg/2jHS4L47U2eJNQvKJxKD7YeB7LZbt/GNnb6gOaVFKvgfYJVkDEPw48L2vKlbtOZbt/LUKQgSJq9JKLdtJ5SMTtHhnIsvC3S4EZeTQvm/vJmdp4Huv0Dmo3TDghcC/fU8YuLVaCT6WYG5RqYPAlbUc46px4Xss8L1fAp9OZJ+/uMW7dXKT82dNTXWSsGJDMxT5DMnAd9HB20eDRd7AwK/58G09rtlK875/jqWW0vc8RSJbFPW+usrJdC5JY7BgQQZkhdXkzEOUBfj7YIqQOX0lZe0GA18jEZWiJ1+7wPemBL73NOrLO661bOclqxecmjvUPst2PgM8llQPpWRZ4HtjU/RJ5rdgNdL9iZn4YcUdvT3wvcPKbAGSkbSxxLKdY6s58FsCM8OryLYgmGo1OaluJZFCfkpI8SIlfjsCMSbxtRWW7VR02LikXS4pI70izRn1D0huBH5SkjUEmGnZzjcbVMr6VeB7NlFonVLsAcwKfG8WkYPuPUiWL27xWkuiug5DMBzJR2NJZo8uHrMWuLpS37bsSGsORLvOKxVfmW/ZzuE1Fm9kOF+2g/yS1eRc3ygHozPzdI9f6EXUntjHBL73jQYIiTsUyd1Bi3dorQUs8ucwAPEKoiw4YRInVj6Amwn8OccAZiLrMQRbspCAAt+DYVynyLomjobRqGgGlnXj0nk2kYPtw1LyN9jx9xiSPxK5EeyhkN4AVkP7vpbtbOrtI2PxaYSXiS5uSeKwLqKd9DYGgbgu8L2JjbKBlsuuA3Z4tP8IoYwl/tX4ws6+h2RUrT892W7mpCaniCxb9UsnwxLLdlZVSjTB7z0BQjVAz+vw78qif6wPO0VghiL7qkZlqzh88LHILi+NTY7njj/Rwxj4CTAeBrT31bstijzLH0NE0WcTaAr8OVMaoQ9E+c73zk9YnVZyyVSEMiTMsvh25W7apu54zLKd
+B9K+Y3zt14PKN5B8oyoRehOnKqSAhy3beTpL+1Jsi7g9EvU74Qs0OCzbudmyHQHcSu2HdNcSXTIyzrKdLxLdMNMnZpSOxS+2L55NFDIoOZhaAt+b0EMx9d7pfWKy7XiLG8TOORAwFOkbUwwsgC2B7x3QRed2GcAvl2NDsaisT3ayFWzKSpokCgsyOPEEUcEpgTIuUfTD1sSzsrAJEfjeBqI4TCJBwrkqj3NkOm6qaPtzAt8bhGA34BQkZwIH5XK5w4sl54WFEORyufXtxfaniEIEecDrvME26xNOGo95I8tFtsTQ/24EQyi7Bq7bkOLbiRyMc3WcL29C5DzdCPh/5shjUYmEdXcAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>6c40b706-c7c1-4536-8e70-17f0ecb9452a</rd:ReportID>
+</Report>

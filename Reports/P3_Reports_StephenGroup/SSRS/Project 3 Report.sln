@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Project 3 Report", "Project 3 Report\Project 3 Report.rptproj", "{46F15185-ECDD-48F5-9409-A2A3D25E2C72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46F15185-ECDD-48F5-9409-A2A3D25E2C72}.Debug|Default.ActiveCfg = Debug
+		{46F15185-ECDD-48F5-9409-A2A3D25E2C72}.Debug|Default.Build.0 = Debug
+		{46F15185-ECDD-48F5-9409-A2A3D25E2C72}.Debug|Default.Deploy.0 = Debug
+		{46F15185-ECDD-48F5-9409-A2A3D25E2C72}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{46F15185-ECDD-48F5-9409-A2A3D25E2C72}.DebugLocal|Default.Build.0 = DebugLocal
+		{46F15185-ECDD-48F5-9409-A2A3D25E2C72}.Release|Default.ActiveCfg = Release
+		{46F15185-ECDD-48F5-9409-A2A3D25E2C72}.Release|Default.Build.0 = Release
+		{46F15185-ECDD-48F5-9409-A2A3D25E2C72}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A6F94EE-C4BD-4D79-8726-0D652EFE3EE5}
+	EndGlobalSection
+EndGlobal

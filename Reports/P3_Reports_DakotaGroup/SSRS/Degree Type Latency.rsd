@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource_LatencyTabular</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('dim_QualifiedLeads'[stem], 'dim_QualifiedLeads'[degree], "Average Action Latency", [Average Action Latency])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_QualifiedLeads</DimensionName>
+                    <HierarchyName>stem</HierarchyName>
+                    <HierarchyUniqueName>[dim_QualifiedLeads].[stem]</HierarchyUniqueName>
+                    <LevelName>stem</LevelName>
+                    <UniqueName>[dim_QualifiedLeads].[stem].[stem]</UniqueName>
+                  </ID>
+                  <ItemCaption>stem</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_QualifiedLeads</DimensionName>
+                    <HierarchyName>degree</HierarchyName>
+                    <HierarchyUniqueName>[dim_QualifiedLeads].[degree]</HierarchyUniqueName>
+                    <LevelName>degree</LevelName>
+                    <UniqueName>[dim_QualifiedLeads].[degree].[degree]</UniqueName>
+                  </ID>
+                  <ItemCaption>degree</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Average Action Latency</MeasureName>
+                    <UniqueName>[Measures].[Average Action Latency]</UniqueName>
+                  </ID>
+                  <ItemCaption>Average Action Latency</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Model</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('dim_QualifiedLeads'[stem], 'dim_QualifiedLeads'[degree], "Average Action Latency", [Average Action Latency])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="stem">
+        <DataField>dim_QualifiedLeads[stem]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="degree">
+        <DataField>dim_QualifiedLeads[degree]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Average_Action_Latency">
+        <DataField>[Average Action Latency]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

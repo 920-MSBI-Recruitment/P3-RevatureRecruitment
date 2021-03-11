@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="RevatureData"
+  DTS:DTSID="{03FB8508-E315-4982-BA02-1EC670DD78C0}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-AU7D43G\TRAININGSERVER;Initial Catalog=RevatureDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-{03FB8508-E315-4982-BA02-1EC670DD78C0}RevatureData;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

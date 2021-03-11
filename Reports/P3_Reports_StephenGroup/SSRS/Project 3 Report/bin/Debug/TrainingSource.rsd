@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>Project3RevatureTrainingData</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('dim_Date'[date], 'fct_Training'[startDateID], 'fct_Training'[numConcurrentBatches], 'fct_Training'[waitingPeriod])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>dim_Date</DimensionName>
+                    <HierarchyName>date</HierarchyName>
+                    <HierarchyUniqueName>[dim_Date].[date]</HierarchyUniqueName>
+                    <LevelName>date</LevelName>
+                    <UniqueName>[dim_Date].[date].[date]</UniqueName>
+                  </ID>
+                  <ItemCaption>date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>fct_Training</DimensionName>
+                    <HierarchyName>startDateID</HierarchyName>
+                    <HierarchyUniqueName>[fct_Training].[startDateID]</HierarchyUniqueName>
+                    <LevelName>startDateID</LevelName>
+                    <UniqueName>[fct_Training].[startDateID].[startDateID]</UniqueName>
+                  </ID>
+                  <ItemCaption>startDateID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>fct_Training</DimensionName>
+                    <HierarchyName>numConcurrentBatches</HierarchyName>
+                    <HierarchyUniqueName>[fct_Training].[numConcurrentBatches]</HierarchyUniqueName>
+                    <LevelName>numConcurrentBatches</LevelName>
+                    <UniqueName>[fct_Training].[numConcurrentBatches].[numConcurrentBatches]</UniqueName>
+                  </ID>
+                  <ItemCaption>numConcurrentBatches</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>fct_Training</DimensionName>
+                    <HierarchyName>waitingPeriod</HierarchyName>
+                    <HierarchyUniqueName>[fct_Training].[waitingPeriod]</HierarchyUniqueName>
+                    <LevelName>waitingPeriod</LevelName>
+                    <UniqueName>[fct_Training].[waitingPeriod].[waitingPeriod]</UniqueName>
+                  </ID>
+                  <ItemCaption>waitingPeriod</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Model</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('dim_Date'[date], 'fct_Training'[startDateID], 'fct_Training'[numConcurrentBatches], 'fct_Training'[waitingPeriod])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="date">
+        <DataField>dim_Date[date]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="startDateID">
+        <DataField>fct_Training[startDateID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="numConcurrentBatches">
+        <DataField>fct_Training[numConcurrentBatches]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="waitingPeriod">
+        <DataField>fct_Training[waitingPeriod]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "RevatureDBtoDW-Date", "RevatureDBtoDW-Date\RevatureDBtoDW-Date.dtproj", "{0F9079AE-260B-4E01-BE04-792A211FF268}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F9079AE-260B-4E01-BE04-792A211FF268}.Development|Default.ActiveCfg = Development
+		{0F9079AE-260B-4E01-BE04-792A211FF268}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B80E4286-0B5A-4D95-8EBF-3AF53F1AB883}
+	EndGlobalSection
+EndGlobal

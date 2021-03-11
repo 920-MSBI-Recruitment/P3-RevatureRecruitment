@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Azure_SSAS_Source">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=asazure://eastus.asazure.windows.net/msbirecruitment920;Initial Catalog="Offers Signed SSAS"</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>df4eb002-4eac-4e1a-85f8-0c48f83e82d5</DataSourceID>
+</RptDataSource>
