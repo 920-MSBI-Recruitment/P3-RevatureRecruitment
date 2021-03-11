@@ -124,7 +124,7 @@ Thusly, we will be creating entirely new models for each domain.
   * If you are not sure exactly what your user name is, navigate to ```C:\Users```. The folders here are tied to the users of the computer you are on. Choose the one that you're     currently using.
 ![ConnectToSqlServer](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ConnectToSQLServerSSAS.PNG)
 * Click connect. Click OK on the Encryption Support warning.
-  * At this point, if you get an Impersonation Mode error of some kind, close the project and reopin SSDT in Administrator Mode. This should fix the issue.
+  * At this point, if you get an Impersonation Mode error of some kind, close the project and reopen SSDT in Administrator Mode. This should fix the issue.
 * You will now be asked to select the tables you wish to build your model with.
 
 ### Power Bi and SSRS
