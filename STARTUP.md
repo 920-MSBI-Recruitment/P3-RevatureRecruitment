@@ -103,29 +103,35 @@ Now that all the packge connections are set, all that remains is to configure th
 * If everything goes to plan, the package should finish with every component having a green check mark. The database and data warehouse are now loaded.
 
 ### SSAS
-This section will detail how to setup the tabular models for each domain relevant to the business questions asked by the project owner. Unfortunately, it's impossible to use the models in their current form, so we will need to create entirely new Tabular models from scratch. The reason for this is that the Azure Analysis Service that hosted these models will most likely be taken down at some point, as well as the Azure SQL Server the Data Warehose is hosted on. Because the tabular model uses the Azure SQL Connection for its data source, it is not possible to connect it to a local instance of SQL Server. In addition, the Data Source itself cannot be deleted without deleting the associated tables, and these tables cannot be deleted without deleting the calculated measures associated with them. A new data source can be added, but it forces you to import the tables again, which solves nothing. 
+This section will detail how to setup the tabular models for each domain relevant to the business questions asked by the project owner. There are two options for this section: an Azure enabled tabular model and a local SQL instance model. The method to setup each model and deploy them is identical, so there will be instructions on how to deploy to each category of model.
 
-Thusly, we will be creating entirely new models for each domain.
 #### Requirements
 * Microsoft SQL Server 2016 or greater.
 * Microsoft SQL Server Management Studio
 * Microsoft SQL Server Analysis Services
 * Microsoft Visual Studio 2017 (SSDT)
 
-##### Latency Domain
-* Open Visual Studio 2017 (SSDT) and in the top left corner, click File->New->Project.
-* Click the drop down menu next to Analysis Services and select Tabular. Name the project and ensure ```Analysis Services Tabular Project``` is selected.
-![NewTabularProject](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/NewSSASProject.PNG)
-* Click OK, and on the next screen select ```Integrated Workspace``` and click OK again. You will now be presented with a blank Tabular SSAS project.
-* In the Tabular Model Explorer on the left, right click Data Sources and select Import From Data Source.
-* In the Get Data window that appears, click SQL Server database and click Connect.
-* Enter the Server name you hosted the RevatureDW database on, and enter RevatureDW as the database. Click OK.
-* Ensure Windows is selected and the Impersonation Mode is set to ```Impersonate Account```. Enter the user name and password of the account you are currently logged into.
-  * If you are not sure exactly what your user name is, navigate to ```C:\Users```. The folders here are tied to the users of the computer you are on. Choose the one that you're     currently using.
-![ConnectToSqlServer](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ConnectToSQLServerSSAS.PNG)
-* Click connect. Click OK on the Encryption Support warning.
-  * At this point, if you get an Impersonation Mode error of some kind, close the project and reopen SSDT in Administrator Mode. This should fix the issue.
-* You will now be asked to select the tables you wish to build your model with.
+##### Deploying to Local Instance
+* These instruction will detail how to deploy the LatencyTabularLocal model, but the instructions are identical for each model.
+* Navigate to ```P3-RevatureRecruitment\SSAS\Local``` and extract the LatencyTabularLocal zip wherever you'd like.
+* Open the LatencyTabularLocal folder and right click the .sln file and Open With Visual Studio 2017.
+* In the Solution Explorer, right click the bold ```LatencyTabularLocal``` and click Properties.
+* In the Deployment Property Page that opens, change the Deployment Server to the name of the tabular analysis service you wish to deploy this model to.
+![LocalAnalysisServerProperty]()
+* Click OK and double click on ```Model.bim``` to open the tabular model.
+* Click the drop down next to ```Data Sources```. Right click the data source and select Change Source.
+* Enter the server name you hosted the RevatureDW database on, and enter RevatureDW in the Database field. Click OK.
+* Go back to the Solution Explorer and right click the bold ```LatencyTabularLocal``` again. Select ```Deploy```.
+* Ensure that Windows is selected and that the Impersonation Mode is set to ```Impersonate Account```.
+* Enter the User name and password of the Windows account you are currently logged in to.
+  * If you do not know what your user name is, navigate to ```C:\Users```. This directory has folders with the user names of all users for your machine. Use the name that           matches the account you are currently logged in to. Click connect.
+![ConnectSQLSSAS](https://github.com/920-MSBI-Recruitment/P3-RevatureRecruitment/blob/dev/Images/ConnectToSQLServerSSAS.PNG)
+  * If you receive an impersonation error at this point, save your work and close SSDT. Run SSDT as adminstrator and try again. This should fix the problem.
+* Click OK when warned about the Encryption Support. Your model is now on your Analysis Tabular Service.
+* Repeat this process for each solution in the SSAS\Local directory.
+
+##### Deploying to Azure Instance
+* 
 
 ### Power Bi and SSRS
 This section will detail how to setup and publish the Power Bi to a Power Bi Web Service workspace, as well as how to migrate SSRS reports to Power Bi.
