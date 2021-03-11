@@ -158,4 +158,6 @@ This section will detail how to setup and publish the Power Bi to a Power Bi Web
 * Microsoft Power Bi
 * Microsoft Visual Studio 2017 (SSDT)
 
-TBD
+##### Publishing the Power Bi Reports
+* Navigate to ```P3-RevatureRecruitment\Reports``` directory. Here are the reports for this project, seperated by teams.
+* Inside each folder is a ```Power Bi``` folder and a ```SSRS``` folder. These instructions will be identical for each Power Bi, so I will explain the p
