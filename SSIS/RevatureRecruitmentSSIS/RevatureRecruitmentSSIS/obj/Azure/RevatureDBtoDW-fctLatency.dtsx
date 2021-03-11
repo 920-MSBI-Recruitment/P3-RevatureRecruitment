@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="RevatureDBtoDW-fctLatency"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{B6491995-CFCC-42FF-BDEB-603A8891FD5A}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{2C3BF8F0-032B-4931-8F8D-630E3ABEB68C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1011,6 +1011,12 @@ where [refTable].[date] = ?</property>
                       cachedName="offerAction"
                       externalMetadataColumnId="Package\factTable\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[actionType]"
                       lineageId="Package\factTable\DB_Offers.Outputs[OLE DB Source Output].Columns[offerAction]" />
+                    <inputColumn
+                      refId="Package\factTable\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[qlId]"
+                      cachedDataType="i4"
+                      cachedName="qlId"
+                      externalMetadataColumnId="Package\factTable\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[qlId]"
+                      lineageId="Package\factTable\DB_Offers.Outputs[OLE DB Source Output].Columns[qlId]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1040,6 +1046,10 @@ where [refTable].[date] = ?</property>
                       dataType="str"
                       length="10"
                       name="actionType" />
+                    <externalMetadataColumn
+                      refId="Package\factTable\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[qlId]"
+                      dataType="i4"
+                      name="qlId" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1451,6 +1461,10 @@ where [refTable].[date] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="145.6,41.6"
+          Id="Package\factTable\screeningDate"
+          TopLeft="18,107.5" />
+        <NodeLayout
           Size="134.4,41.6"
           Id="Package\factTable\offerDateID"
           TopLeft="24.0000000000001,515.5" />
@@ -1478,10 +1492,54 @@ where [refTable].[date] = ?</property>
           Size="147.2,41.6"
           Id="Package\factTable\contactDateID"
           TopLeft="17.5000000000001,413.5" />
-        <NodeLayout
-          Size="145.6,41.6"
-          Id="Package\factTable\screeningDate"
-          TopLeft="18,107.5" />
+        <EdgeLayout
+          Id="Package\factTable.Paths[Lookup Match Output1]"
+          TopLeft="91,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\factTable.Paths[Lookup Match Output]"
+          TopLeft="91,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\factTable.Paths[OLE DB Source Output]"
           TopLeft="91,47.5">
@@ -1600,57 +1658,32 @@ where [refTable].[date] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\factTable.Paths[Lookup Match Output1]"
-          TopLeft="91,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\factTable.Paths[Lookup Match Output]"
-          TopLeft="91,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\factTable\screeningDate">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[tbl_Screenings]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\factTable\offerDateID">
     <Properties>
@@ -1786,29 +1819,6 @@ where [refTable].[date] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\factTable\screeningDate">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[tbl_Screenings]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
